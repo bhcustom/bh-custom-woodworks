@@ -1,5 +1,5 @@
 /**
- * Product catalog for BH Custom Woodworking.
+ * Product catalog for BH Custom Woodworks.
  *
  * Each product belongs to a `category` that maps to a section
  * on the /shop page.  The `cta` field controls which buttons render:

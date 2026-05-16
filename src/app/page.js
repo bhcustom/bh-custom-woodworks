@@ -19,12 +19,12 @@ export default function Home() {
         <div className="hero-content">
           <Image
             src="/logo_icon.svg"
-            alt="BH Custom Woodworking Icon"
+            alt="BH Custom Woodworks Icon"
             width={160}
             height={160}
             className="hero-logo-icon"
           />
-          <span className="label-sm">BH Custom Woodworking</span>
+          <span className="label-sm">BH Custom Woodworks</span>
           <h1 className="display-lg">
             Heirloom Quality, Handcrafted for You
           </h1>

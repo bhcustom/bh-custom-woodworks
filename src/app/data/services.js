@@ -1,5 +1,5 @@
 /**
- * Service page data for BH Custom Woodworking.
+ * Service page data for BH Custom Woodworks.
  *
  * Each service has its own landing page under /services/[slug].
  * Content is original, SEO-focused, and structured around buyer intent.

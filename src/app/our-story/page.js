@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const metadata = {
   title: "Our Story",
-  description: "Learn about the heritage, craftsmanship, and dedication behind BH Custom Woodworking.",
+  description: "Learn about the heritage, craftsmanship, and dedication behind BH Custom Woodworks.",
 };
 
 export default function OurStory() {
@@ -23,7 +23,7 @@ export default function OurStory() {
             <div className="story-hero-image">
               <Image
                 src="/images/artisan.jpg"
-                alt="Bob, Owner and master woodworker of BH Custom Woodworking"
+                alt="Bob, Owner and master woodworker of BH Custom Woodworks"
                 fill
                 style={{ objectFit: 'cover', objectPosition: 'center' }}
                 priority
@@ -34,7 +34,7 @@ export default function OurStory() {
 
         <article className="body-lg" style={{ lineHeight: 1.8, color: 'var(--on-surface-variant)' }}>
           <p style={{ marginBottom: '1.5rem' }}>
-            There’s a profound difference between something manufactured and something made. When you run your hand across a piece of solid walnut that has been planed, sanded, and finished by hand, you can feel the hours that went into it. That tactile connection is exactly why BH Custom Woodworking was started.
+            There’s a profound difference between something manufactured and something made. When you run your hand across a piece of solid walnut that has been planed, sanded, and finished by hand, you can feel the hours that went into it. That tactile connection is exactly why BH Custom Woodworks was started.
           </p>
           <p style={{ marginBottom: '1.5rem' }}>
             We started small—building pieces for friends and family in a modest garage shop. The goal was never mass production; it was always about precision. Whether it was a simple cutting board or a complex laser-engraved memorial urn, the philosophy remained the same: use the best American hardwoods, refuse to cut corners, and build it as if it were going into our own home.

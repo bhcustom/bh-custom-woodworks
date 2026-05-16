@@ -31,7 +31,7 @@ export default function TermsOfService() {
         <section style={{ marginBottom: 'var(--stack-lg)' }}>
           <h2 className="headline-md" style={{ marginBottom: 'var(--stack-sm)' }}>1. Agreement to Terms</h2>
           <p className="body-md">
-            By accessing our website or purchasing products from BH Custom Woodworking, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions, then you may not access the website or use any of our services.
+            By accessing our website or purchasing products from BH Custom Woodworks, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions, then you may not access the website or use any of our services.
           </p>
         </section>
 
@@ -41,7 +41,7 @@ export default function TermsOfService() {
             For customized items, we will often provide a digital proof for your approval before production begins. It is the buyer's responsibility to carefully review the proof for spelling, grammar, layout, and factual accuracy. 
           </p>
           <p className="body-md">
-            Once a proof is approved, BH Custom Woodworking is not responsible for any errors that were present in the approved proof. Remaking an item due to an error approved in a proof will incur additional costs.
+            Once a proof is approved, BH Custom Woodworks is not responsible for any errors that were present in the approved proof. Remaking an item due to an error approved in a proof will incur additional costs.
           </p>
         </section>
 
@@ -51,7 +51,7 @@ export default function TermsOfService() {
             When you submit a design, logo, or image for engraving, you represent and warrant that you own the copyright or have the necessary licenses and permissions to use that material. We will not be held liable for any copyright or trademark infringement resulting from customer-supplied artwork.
           </p>
           <p className="body-md">
-            All original designs created by BH Custom Woodworking remain our intellectual property. We reserve the right to photograph custom orders and use those images for marketing and portfolio purposes, unless the item contains sensitive or confidential information and you explicitly request otherwise.
+            All original designs created by BH Custom Woodworks remain our intellectual property. We reserve the right to photograph custom orders and use those images for marketing and portfolio purposes, unless the item contains sensitive or confidential information and you explicitly request otherwise.
           </p>
         </section>
 
@@ -72,7 +72,7 @@ export default function TermsOfService() {
         <section style={{ marginBottom: 'var(--stack-lg)' }}>
           <h2 className="headline-md" style={{ marginBottom: 'var(--stack-sm)' }}>6. Limitation of Liability</h2>
           <p className="body-md">
-            In no case shall BH Custom Woodworking, our directors, officers, employees, or affiliates be liable for any injury, loss, claim, or any direct, indirect, incidental, punitive, special, or consequential damages of any kind, arising from your use of any of the service or any products procured using the service.
+            In no case shall BH Custom Woodworks, our directors, officers, employees, or affiliates be liable for any injury, loss, claim, or any direct, indirect, incidental, punitive, special, or consequential damages of any kind, arising from your use of any of the service or any products procured using the service.
           </p>
         </section>
 

@@ -4,8 +4,8 @@ import Image from "next/image";
 export const metadata = {
   metadataBase: new URL('https://bhcustomwoodworks.com'),
   title: {
-    default: "BH Custom Woodworking | Custom Woodwork & Laser Engraving",
-    template: "%s | BH Custom Woodworking"
+    default: "BH Custom Woodworks | Custom Woodwork & Laser Engraving",
+    template: "%s | BH Custom Woodworks"
   },
   description:
     "Custom woodwork and precision laser engraving designed to last generations. From personalized signs to handcrafted cutting boards, we blend heritage craft with modern technology.",
@@ -20,16 +20,16 @@ export const metadata = {
     "business signage",
   ],
   openGraph: {
-    title: "BH Custom Woodworking | Custom Woodwork & Laser Engraving",
+    title: "BH Custom Woodworks | Custom Woodwork & Laser Engraving",
     description: "Heirloom quality handcrafted woodwork and precision laser engraving.",
     url: 'https://bhcustomwoodworks.com',
-    siteName: 'BH Custom Woodworking',
+    siteName: 'BH Custom Woodworks',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: "BH Custom Woodworking | Custom Woodwork & Laser Engraving",
+    title: "BH Custom Woodworks | Custom Woodwork & Laser Engraving",
     description: "Heirloom quality handcrafted woodwork and precision laser engraving.",
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'BH Custom Woodworking',
+  name: 'BH Custom Woodworks',
   logo: 'https://bhcustomwoodworks.com/logo_icon.svg',
   url: 'https://bhcustomwoodworks.com',
   description: 'Artisan woodworking and precision laser engraving, specializing in heirloom-quality custom signs, memorial urns, and personalized gifts.',
@@ -76,12 +76,12 @@ export default function RootLayout({ children }) {
             <a href="/" className="navbar-logo">
               <Image
                 src="/logo_icon.svg"
-                alt="BH Custom Woodworking Logo"
+                alt="BH Custom Woodworks Logo"
                 width={40}
                 height={40}
                 className="navbar-logo-icon"
               />
-              <span>BH Custom <br /> Woodworking</span>
+              <span>BH Custom <br /> Woodworks</span>
             </a>
 
             <nav className="navbar-links">
@@ -162,7 +162,7 @@ export default function RootLayout({ children }) {
         <div className="footer-bottom">
           <div className="footer-divider"></div>
           <p className="label-sm footer-copy">
-            © 2026 BH Custom Woodworking. All rights reserved.
+            © 2026 BH Custom Woodworks. All rights reserved.
           </p>
         </div>
       </footer>

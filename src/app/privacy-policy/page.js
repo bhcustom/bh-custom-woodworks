@@ -36,7 +36,7 @@ export default function PrivacyPolicy() {
         <section style={{ marginBottom: 'var(--stack-lg)' }}>
           <h2 className="headline-md" style={{ marginBottom: 'var(--stack-sm)' }}>Who we are</h2>
           <p className="body-md">
-            BH Custom Woodworking (“we,” “us,” or “our”) is a custom woodworking and laser engraving business. This Privacy Policy explains how we collect, use, and protect information when you use our website.
+            BH Custom Woodworks (“we,” “us,” or “our”) is a custom woodworking and laser engraving business. This Privacy Policy explains how we collect, use, and protect information when you use our website.
           </p>
         </section>
 
@@ -149,7 +149,7 @@ export default function PrivacyPolicy() {
             If you have any questions about this Privacy Policy or how we handle your information, please contact us:
           </p>
           <div className="body-md" style={{ marginTop: 'var(--stack-sm)' }}>
-            <p style={{ marginBottom: 'var(--stack-md)' }}><strong>BH Custom Woodworking</strong></p>
+            <p style={{ marginBottom: 'var(--stack-md)' }}><strong>BH Custom Woodworks</strong></p>
             <a href="/quote" className="btn btn-primary">Contact Us</a>
           </div>
         </section>
