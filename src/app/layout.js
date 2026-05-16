@@ -79,8 +79,8 @@ export default function RootLayout({ children }) {
               <Image
                 src="/logo_icon.svg"
                 alt="BH Custom Woodworks Logo"
-                width={40}
-                height={40}
+                width={70}
+                height={70}
                 className="navbar-logo-icon"
                 id="nav-logo-anchor"
               />
