@@ -476,10 +476,29 @@ ul {
   align-items: center;
 }
  
-.hero-logo-icon {
+/* --- Hero Logo Anchor (invisible placeholder for the floating logo) --- */
+.hero-logo-anchor {
   width: 10rem;
-  height: auto;
+  height: 10rem;
   margin-bottom: var(--stack-md);
+  flex-shrink: 0;
+}
+
+/* --- Floating Scroll Logo --- */
+.scroll-logo-floating {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 160px;
+  z-index: 200;
+  pointer-events: none;
+  will-change: transform;
+}
+
+/* --- Navbar Logo Text (animated on scroll) --- */
+.navbar-logo-text {
+  transition: none; /* JS handles animation directly */
 }
 
 .hero-content .label-sm {

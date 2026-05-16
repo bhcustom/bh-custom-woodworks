@@ -1,5 +1,6 @@
 import "./globals.css";
 import Image from "next/image";
+import ScrollLogo from "./components/ScrollLogo";
 
 export const metadata = {
   metadataBase: new URL('https://bhcustomwoodworks.com'),
@@ -70,6 +71,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
+        <ScrollLogo />
         {/* ====== NAVBAR ====== */}
         <header className="navbar">
           <div className="navbar-inner">
@@ -80,8 +82,9 @@ export default function RootLayout({ children }) {
                 width={40}
                 height={40}
                 className="navbar-logo-icon"
+                id="nav-logo-anchor"
               />
-              <span>BH Custom <br /> Woodworks</span>
+              <span className="navbar-logo-text">BH Custom <br /> Woodworks</span>
             </a>
 
             <nav className="navbar-links">
