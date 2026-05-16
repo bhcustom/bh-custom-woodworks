@@ -125,12 +125,12 @@ export default function RootLayout({ children }) {
             <a href="/" className="navbar-logo">
               <Image
                 src="/logo_icon.svg"
-                alt="BH Custom Woodworking Logo"
+                alt="BH Custom Woodworks Logo"
                 width={40}
                 height={40}
                 className="navbar-logo-icon"
               />
-              <span>BH Custom <br /> Woodworking</span>
+              <span>BH Custom <br /> Woodworks</span>
             </a>
             <p className="body-md">
               Crafting legacy pieces through the perfect union of traditional
