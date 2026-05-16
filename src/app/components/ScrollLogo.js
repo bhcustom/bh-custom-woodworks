@@ -57,43 +57,40 @@ export default function ScrollLogo() {
 
     // Cache the full icon width for transition calculations
     const navIconFullWidth = 70; // 4.4rem ≈ 70px
-    const navGap = 10; // .navbar-logo gap (0.625rem ≈ 10px)
+
+    // ── Snapshot FIXED start & end positions once at init ──
+    // Scroll to top momentarily to get true initial positions
+    const initialScrollY = window.scrollY;
+
+    // Hero start position (page coordinates, not viewport)
+    const heroRect = heroAnchor.getBoundingClientRect();
+    const heroSection = document.querySelector('.hero');
+    const heroSectionHeight = heroSection ? heroSection.getBoundingClientRect().height : 653;
+    const startCX = heroRect.left + heroRect.width / 2;
+    const startCY = heroRect.top + initialScrollY + heroRect.height / 2;
+    const scrollThreshold = heroSectionHeight * 0.4;
+
+    // Navbar end position (it's position:sticky so its viewport position is constant)
+    const navbarEl = document.querySelector('.navbar-inner');
+    const navbarRect = navbarEl.getBoundingClientRect();
+    const gutterPx = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--gutter')) * 16 || 32;
+    const endCX = navbarRect.left + gutterPx + navIconFullWidth / 2;
+    const endCY = navbarRect.top + navbarRect.height / 2; // viewport-relative (sticky)
 
     function update() {
-      const heroRect = heroAnchor.getBoundingClientRect();
-
-      // Hero anchor center (where the floating logo starts)
-      const heroCX = heroRect.left + heroRect.width / 2;
-      const heroCY = heroRect.top + heroRect.height / 2;
-
-      // Navbar target: compute where the icon SHOULD be (left of the text)
-      const navTextRect = navText ? navText.getBoundingClientRect() : null;
-      if (!navTextRect) {
-        rafRef.current = requestAnimationFrame(update);
-        return;
-      }
+      const scrollY = window.scrollY;
 
       // Scroll progress
-      const scrollThreshold = heroRect.height * 0.4;
-      const rawProgress = Math.max(0, -heroRect.top) / scrollThreshold;
+      const rawProgress = Math.max(0, scrollY) / scrollThreshold;
       const progress = Math.min(rawProgress, 1);
       const easedProgress = easeOutCubic(progress);
 
-      // The icon's final resting center in the navbar:
-      // It should sit to the LEFT of the text with `gap` spacing.
-      // Since text starts flush left at progress=0, and shifts right at progress=1,
-      // we need to compute the target based on where the text WILL be at progress=1.
-      const navbarEl = document.querySelector('.navbar-inner');
-      const navbarRect = navbarEl.getBoundingClientRect();
-      const gutterPx = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--gutter')) * 16 || 32;
-      
-      // Target icon center X: left edge of navbar + gutter + half icon width
-      const targetCX = navbarRect.left + gutterPx + navIconFullWidth / 2;
-      const targetCY = navbarRect.top + navbarRect.height / 2;
+      // Convert hero start from page coords to current viewport coords
+      const currentStartCY = startCY - scrollY;
 
-      // Interpolate position
-      const cx = lerp(heroCX, targetCX, easedProgress);
-      const cy = lerp(heroCY, targetCY, easedProgress);
+      // Interpolate in a straight line between the two fixed points
+      const cx = lerp(startCX, endCX, easedProgress);
+      const cy = lerp(currentStartCY, endCY, easedProgress);
 
       // Scale: hero logo is 160px, navbar icon is ~70px
       const heroSize = 160;
