@@ -2,7 +2,7 @@ import "./globals.css";
 import Image from "next/image";
 
 export const metadata = {
-  metadataBase: new URL('https://bhcustomwoodworking.com'),
+  metadataBase: new URL('https://bhcustomwoodworks.com'),
   title: {
     default: "BH Custom Woodworking | Custom Woodwork & Laser Engraving",
     template: "%s | BH Custom Woodworking"
@@ -22,7 +22,7 @@ export const metadata = {
   openGraph: {
     title: "BH Custom Woodworking | Custom Woodwork & Laser Engraving",
     description: "Heirloom quality handcrafted woodwork and precision laser engraving.",
-    url: 'https://bhcustomwoodworking.com',
+    url: 'https://bhcustomwoodworks.com',
     siteName: 'BH Custom Woodworking',
     locale: 'en_US',
     type: 'website',
@@ -42,8 +42,8 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'BH Custom Woodworking',
-  logo: 'https://bhcustomwoodworking.com/logo_icon.svg',
-  url: 'https://bhcustomwoodworking.com',
+  logo: 'https://bhcustomwoodworks.com/logo_icon.svg',
+  url: 'https://bhcustomwoodworks.com',
   description: 'Artisan woodworking and precision laser engraving, specializing in heirloom-quality custom signs, memorial urns, and personalized gifts.',
   address: {
     '@type': 'PostalAddress',

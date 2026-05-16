@@ -1,7 +1,7 @@
 import { services } from './data/services';
 
 export default async function sitemap() {
-  const baseUrl = 'https://bhcustomwoodworking.com';
+  const baseUrl = 'https://bhcustomwoodworks.com';
 
   // Base routes
   const routes = [

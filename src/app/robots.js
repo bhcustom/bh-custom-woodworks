@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://bhcustomwoodworking.com/sitemap.xml',
+    sitemap: 'https://bhcustomwoodworks.com/sitemap.xml',
   }
 }
