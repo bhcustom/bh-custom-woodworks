@@ -58,24 +58,31 @@ export default function ScrollLogo() {
     // Cache the full icon width for transition calculations
     const navIconFullWidth = 70; // 4.4rem ≈ 70px
 
-    // ── Snapshot FIXED start & end positions once at init ──
-    // Scroll to top momentarily to get true initial positions
-    const initialScrollY = window.scrollY;
+    let startCX, startCY, scrollThreshold, endCX, endCY;
 
-    // Hero start position (page coordinates, not viewport)
-    const heroRect = heroAnchor.getBoundingClientRect();
-    const heroSection = document.querySelector('.hero');
-    const heroSectionHeight = heroSection ? heroSection.getBoundingClientRect().height : 653;
-    const startCX = heroRect.left + heroRect.width / 2;
-    const startCY = heroRect.top + initialScrollY + heroRect.height / 2;
-    const scrollThreshold = heroSectionHeight * 0.4;
+    function calculateMetrics() {
+      // ── Snapshot FIXED start & end positions ──
+      const initialScrollY = window.scrollY;
 
-    // Navbar end position (it's position:sticky so its viewport position is constant)
-    const navbarEl = document.querySelector('.navbar-inner');
-    const navbarRect = navbarEl.getBoundingClientRect();
-    const gutterPx = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--gutter')) * 16 || 32;
-    const endCX = navbarRect.left + gutterPx + navIconFullWidth / 2;
-    const endCY = navbarRect.top + navbarRect.height / 2; // viewport-relative (sticky)
+      // Hero start position (page coordinates, not viewport)
+      const heroRect = heroAnchor.getBoundingClientRect();
+      const heroSection = document.querySelector('.hero');
+      const heroSectionHeight = heroSection ? heroSection.getBoundingClientRect().height : 653;
+      
+      startCX = heroRect.left + heroRect.width / 2;
+      startCY = heroRect.top + initialScrollY + heroRect.height / 2;
+      scrollThreshold = heroSectionHeight * 0.4;
+
+      // Navbar end position (it's position:sticky so its viewport position is constant)
+      const navbarEl = document.querySelector('.navbar-inner');
+      const navbarRect = navbarEl.getBoundingClientRect();
+      const gutterPx = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--gutter')) * 16 || 32;
+      endCX = navbarRect.left + gutterPx + navIconFullWidth / 2;
+      endCY = navbarRect.top + navbarRect.height / 2; // viewport-relative (sticky)
+    }
+
+    calculateMetrics();
+    window.addEventListener('resize', calculateMetrics);
 
     function update() {
       const scrollY = window.scrollY;
@@ -118,6 +125,7 @@ export default function ScrollLogo() {
     rafRef.current = requestAnimationFrame(update);
 
     return () => {
+      window.removeEventListener('resize', calculateMetrics);
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
   }, []);
