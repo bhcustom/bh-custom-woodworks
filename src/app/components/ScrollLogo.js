@@ -56,7 +56,7 @@ export default function ScrollLogo() {
     }
 
     // Cache the full icon width for transition calculations
-    const navIconFullWidth = 70; // 4.4rem ≈ 70px
+    const navIconFullWidth = 40; // 2.5rem = 40px
 
     // ── Snapshot FIXED start & end positions once at init ──
     // Scroll to top momentarily to get true initial positions

@@ -493,7 +493,6 @@ ul {
   height: 160px;
   z-index: 200;
   pointer-events: none;
-  will-change: transform;
 }
 
 /* --- Navbar Logo Text (animated on scroll) --- */
