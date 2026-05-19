@@ -90,7 +90,7 @@ export default function RootLayout({ children }) {
               <span>BH Custom <br /> Woodworks</span>
             </a>
             <p className="body-md">
-              Crafting legacy pieces through the perfect union of traditional
+              Crafting legacy pieces through the union of traditional
               woodworking and modern precision.
             </p>
           </div>
