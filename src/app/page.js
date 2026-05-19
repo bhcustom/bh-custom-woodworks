@@ -1,5 +1,11 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "BH Custom Woodworks | Custom Woodwork & Laser Engraving",
+  description:
+    "Custom woodwork and precision laser engraving designed to last generations. From personalized signs to handcrafted cutting boards, we blend heritage craft with modern technology.",
+};
+
 export default function Home() {
   return (
     <main>
@@ -38,9 +44,9 @@ export default function Home() {
             <a href="/shop" className="btn btn-primary" id="hero-cta-shop">
               Browse the Collection
             </a>
-            <button className="btn btn-outline" id="hero-cta-quote">
+            <a href="/quote" className="btn btn-outline" id="hero-cta-quote">
               Request a Custom Quote
-            </button>
+            </a>
           </div>
         </div>
       </section>

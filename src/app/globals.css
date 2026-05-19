@@ -554,22 +554,6 @@ header.navbar.scrolled .navbar-logo-icon {
   flex-shrink: 0;
 }
 
-/* --- Floating Scroll Logo --- */
-.scroll-logo-floating {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 160px;
-  height: 160px;
-  z-index: 200;
-  pointer-events: none;
-  opacity: 0; /* Hide by default to prevent flashing in upper-left before hydration/positioning */
-}
-
-/* --- Navbar Logo Text (animated on scroll) --- */
-.navbar-logo-text {
-  transition: none; /* JS handles animation directly */
-}
 
 .hero-content .label-sm {
   color: var(--on-surface-variant);
@@ -1982,7 +1966,7 @@ header.navbar.scrolled .navbar-logo-icon {
   background: rgba(255, 248, 245, 0.98); /* Luxury cream background */
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  z-index: 250; /* Behind the header (.navbar is 300), but in front of floating scroll logo (.scroll-logo-floating is 200) */
+  z-index: 250; /* Above page content, behind the header when .menu-open is active */
   display: flex;
   flex-direction: column;
   justify-content: center;

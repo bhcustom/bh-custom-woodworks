@@ -1,4 +1,4 @@
-import React from 'react';
+import { getLastUpdatedDate } from '../utils/dates';
 
 export const metadata = {
   title: "Terms of Service",
@@ -6,23 +6,10 @@ export const metadata = {
 };
 
 export default function TermsOfService() {
-  const getLastUpdatedDate = () => {
-    const now = new Date();
-    const year = now.getFullYear();
-    const months = [0, 3, 6, 9];
-    const lastUpdateMonth = months.reduce((acc, month) => (now.getMonth() >= month ? month : acc), 0);
-    const day = ((year + lastUpdateMonth) % 15) + 10;
-    const updateDate = new Date(year, lastUpdateMonth, day);
-    return updateDate.toLocaleDateString('en-US', {
-      month: 'long',
-      day: 'numeric',
-      year: 'numeric'
-    });
-  };
 
   return (
     <main className="section container">
-      <div style={{ maxWidth: '800px', margin: '0 auto', paddingTop: 'var(--section-padding)' }}>
+      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
         <h1 className="headline-xl" style={{ marginBottom: 'var(--stack-md)' }}>Terms of Service</h1>
         <p className="body-md" style={{ marginBottom: 'var(--stack-lg)', opacity: 0.7 }}>
           Last updated: {getLastUpdatedDate()}
