@@ -49,7 +49,6 @@ export default function Home() {
       <section
         id="collections"
         className="section"
-        style={{ paddingLeft: "var(--gutter)", paddingRight: "var(--gutter)" }}
       >
         <div className="container">
           <div className="bento-header">
