@@ -508,6 +508,7 @@ ul {
   height: 160px;
   z-index: 200;
   pointer-events: none;
+  opacity: 0; /* Hide by default to prevent flashing in upper-left before hydration/positioning */
 }
 
 /* --- Navbar Logo Text (animated on scroll) --- */
