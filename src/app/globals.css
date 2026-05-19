@@ -272,7 +272,7 @@ ul {
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 300;
   background: var(--surface);
   border-bottom: 1px solid var(--outline-variant);
 }
@@ -1891,7 +1891,7 @@ ul {
   background: rgba(255, 248, 245, 0.98); /* Luxury cream background */
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  z-index: 48; /* Behind the header (.navbar is 50) */
+  z-index: 250; /* Behind the header (.navbar is 300), but in front of floating scroll logo (.scroll-logo-floating is 200) */
   display: flex;
   flex-direction: column;
   justify-content: center;
