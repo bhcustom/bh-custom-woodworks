@@ -55,12 +55,12 @@ export default function ScrollLogo() {
       return a + (b - a) * t;
     }
 
-    // Cache the full icon width for transition calculations
-    const navIconFullWidth = 70; // 4.4rem ≈ 70px
+    let navIconFullWidth = 70.4;
 
     let startCX, startCY, scrollThreshold, endCX, endCY;
 
     function calculateMetrics() {
+      navIconFullWidth = window.innerWidth < 768 ? 52.8 : 70.4;
       // ── Snapshot FIXED start & end positions ──
       const initialScrollY = window.scrollY;
 
