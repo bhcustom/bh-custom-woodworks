@@ -1877,3 +1877,107 @@ ul {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* ===================================================================
+   MOBILE MENU OVERLAY
+   =================================================================== */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 248, 245, 0.98); /* Luxury cream background */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 48; /* Behind the header (.navbar is 50) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-100%);
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobile-menu.active {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+  width: 100%;
+  padding: 6rem 2rem 2rem 2rem;
+  max-height: 95vh;
+  overflow-y: auto;
+}
+
+.mobile-menu-link {
+  font-family: 'Noto Serif', serif;
+  font-size: 1.6rem;
+  color: var(--primary);
+  transition: color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link.active {
+  color: var(--outline);
+}
+
+.mobile-menu-link .material-symbols-outlined {
+  transition: transform 0.3s ease;
+  font-size: 1.5rem;
+}
+
+.mobile-menu-link.expanded .material-symbols-outlined {
+  transform: rotate(180deg);
+}
+
+.mobile-menu-sublinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), margin 0.3s ease;
+}
+
+.mobile-menu-sublinks.expanded {
+  max-height: 400px;
+  margin-top: 0.75rem;
+}
+
+.mobile-menu-sublink {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.05rem;
+  color: var(--on-surface-variant);
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.mobile-menu-sublink:hover {
+  color: var(--primary);
+}
+
+.mobile-menu-cta {
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 260px;
+}
+
+.mobile-menu-cta .btn {
+  width: 100%;
+}

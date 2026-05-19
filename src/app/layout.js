@@ -1,6 +1,7 @@
 import "./globals.css";
 import Image from "next/image";
 import ScrollLogo from "./components/ScrollLogo";
+import Navbar from "./components/Navbar";
 
 export const metadata = {
   metadataBase: new URL('https://bhcustomwoodworks.com'),
@@ -72,52 +73,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <ScrollLogo />
-        {/* ====== NAVBAR ====== */}
-        <header className="navbar">
-          <div className="navbar-inner">
-            <a href="/" className="navbar-logo">
-              <Image
-                src="/logo_icon.svg"
-                alt="BH Custom Woodworks Logo"
-                width={70}
-                height={70}
-                className="navbar-logo-icon"
-                id="nav-logo-anchor"
-              />
-              <span className="navbar-logo-text">BH Custom <br /> Woodworks</span>
-            </a>
-
-            <nav className="navbar-links">
-              <div className="nav-dropdown">
-                <a href="/#collections" className="nav-dropdown-trigger active">
-                  Collections
-                  <span className="material-symbols-outlined nav-dropdown-icon">
-                    expand_more
-                  </span>
-                </a>
-                <div className="nav-dropdown-menu">
-                  <a href="/services/custom-wood-signs">Custom Wood Signs</a>
-                  <a href="/services/laser-engraved-gifts">Laser Engraved Gifts</a>
-                  <a href="/services/cutting-boards">Cutting Boards</a>
-                  <a href="/services/wedding-decor">Wedding Decor</a>
-                  <a href="/services/business-signage">Business Signage</a>
-                  <a href="/services/memorial-pieces">Memorial Pieces</a>
-                  <a href="/services/laser-engraving">Laser Engraving</a>
-                </div>
-              </div>
-              <a href="/#process">Process</a>
-              <a href="/quote">Custom Quote</a>
-              <a href="/our-story">Our Story</a>
-            </nav>
-
-            <div className="navbar-actions">
-              <a href="/shop" className="btn btn-primary">Shop Now</a>
-              <button className="navbar-menu-btn" aria-label="Menu">
-                <span className="material-symbols-outlined">menu</span>
-              </button>
-            </div>
-          </div>
-        </header>
+        <Navbar />
 
         {children}
 
