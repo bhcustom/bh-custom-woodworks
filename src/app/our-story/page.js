@@ -8,7 +8,7 @@ export const metadata = {
 export default function OurStory() {
   return (
     <main className="section container">
-      <div style={{ maxWidth: '800px', margin: '0 auto', paddingTop: 'var(--section-padding)' }}>
+      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
         
         <div className="story-hero">
           <span className="label-sm story-hero-label">Our Heritage</span>
