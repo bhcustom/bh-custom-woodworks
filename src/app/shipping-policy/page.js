@@ -53,7 +53,7 @@ export default function ShippingPolicy() {
         <section style={{ marginBottom: 'var(--stack-lg)' }}>
           <h2 className="headline-md" style={{ marginBottom: 'var(--stack-sm)' }}>Returns & Exchanges</h2>
           <p className="body-md" style={{ marginBottom: '1rem' }}>
-            <strong>Custom & Personalized Orders:</strong> Because of the nature of these items, we cannot accept returns or exchanges on custom or personalized pieces unless they arrive damaged or defective. We send digital proofs for most custom work—please review these carefully for spelling and layout before approving.
+            <strong>Custom & Personalized Orders:</strong> Because of the nature of these items, we cannot accept returns or exchanges on custom or personalized pieces unless they arrive damaged or defective. We send digital proofs for most custom work; please review these carefully for spelling and layout before approving.
           </p>
           <p className="body-md">
             <strong>Standard/Non-Personalized Items:</strong> We gladly accept returns on standard items. Contact us within 14 days of delivery and ship items back within 30 days of delivery. Buyers are responsible for return shipping costs. If the item is not returned in its original condition, the buyer is responsible for any loss in value.

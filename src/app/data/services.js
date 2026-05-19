@@ -15,36 +15,36 @@ export const services = {
     intro: {
       headline: "A Sign That Says Something",
       description:
-        "Whether it's your family name above the front door, a verse in the living room, or a rustic welcome sign for the back porch — we build each one from solid hardwood and engrave it to last. No vinyl. No stickers. Just wood, a laser, and a design that's yours.",
+        "Whether it's your family name above the front door, a verse in the living room, or a rustic welcome sign for the back porch: we build each one from solid hardwood and engrave it to last. No vinyl. No stickers. Just wood, a laser, and a design that's yours.",
     },
     details: [
       {
         icon: "park",
         title: "Wood Options",
         items: [
-          "White Oak — Light, clean grain with a classic feel",
-          "Black Walnut — Rich, dark chocolate tones",
-          "Cherry — Warm amber that deepens over time",
-          "Maple — Bright, tight grain for crisp engraving detail",
+          "White Oak: Light, clean grain with a classic feel",
+          "Black Walnut: Rich, dark chocolate tones",
+          "Cherry: Warm amber that deepens over time",
+          "Maple: Bright, tight grain for crisp engraving detail",
         ],
       },
       {
         icon: "palette",
         title: "Finish Options",
         items: [
-          "Natural clear coat — Lets the grain speak for itself",
-          "Semi-gloss lacquer — Durable, slight sheen",
-          "Matte polyurethane — Smooth, modern look",
-          "Raw / unfinished — For a rustic, weathered aesthetic",
+          "Natural clear coat: Lets the grain speak for itself",
+          "Semi-gloss lacquer: Durable, slight sheen",
+          "Matte polyurethane: Smooth, modern look",
+          "Raw / unfinished: For a rustic, weathered aesthetic",
         ],
       },
       {
         icon: "straighten",
         title: "Sizes Available",
         items: [
-          "Small — Up to 12\" × 8\" (shelf or desk display)",
-          "Medium — Up to 24\" × 12\" (wall-mount)",
-          "Large — Up to 36\" × 18\" (statement piece)",
+          "Small: Up to 12\" × 8\" (shelf or desk display)",
+          "Medium: Up to 24\" × 12\" (wall-mount)",
+          "Large: Up to 36\" × 18\" (statement piece)",
           "Custom dimensions available on request",
         ],
       },
@@ -64,7 +64,7 @@ export const services = {
       },
       {
         q: "How long does a custom sign take?",
-        a: "Most signs ship within 2–3 weeks. Rush orders may be available depending on our current workload — just ask.",
+        a: "Most signs ship within 2-3 weeks. Rush orders may be available depending on our current workload: just ask.",
       },
       {
         q: "Are these signs suitable for outdoor use?",
@@ -82,27 +82,27 @@ export const services = {
     intro: {
       headline: "Gifts People Actually Keep",
       description:
-        "A laser-engraved gift isn't just another item in a drawer. It's a name, a date, an inside joke — something that makes the person holding it stop and smile. We engrave on solid hardwood, so it's built to outlast the moment it was given.",
+        "A laser-engraved gift isn't just another item in a drawer. It's a name, a date, an inside joke: something that makes the person holding it stop and smile. We engrave on solid hardwood, so it's built to outlast the moment it was given.",
     },
     details: [
       {
         icon: "park",
         title: "Wood Options",
         items: [
-          "Cherry — Rich warmth, engraves with beautiful contrast",
-          "Maple — Light and smooth, ideal for detailed artwork",
-          "Walnut — Deep, dramatic tones for a premium feel",
-          "Alder — Affordable and lightweight, great for ornaments",
+          "Cherry: Rich warmth, engraves with beautiful contrast",
+          "Maple: Light and smooth, ideal for detailed artwork",
+          "Walnut: Deep, dramatic tones for a premium feel",
+          "Alder: Affordable and lightweight, great for ornaments",
         ],
       },
       {
         icon: "category",
         title: "Gift Categories",
         items: [
-          "Ornaments — Annual, memorial, baby's first, couple's first",
-          "Coaster sets — Monogrammed or custom artwork",
-          "Keepsake boxes — Jewelry, mementos, letters",
-          "Desk accessories — Name plates, phone stands, pen holders",
+          "Ornaments: Annual, memorial, baby's first, couple's first",
+          "Coaster sets: Monogrammed or custom artwork",
+          "Keepsake boxes: Jewelry, mementos, letters",
+          "Desk accessories: Name plates, phone stands, pen holders",
         ],
       },
       {
@@ -127,7 +127,7 @@ export const services = {
     faq: [
       {
         q: "What's the turnaround for gift orders?",
-        a: "Standard orders ship in 1–2 weeks. During November and December, we recommend ordering at least 3 weeks early to guarantee holiday delivery.",
+        a: "Standard orders ship in 1-2 weeks. During November and December, we recommend ordering at least 3 weeks early to guarantee holiday delivery.",
       },
       {
         q: "Can you engrave a photo onto wood?",
@@ -149,37 +149,37 @@ export const services = {
     intro: {
       headline: "Built to Be Used, Not Just Displayed",
       description:
-        "Our cutting boards are real kitchen tools — thick enough to handle daily use, beautiful enough to leave on the counter. Each one is glued, clamped, sanded, and finished by hand. Add a custom engraving and it becomes something worth passing down.",
+        "Our cutting boards are real kitchen tools: thick enough to handle daily use, beautiful enough to leave on the counter. Each one is glued, clamped, sanded, and finished by hand. Add a custom engraving and it becomes something worth passing down.",
     },
     details: [
       {
         icon: "park",
         title: "Wood Options",
         items: [
-          "Black Walnut — The classic. Rich color, naturally antimicrobial",
-          "Hard Maple — Dense, light-colored, and knife-friendly",
-          "Cherry — Warm tones that deepen with use and age",
-          "White Oak — Strong, water-resistant, with visible grain character",
-          "Multi-wood striped — Walnut + Maple + Cherry combinations",
+          "Black Walnut: The classic. Rich color, naturally antimicrobial",
+          "Hard Maple: Dense, light-colored, and knife-friendly",
+          "Cherry: Warm tones that deepen with use and age",
+          "White Oak: Strong, water-resistant, with visible grain character",
+          "Multi-wood striped: Walnut + Maple + Cherry combinations",
         ],
       },
       {
         icon: "construction",
         title: "Construction Styles",
         items: [
-          "End-grain — Self-healing surface, best for heavy use",
-          "Edge-grain — Beautiful long grain lines, great for display",
-          "Face-grain — Widest canvas for detailed engraving work",
+          "End-grain: Self-healing surface, best for heavy use",
+          "Edge-grain: Beautiful long grain lines, great for display",
+          "Face-grain: Widest canvas for detailed engraving work",
         ],
       },
       {
         icon: "straighten",
         title: "Standard Sizes",
         items: [
-          "Small — 10\" × 7\" (cheese and charcuterie)",
-          "Medium — 14\" × 10\" (everyday prep board)",
-          "Large — 18\" × 12\" (full kitchen workhorse)",
-          "Butcher block — 20\" × 14\" × 2\" (statement piece)",
+          "Small: 10\" × 7\" (cheese and charcuterie)",
+          "Medium: 14\" × 10\" (everyday prep board)",
+          "Large: 18\" × 12\" (full kitchen workhorse)",
+          "Butcher block: 20\" × 14\" × 2\" (statement piece)",
           "Custom dimensions available",
         ],
       },
@@ -203,7 +203,7 @@ export const services = {
       },
       {
         q: "What finish do you use?",
-        a: "All cutting boards are finished with food-safe mineral oil and beeswax. No lacquer or polyurethane — everything that touches your food is completely food-safe.",
+        a: "All cutting boards are finished with food-safe mineral oil and beeswax. No lacquer or polyurethane: everything that touches your food is completely food-safe.",
       },
     ],
   },
@@ -217,39 +217,39 @@ export const services = {
     intro: {
       headline: "Details That Make It Yours",
       description:
-        "Your wedding should feel like you — not like a catalog. We craft wooden ceremony signs, guest books, table numbers, and keepsakes that bring warmth and personality to your day. Everything is made to order, so every piece matches your vision exactly.",
+        "Your wedding should feel like you: not like a catalog. We craft wooden ceremony signs, guest books, table numbers, and keepsakes that bring warmth and personality to your day. Everything is made to order, so every piece matches your vision exactly.",
     },
     details: [
       {
         icon: "park",
         title: "Wood Options",
         items: [
-          "White Oak — Clean and timeless, pairs with any palette",
-          "Walnut — Rich and dramatic for moody or rustic themes",
-          "Cherry — Warm and romantic with a natural glow",
-          "Birch plywood — Lightweight, ideal for hanging signs and toppers",
+          "White Oak: Clean and timeless, pairs with any palette",
+          "Walnut: Rich and dramatic for moody or rustic themes",
+          "Cherry: Warm and romantic with a natural glow",
+          "Birch plywood: Lightweight, ideal for hanging signs and toppers",
         ],
       },
       {
         icon: "category",
         title: "Popular Items",
         items: [
-          "Welcome signs — Names, date, venue on a statement board",
-          "Guest books — Laser-engraved wooden covers with blank pages",
-          "Table numbers — Freestanding or flat, numbered or named",
-          "Cake toppers — Custom silhouettes, initials, or phrases",
-          "Ring boxes — Magnetic lid, velvet interior, engraved top",
-          "Ceremony signs — \"Pick a seat, not a side\" and similar",
+          "Welcome signs: Names, date, venue on a statement board",
+          "Guest books: Laser-engraved wooden covers with blank pages",
+          "Table numbers: Freestanding or flat, numbered or named",
+          "Cake toppers: Custom silhouettes, initials, or phrases",
+          "Ring boxes: Magnetic lid, velvet interior, engraved top",
+          "Ceremony signs: \"Pick a seat, not a side\" and similar",
         ],
       },
       {
         icon: "palette",
         title: "Finish & Style",
         items: [
-          "Natural wood — Clean, organic, minimal",
-          "Whitewashed — Soft, beachy, bohemian",
-          "Dark stained — Dramatic, formal, vineyard aesthetic",
-          "Painted lettering on raw wood — Contrast and readability",
+          "Natural wood: Clean, organic, minimal",
+          "Whitewashed: Soft, beachy, bohemian",
+          "Dark stained: Dramatic, formal, vineyard aesthetic",
+          "Painted lettering on raw wood: Contrast and readability",
         ],
       },
     ],
@@ -264,7 +264,7 @@ export const services = {
     faq: [
       {
         q: "How far in advance should I order?",
-        a: "We recommend placing your order at least 6–8 weeks before your wedding date. This gives time for design approval, production, and shipping without any rush.",
+        a: "We recommend placing your order at least 6-8 weeks before your wedding date. This gives time for design approval, production, and shipping without any rush.",
       },
       {
         q: "Can I see a proof before production?",
@@ -272,7 +272,7 @@ export const services = {
       },
       {
         q: "Do you offer wedding packages?",
-        a: "Yes — if you need multiple items (welcome sign + guest book + table numbers, for example), reach out for a package price. Bundling saves on design time.",
+        a: "Yes: if you need multiple items (welcome sign + guest book + table numbers, for example), reach out for a package price. Bundling saves on design time.",
       },
     ],
   },
@@ -293,10 +293,10 @@ export const services = {
         icon: "park",
         title: "Wood Options",
         items: [
-          "Maple — Bright and professional, perfect for corporate logos",
-          "Walnut — Sophisticated and rich, ideal for law offices and studios",
-          "Cherry — Warm and inviting, great for hospitality and wellness",
-          "Oak — Traditional and substantial, perfect for established brands",
+          "Maple: Bright and professional, perfect for corporate logos",
+          "Walnut: Sophisticated and rich, ideal for law offices and studios",
+          "Cherry: Warm and inviting, great for hospitality and wellness",
+          "Oak: Traditional and substantial, perfect for established brands",
         ],
       },
       {
@@ -315,9 +315,9 @@ export const services = {
         icon: "straighten",
         title: "Size Options",
         items: [
-          "Desk plaques — 8\" × 2\" to 12\" × 4\"",
-          "Door signs — 10\" × 4\" to 14\" × 6\"",
-          "Wall signs — 18\" × 12\" to 48\" × 24\"",
+          "Desk plaques: 8\" × 2\" to 12\" × 4\"",
+          "Door signs: 10\" × 4\" to 14\" × 6\"",
+          "Wall signs: 18\" × 12\" to 48\" × 24\"",
           "Large-format and multi-panel displays available",
         ],
       },
@@ -337,7 +337,7 @@ export const services = {
       },
       {
         q: "Do you offer bulk pricing for multiple signs?",
-        a: "Absolutely. Multi-unit orders — like a set of office plaques or matching retail signs — get volume pricing. Request a quote with your quantities.",
+        a: "Absolutely. Multi-unit orders: like a set of office plaques or matching retail signs: get volume pricing. Request a quote with your quantities.",
       },
       {
         q: "Can these signs go outdoors?",
@@ -355,29 +355,29 @@ export const services = {
     intro: {
       headline: "Something Worthy of Who They Were",
       description:
-        "When words aren't enough, something you can hold in your hands matters. We build memorial urns, keepsake boxes, photo plaques, and tribute signs from solid American hardwood — crafted with the kind of care that says this person mattered. Every piece includes custom laser engraving to tell their story.",
+        "When words aren't enough, something you can hold in your hands matters. We build memorial urns, keepsake boxes, photo plaques, and tribute signs from solid American hardwood: crafted with the kind of care that says this person mattered. Every piece includes custom laser engraving to tell their story.",
     },
     details: [
       {
         icon: "park",
         title: "Wood Options",
         items: [
-          "White Oak — Classic and timeless, light natural grain",
-          "Black Walnut — Rich and dignified, darkens beautifully",
-          "Aromatic Cedar — Warm, fragrant, and deeply personal",
-          "Cherry — Soft amber tones that deepen with age",
+          "White Oak: Classic and timeless, light natural grain",
+          "Black Walnut: Rich and dignified, darkens beautifully",
+          "Aromatic Cedar: Warm, fragrant, and deeply personal",
+          "Cherry: Soft amber tones that deepen with age",
         ],
       },
       {
         icon: "category",
         title: "Memorial Items",
         items: [
-          "Cremation urns — Keepsake through Companion sizes",
-          "Keepsake boxes — For letters, photos, jewelry, or ashes",
-          "Photo plaques — Portrait engraved into solid wood",
-          "Memorial signs — Name, dates, and verse or quote",
-          "Pet memorials — Urns and portrait plaques for companions",
-          "Garden markers — Weather-sealed name and date stakes",
+          "Cremation urns: Keepsake through Companion sizes",
+          "Keepsake boxes: For letters, photos, jewelry, or ashes",
+          "Photo plaques: Portrait engraved into solid wood",
+          "Memorial signs: Name, dates, and verse or quote",
+          "Pet memorials: Urns and portrait plaques for companions",
+          "Garden markers: Weather-sealed name and date stakes",
         ],
       },
       {
@@ -412,7 +412,7 @@ export const services = {
       },
       {
         q: "How quickly can you complete a memorial order?",
-        a: "We understand the urgency. Memorial orders are prioritized and typically ship within 5–7 business days. Rush processing is available if needed.",
+        a: "We understand the urgency. Memorial orders are prioritized and typically ship within 5-7 business days. Rush processing is available if needed.",
       },
     ],
     shopLink: "/shop#memorial-urns",
@@ -428,18 +428,18 @@ export const services = {
     intro: {
       headline: "Precision You Can See and Feel",
       description:
-        "Our laser doesn't just mark the surface — it cuts into the wood with pinpoint accuracy, creating depth and texture you can run your fingers over. Whether it's a single custom piece or a production run of 500, the result is the same: clean lines, consistent depth, and detail that holds up over time.",
+        "Our laser doesn't just mark the surface: it cuts into the wood with pinpoint accuracy, creating depth and texture you can run your fingers over. Whether it's a single custom piece or a production run of 500, the result is the same: clean lines, consistent depth, and detail that holds up over time.",
     },
     details: [
       {
         icon: "settings_suggest",
         title: "What We Engrave",
         items: [
-          "Solid hardwoods — All species in our catalog",
-          "Plywood and MDF — For lightweight or painted projects",
-          "Leather — Wallets, journal covers, belts, holsters",
-          "Bamboo — Cutting boards, utensils, and drinkware",
-          "Bring your own item — We can engrave most flat surfaces",
+          "Solid hardwoods: All species in our catalog",
+          "Plywood and MDF: For lightweight or painted projects",
+          "Leather: Wallets, journal covers, belts, holsters",
+          "Bamboo: Cutting boards, utensils, and drinkware",
+          "Bring your own item: We can engrave most flat surfaces",
         ],
       },
       {
@@ -448,7 +448,7 @@ export const services = {
         items: [
           "Maximum bed size: 24\" × 18\"",
           "Detail resolution down to 0.001\"",
-          "Variable depth control — Light etch to deep carve",
+          "Variable depth control: Light etch to deep carve",
           "Raster engraving for photos and shading",
           "Vector cutting for shapes and silhouettes",
         ],
@@ -457,10 +457,10 @@ export const services = {
         icon: "inventory_2",
         title: "Order Types",
         items: [
-          "Single custom pieces — One-of-a-kind projects",
-          "Small batch (5–50) — Wedding favors, team gifts, promos",
-          "Production runs (50–500+) — Corporate branding, retail inventory",
-          "Bring-your-own-item — Engrave on something you already have",
+          "Single custom pieces: One-of-a-kind projects",
+          "Small batch (5-50): Wedding favors, team gifts, promos",
+          "Production runs (50-500+): Corporate branding, retail inventory",
+          "Bring-your-own-item: Engrave on something you already have",
         ],
       },
     ],
@@ -475,7 +475,7 @@ export const services = {
     faq: [
       {
         q: "Can I bring in my own item to be engraved?",
-        a: "Yes — as long as it's flat (or close to flat) and fits on our 24\" × 18\" laser bed, we can likely engrave it. Bring it by or ship it to us with your design and we'll take care of the rest.",
+        a: "Yes: as long as it's flat (or close to flat) and fits on our 24\" × 18\" laser bed, we can likely engrave it. Bring it by or ship it to us with your design and we'll take care of the rest.",
       },
       {
         q: "What file format should I send for my design?",

@@ -34,7 +34,7 @@ function ProductCard({ product }) {
             <div className="shop-detail-row">
               <span className="material-symbols-outlined">park</span>
               <span>
-                <strong>{product.wood}</strong> — {product.woodNote}
+                <strong>{product.wood}</strong>: {product.woodNote}
               </span>
             </div>
           )}
@@ -99,7 +99,7 @@ function SizeGuideTable() {
       </h3>
       <p className="body-md" style={{ marginBottom: "var(--stack-md)", maxWidth: "42rem" }}>
         Not sure which size you need? This guide covers the most common
-        options. If you have questions, just ask — we&rsquo;re happy to help
+        options. If you have questions, just ask. We&rsquo;re happy to help
         you choose.
       </p>
       <div className="shop-table-wrap">

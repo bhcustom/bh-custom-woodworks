@@ -41,12 +41,12 @@ export default function ServicePage({ service }) {
                 <h2 className="headline-md">{block.title}</h2>
                 <ul>
                   {block.items.map((item) => {
-                    const parts = item.split(" — ");
+                    const parts = item.split(": ");
                     return (
                       <li key={item} className="body-md">
                         {parts.length > 1 ? (
                           <>
-                            <strong>{parts[0]}</strong> — {parts[1]}
+                            <strong>{parts[0]}</strong>: {parts[1]}
                           </>
                         ) : (
                           item

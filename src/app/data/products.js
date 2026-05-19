@@ -13,7 +13,7 @@ export const categories = [
     slug: "memorial-urns",
     title: "Handcrafted Memorial Urns",
     intro:
-      "Losing someone you love is hard enough. Choosing how to honor them shouldn't be. Our memorial urns are handcrafted from solid American hardwoods — no veneers, no composites — and finished with the same care we'd put into a piece for our own family. Each one includes free custom laser engraving on one side: a name, a date, a favorite verse, or an image that meant something to them.",
+      "Losing someone you love is hard enough. Choosing how to honor them shouldn't be. Our memorial urns are handcrafted from solid American hardwoods (with no veneers or composites) and finished with the same care we'd put into a piece for our own family. Each one includes free custom laser engraving on one side: a name, a date, a favorite verse, or an image that meant something to them.",
   },
   {
     slug: "limited-editions",
@@ -36,7 +36,7 @@ export const products = [
     woodNote: "Light, straight grain with a timeless, classic feel.",
     summary:
       "Built from solid White Oak and finished to show off the natural grain. A quiet, dignified choice for someone who valued simplicity and strength.",
-    personalization: "Free laser engraving on one side — names, dates, verses, or custom artwork.",
+    personalization: "Free laser engraving on one side: names, dates, verses, or custom artwork.",
     sizes: "Keepsake (55 cu in) through Companion (450 cu in)",
     etsyUrl: "https://www.etsy.com/listing/1203855699/wood-urns-for-human-or-pet-ashes",
     cta: "etsy+custom",
@@ -52,7 +52,7 @@ export const products = [
     woodNote: "Deep chocolate tones that darken naturally over time.",
     summary:
       "Rich, dark Walnut with a warmth you can feel. This is the wood people choose when they want something that looks as substantial as it feels in your hands.",
-    personalization: "Free laser engraving on one side — names, dates, verses, or custom artwork.",
+    personalization: "Free laser engraving on one side: names, dates, verses, or custom artwork.",
     sizes: "Keepsake (55 cu in) through Companion (450 cu in)",
     etsyUrl: "https://www.etsy.com/listing/1203845821/wooden-urns-for-human-or-pet-ashes",
     cta: "etsy+custom",
@@ -68,7 +68,7 @@ export const products = [
     woodNote: "Warm reddish tones with a natural, comforting fragrance.",
     summary:
       "Aromatic Cedar carries a gentle, familiar scent that most people associate with keepsakes and cherished things. The reddish-purple grain makes each piece distinctive.",
-    personalization: "Free laser engraving on one side — names, dates, verses, or custom artwork.",
+    personalization: "Free laser engraving on one side: names, dates, verses, or custom artwork.",
     sizes: "Keepsake (55 cu in) through Companion (450 cu in)",
     etsyUrl: "https://www.etsy.com/listing/1189467714/wooden-urns-for-human-or-pet-ashes",
     cta: "etsy+custom",
@@ -84,7 +84,7 @@ export const products = [
     woodNote: "Warm cedar with handcrafted cross detailing.",
     summary:
       "The same solid Aromatic Cedar as our standard urn, with hand-cut cross inlays on the sides. Designed for families who want their faith reflected in every detail.",
-    personalization: "Free laser engraving on one side — names, dates, verses, or custom imagery.",
+    personalization: "Free laser engraving on one side: names, dates, verses, or custom imagery.",
     sizes: "Keepsake (55 cu in) through Companion (450 cu in)",
     etsyUrl: "https://www.etsy.com/listing/1189910522/wood-urns-for-pet-or-human-ashes",
     cta: "etsy+custom",

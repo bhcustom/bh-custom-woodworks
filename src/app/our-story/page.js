@@ -37,7 +37,7 @@ export default function OurStory() {
             There’s a profound difference between something manufactured and something made. When you run your hand across a piece of solid walnut that has been planed, sanded, and finished by hand, you can feel the hours that went into it. That tactile connection is exactly why BH Custom Woodworks was started.
           </p>
           <p style={{ marginBottom: '1.5rem' }}>
-            We started small—building pieces for friends and family in a modest garage shop. The goal was never mass production; it was always about precision. Whether it was a simple cutting board or a complex laser-engraved memorial urn, the philosophy remained the same: use the best American hardwoods, refuse to cut corners, and build it as if it were going into our own home.
+            We started small, building pieces for friends and family in a modest garage shop. The goal was never mass production; it was always about precision. Whether it was a simple cutting board or a complex laser-engraved memorial urn, the philosophy remained the same: use the best American hardwoods, refuse to cut corners, and build it as if it were going into our own home.
           </p>
           <p style={{ marginBottom: '1.5rem' }}>
             Today, the shop has grown. Our tools have gotten bigger, and our laser engravers allow us to achieve a level of personalized detail that was unimaginable decades ago. But the core of the business hasn't changed. Every piece of wood is still hand-selected for its grain and character. Every board is milled and joined with care. Every finish is applied by hand.
