@@ -6,6 +6,7 @@ import Image from 'next/image';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [collectionsExpanded, setCollectionsExpanded] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => {
@@ -30,10 +31,35 @@ export default function Navbar() {
     };
   }, [isOpen]);
 
+  // Scroll detection logic
+  useEffect(() => {
+    const isHome = window.location.pathname === '/';
+    if (!isHome) {
+      setIsScrolled(true);
+      return;
+    }
+
+    const handleScroll = () => {
+      // 150px is when the hero icon is fully moved under/past the main menu
+      if (window.scrollY > 150) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       {/* ====== NAVBAR ====== */}
-      <header className="navbar">
+      <header className={`navbar ${isScrolled ? 'scrolled' : ''} ${isOpen ? 'menu-open' : ''}`}>
         <div className="navbar-inner">
           <a href="/" className="navbar-logo" onClick={closeMenu}>
             <Image

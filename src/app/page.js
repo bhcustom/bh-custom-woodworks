@@ -17,7 +17,14 @@ export default function Home() {
         </div>
 
         <div className="hero-content">
-          <div id="hero-logo-anchor" className="hero-logo-anchor" aria-hidden="true" />
+          <Image
+            src="/logo_icon.svg"
+            alt="BH Custom Woodworks Logo"
+            width={160}
+            height={160}
+            className="hero-logo-img"
+            priority
+          />
           <span className="label-sm">BH Custom Woodworks</span>
           <h1 className="display-lg">
             Heirloom Quality, Handcrafted for You

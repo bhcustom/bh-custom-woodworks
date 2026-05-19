@@ -272,9 +272,15 @@ ul {
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 300;
+  z-index: 50;
   background: var(--surface);
   border-bottom: 1px solid var(--outline-variant);
+  transition: z-index 0.5s step-end;
+}
+
+.navbar.menu-open {
+  z-index: 300;
+  transition: z-index 0s step-start;
 }
 
 .navbar-inner {
@@ -289,19 +295,32 @@ ul {
 .navbar-logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.46875rem;
+  gap: 0;
   font-family: 'Noto Serif', serif;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.1;
   color: var(--primary);
   letter-spacing: -0.01em;
+  transition: gap 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.navbar.scrolled .navbar-logo {
+  gap: 0.46875rem;
 }
 
 .navbar-logo-icon {
-  width: 3.3rem;
+  width: 0;
   height: 3.3rem;
+  opacity: 0;
+  overflow: hidden;
   flex-shrink: 0;
+  transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease 0.2s;
+}
+
+.navbar.scrolled .navbar-logo-icon {
+  width: 3.3rem;
+  opacity: 1;
 }
 
 .navbar-links {
@@ -426,12 +445,22 @@ ul {
     padding: var(--stack-sm) var(--gutter);
   }
   .navbar-logo {
-    gap: 0.625rem;
     font-size: 2rem;
+    gap: 0;
+    transition: gap 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .navbar.scrolled .navbar-logo {
+    gap: 0.625rem;
   }
   .navbar-logo-icon {
-    width: 4.4rem;
+    width: 0;
     height: 4.4rem;
+    opacity: 0;
+    transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease 0.2s;
+  }
+  .navbar.scrolled .navbar-logo-icon {
+    width: 4.4rem;
+    opacity: 1;
   }
   .navbar-links {
     display: flex;
@@ -491,8 +520,8 @@ ul {
   align-items: center;
 }
  
-/* --- Hero Logo Anchor (invisible placeholder for the floating logo) --- */
-.hero-logo-anchor {
+/* --- Hero Logo Image (statically positioned) --- */
+.hero-logo-img {
   width: 10rem;
   height: 10rem;
   margin-bottom: var(--stack-md);

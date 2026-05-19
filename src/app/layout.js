@@ -1,6 +1,5 @@
 import "./globals.css";
 import Image from "next/image";
-import ScrollLogo from "./components/ScrollLogo";
 import Navbar from "./components/Navbar";
 
 export const metadata = {
@@ -72,7 +71,6 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <ScrollLogo />
         <Navbar />
 
         {children}
