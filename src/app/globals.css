@@ -728,11 +728,15 @@ ul {
    OUR STORY PAGE
    =================================================================== */
 
+.story-main {
+  padding-top: 2.5rem;
+}
+
 .story-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 0px;
   margin-bottom: 50px;
 }
 
@@ -765,9 +769,12 @@ ul {
 }
 
 @media (min-width: 768px) {
+  .story-main {
+    padding-top: 4rem;
+  }
   .story-hero {
     align-items: flex-start;
-    padding-top: 40px;
+    padding-top: 10px;
   }
   .story-hero-label {
     text-align: left;
@@ -783,6 +790,15 @@ ul {
   .story-hero-image {
     flex: 0 0 40%;
     transform: translateX(-15px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .story-main {
+    padding-top: var(--section-padding);
+  }
+  .story-hero {
+    padding-top: 40px;
   }
 }
 

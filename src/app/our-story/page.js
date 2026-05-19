@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function OurStory() {
   return (
-    <main className="section container">
+    <main className="section container story-main">
       <div style={{ maxWidth: '800px', margin: '0 auto' }}>
         
         <div className="story-hero">
