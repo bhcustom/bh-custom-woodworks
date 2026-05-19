@@ -876,15 +876,28 @@ header.navbar.scrolled .navbar-logo-icon {
   gap: var(--section-padding);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .editorial-inner {
     flex-direction: row;
+    gap: var(--gutter);
+  }
+}
+
+@media (min-width: 1024px) {
+  .editorial-inner {
+    gap: var(--section-padding);
   }
 }
 
 .editorial-image {
   width: 100%;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .editorial-image {
+    width: 45%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -914,6 +927,12 @@ header.navbar.scrolled .navbar-logo-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .editorial-text {
+    width: 55%;
+  }
 }
 
 @media (min-width: 1024px) {
