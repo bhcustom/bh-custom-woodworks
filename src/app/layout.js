@@ -119,7 +119,7 @@ export default function RootLayout({ children }) {
         <div className="footer-bottom">
           <div className="footer-divider"></div>
           <p className="label-sm footer-copy">
-            © 2026 BH Custom Woodworks. All rights reserved.
+            © 2026 BH Custom Woodworks. <br className="footer-split-br" /> All rights reserved.
           </p>
         </div>
       </footer>
