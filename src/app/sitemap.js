@@ -5,22 +5,20 @@ export default async function sitemap() {
 
   // Base routes
   const routes = [
-    '',
-    '/our-story',
-    '/shop',
-    '/quote',
-    '/shipping-policy',
-    '/privacy-policy',
-    '/terms-of-service',
+    { url: '' },
+    { url: '/our-story' },
+    { url: '/shop' },
+    { url: '/quote' },
+    { url: '/shipping-policy' },
+    { url: '/privacy-policy' },
+    { url: '/terms-of-service' },
   ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    url: `${baseUrl}${route.url}`,
   }));
 
   // Service routes
   const serviceRoutes = Object.keys(services).map((slug) => ({
     url: `${baseUrl}/services/${slug}`,
-    lastModified: new Date(),
   }));
 
   return [...routes, ...serviceRoutes];
