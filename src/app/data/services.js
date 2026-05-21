@@ -145,7 +145,7 @@ export const services = {
     metaDescription:
       "Handcrafted custom cutting boards in end-grain and edge-grain styles. Personalized laser engraving on walnut, maple, cherry, and oak.",
     heroImage: "/images/cutting-boards.jpg",
-    heroAlt: "End-grain walnut cutting board with laser engraved family crest",
+    heroAlt: "Handcrafted walnut edge-grain cutting board with juice groove on a marble surface",
     intro: {
       headline: "Built to Be Used, Not Just Displayed",
       description:
@@ -213,7 +213,7 @@ export const services = {
     metaDescription:
       "Custom wooden wedding decor including guest books, table numbers, cake toppers, and ceremony signs. Handcrafted and laser engraved for your day.",
     heroImage: "/images/wedding-decor.jpg",
-    heroAlt: "Elegant laser-engraved wooden wedding welcome sign on an easel",
+    heroAlt: "Elegant laser-engraved wooden wedding sign with leafy borders and script text",
     intro: {
       headline: "Details That Make It Yours",
       description:
@@ -282,7 +282,7 @@ export const services = {
     metaDescription:
       "Professional custom business signs and logo displays in solid hardwood. Laser-engraved office signs, lobby displays, and retail signage.",
     heroImage: "/images/business-signage.jpg",
-    heroAlt: "Professional business logo laser-engraved on a maple wall plaque",
+    heroAlt: "Minimalist mountain line-art logo laser-engraved on a rectangular maple wood block plaque",
     intro: {
       headline: "Your Brand, Built in Wood",
       description:
@@ -423,7 +423,7 @@ export const services = {
     title: "Custom Laser Engraving",
     metaDescription:
       "Professional laser engraving services on wood, leather, and more. Custom logos, text, photos, and artwork engraved with precision on any surface.",
-    heroImage: "/images/laser-gifts.jpg",
+    heroImage: "/images/process.jpg",
     heroAlt: "Laser engraving machine cutting a detailed design into solid wood",
     intro: {
       headline: "Precision You Can See and Feel",

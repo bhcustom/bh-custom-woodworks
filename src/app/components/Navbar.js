@@ -68,6 +68,7 @@ export default function Navbar() {
               width={70}
               height={70}
               className="navbar-logo-icon"
+              priority
             />
             <span className="navbar-logo-text">BH Custom <br /> Woodworks</span>
           </a>

@@ -3,6 +3,9 @@ import { getLastUpdatedDate } from '../utils/dates';
 export const metadata = {
   title: "Terms of Service",
   description: "Terms and conditions for orders, intellectual property, and website usage.",
+  alternates: {
+    canonical: "/terms-of-service",
+  },
 };
 
 export default function TermsOfService() {

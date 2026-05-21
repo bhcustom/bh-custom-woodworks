@@ -6,6 +6,9 @@ const service = services["laser-engraved-gifts"];
 export const metadata = {
   title: service.title,
   description: service.metaDescription,
+  alternates: {
+    canonical: "/services/laser-engraved-gifts",
+  },
 };
 
 export default function LaserEngravedGiftsPage() {

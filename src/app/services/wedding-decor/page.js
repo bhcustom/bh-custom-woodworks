@@ -6,6 +6,9 @@ const service = services["wedding-decor"];
 export const metadata = {
   title: service.title,
   description: service.metaDescription,
+  alternates: {
+    canonical: "/services/wedding-decor",
+  },
 };
 
 export default function WeddingDecorPage() {

@@ -3,6 +3,9 @@ import { getLastUpdatedDate } from '../utils/dates';
 export const metadata = {
   title: "Shipping & Returns Policy",
   description: "Information regarding shipping times, damage claims, and our return policy for custom woodworking orders.",
+  alternates: {
+    canonical: "/shipping-policy",
+  },
 };
 
 export default function ShippingPolicy() {

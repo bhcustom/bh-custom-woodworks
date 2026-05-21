@@ -4,6 +4,9 @@ export const metadata = {
   title: "BH Custom Woodworks | Custom Woodwork & Laser Engraving",
   description:
     "Custom woodwork and precision laser engraving designed to last generations. From personalized signs to handcrafted cutting boards, we blend heritage craft with modern technology.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function Home() {
@@ -14,7 +17,7 @@ export default function Home() {
         <div className="hero-bg">
           <Image
             src="/images/hero-bg-final.jpg"
-            alt="Master woodworker sanding walnut in a bright studio"
+            alt="Close-up of a beautifully finished solid dark wood tabletop corner with soft sunlight highlights"
             fill
             style={{ objectFit: "cover", objectPosition: "center" }}
             priority
@@ -95,7 +98,7 @@ export default function Home() {
             <div className="showcase-card">
               <Image
                 src="/images/laser-gifts.jpg"
-                alt="Collection of laser-engraved wooden gifts"
+                alt="Collection of laser-engraved wooden gifts including ornaments and coasters"
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
                 style={{ objectFit: "cover" }}
@@ -116,7 +119,7 @@ export default function Home() {
             <div className="showcase-card">
               <Image
                 src="/images/cutting-boards.jpg"
-                alt="End-grain walnut cutting board with laser engraved crest"
+                alt="Handcrafted walnut edge-grain cutting board with juice groove on a marble surface"
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
                 style={{ objectFit: "cover" }}
@@ -137,7 +140,7 @@ export default function Home() {
             <div className="showcase-card">
               <Image
                 src="/images/wedding-decor.jpg"
-                alt="Elegant laser-cut wooden wedding table numbers"
+                alt="Elegant laser-engraved wooden wedding sign with leafy borders and script text"
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
                 style={{ objectFit: "cover" }}
@@ -158,7 +161,7 @@ export default function Home() {
             <div className="showcase-card">
               <Image
                 src="/images/business-signage.jpg"
-                alt="Professional business logo laser-engraved on maple"
+                alt="Minimalist mountain line-art logo laser-engraved on a rectangular maple wood block plaque"
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
                 style={{ objectFit: "cover" }}
@@ -179,7 +182,7 @@ export default function Home() {
             <div className="showcase-card">
               <Image
                 src="/images/memorial-pieces.jpg"
-                alt="Handcrafted wooden memorial box with floral engravings"
+                alt="Handcrafted wooden memorial keepsake box with floral laser engraving"
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
                 style={{ objectFit: "cover" }}
@@ -206,7 +209,7 @@ export default function Home() {
             <div className="editorial-image-frame">
               <Image
                 src="/images/process.jpg"
-                alt="Laser engraver burning a pattern into walnut wood"
+                alt="Laser engraving machine cutting a detailed design into solid wood"
                 width={800}
                 height={1000}
                 style={{ objectFit: "cover", width: "100%", height: "100%" }}

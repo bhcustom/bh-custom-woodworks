@@ -3,6 +3,9 @@ import { getLastUpdatedDate } from '../utils/dates';
 export const metadata = {
   title: "Privacy Policy",
   description: "Professional custom woodworking and laser engraving services privacy policy.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
 };
 
 export default function PrivacyPolicy() {

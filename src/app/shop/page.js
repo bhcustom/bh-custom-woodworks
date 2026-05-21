@@ -5,6 +5,9 @@ export const metadata = {
   title: "Shop",
   description:
     "Browse handcrafted memorial urns, commemorative plaques, and artisan woodwork. Solid American hardwoods, free custom laser engraving, and free shipping on every order.",
+  alternates: {
+    canonical: "/shop",
+  },
 };
 
 function ProductCard({ product }) {

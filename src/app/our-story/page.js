@@ -3,6 +3,9 @@ import Image from "next/image";
 export const metadata = {
   title: "Our Story",
   description: "Learn about the heritage, craftsmanship, and dedication behind BH Custom Woodworks.",
+  alternates: {
+    canonical: "/our-story",
+  },
 };
 
 export default function OurStory() {

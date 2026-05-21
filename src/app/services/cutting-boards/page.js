@@ -6,6 +6,9 @@ const service = services["cutting-boards"];
 export const metadata = {
   title: service.title,
   description: service.metaDescription,
+  alternates: {
+    canonical: "/services/cutting-boards",
+  },
 };
 
 export default function CuttingBoardsPage() {
