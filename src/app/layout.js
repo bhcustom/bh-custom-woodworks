@@ -1,6 +1,7 @@
 import "./globals.css";
 import Image from "next/image";
 import Navbar from "./components/Navbar";
+import Script from "next/script";
 
 export const metadata = {
   metadataBase: new URL('https://bhcustomwoodworks.com'),
@@ -71,6 +72,20 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-HXVTRL2ED3"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-HXVTRL2ED3');
+          `}
+        </Script>
         <Navbar />
 
         {children}
