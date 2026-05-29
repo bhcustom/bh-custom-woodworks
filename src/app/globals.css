@@ -2078,7 +2078,7 @@ header.navbar.scrolled .navbar-logo-icon {
 
 .mobile-menu-sublinks.expanded {
   max-height: 400px;
-  margin-top: 0.25rem; /* Elegant spacing when expanded */
+  margin-top: -0.55rem; /* Mathematically sets visual distance from Collections to 0.6rem */
 }
 
 .mobile-menu-sublink {
