@@ -69,7 +69,7 @@ export default function Home() {
 
           <div className="bento-grid">
             {/* Card 1 — Signature (large): Memorial Pieces */}
-            <div className="showcase-card signature">
+            <a href="/services/memorial-pieces" className="showcase-card signature">
               <Image
                 src="/images/memorial-pieces.jpg"
                 alt="Handcrafted wooden memorial keepsake box with floral laser engraving"
@@ -82,20 +82,20 @@ export default function Home() {
                 <span className="label-sm card-tag">Signature</span>
                 <h3 className="headline-md">Memorial Pieces</h3>
                 <p className="body-md">
-                  Handcrafted cremation urns, tribute boxes, and custom markers,
+                  Handcrafted cremation urns, tribute boxes, and pet urns,
                   built with care to honor your loved ones and preserve their stories.
                 </p>
-                <a href="/services/memorial-pieces" className="label-sm card-link">
+                <div className="label-sm card-link">
                   <span className="card-link-text">View</span>
                   <span className="material-symbols-outlined">
                     chevron_right
                   </span>
-                </a>
+                </div>
               </div>
-            </div>
+            </a>
 
             {/* Card 2: Charcuterie Boards */}
-            <div className="showcase-card">
+            <a href="/services/charcuterie-boards" className="showcase-card">
               <Image
                 src="/images/charcuterie-boards.jpg"
                 alt="Handcrafted dark walnut charcuterie board styled with artisan cheeses and fruits"
@@ -106,17 +106,17 @@ export default function Home() {
               <div className="card-scrim" />
               <div className="card-content">
                 <h3 className="headline-md">Charcuterie Boards</h3>
-                <a href="/services/charcuterie-boards" className="label-sm card-link">
+                <div className="label-sm card-link">
                   <span className="card-link-text">View</span>
                   <span className="material-symbols-outlined">
                     chevron_right
                   </span>
-                </a>
+                </div>
               </div>
-            </div>
+            </a>
 
             {/* Card 3: Cutting Boards */}
-            <div className="showcase-card">
+            <a href="/services/cutting-boards" className="showcase-card">
               <Image
                 src="/images/cutting-boards.jpg"
                 alt="Handcrafted walnut edge-grain cutting board with juice groove on a marble surface"
@@ -127,17 +127,17 @@ export default function Home() {
               <div className="card-scrim" />
               <div className="card-content">
                 <h3 className="headline-md">Cutting Boards</h3>
-                <a href="/services/cutting-boards" className="label-sm card-link">
+                <div className="label-sm card-link">
                   <span className="card-link-text">View</span>
                   <span className="material-symbols-outlined">
                     chevron_right
                   </span>
-                </a>
+                </div>
               </div>
-            </div>
+            </a>
 
             {/* Card 4: Wedding Decor */}
-            <div className="showcase-card">
+            <a href="/services/wedding-decor" className="showcase-card">
               <Image
                 src="/images/wedding-decor.jpg"
                 alt="Elegant laser-engraved wooden wedding sign with leafy borders and script text"
@@ -148,17 +148,17 @@ export default function Home() {
               <div className="card-scrim" />
               <div className="card-content">
                 <h3 className="headline-md">Wedding Decor</h3>
-                <a href="/services/wedding-decor" className="label-sm card-link">
+                <div className="label-sm card-link">
                   <span className="card-link-text">View</span>
                   <span className="material-symbols-outlined">
                     chevron_right
                   </span>
-                </a>
+                </div>
               </div>
-            </div>
+            </a>
 
             {/* Card 5: Laser Engraved Gifts */}
-            <div className="showcase-card">
+            <a href="/services/laser-engraved-gifts" className="showcase-card">
               <Image
                 src="/images/laser-gifts.jpg"
                 alt="Collection of laser-engraved wooden gifts including ornaments and coasters"
@@ -169,17 +169,17 @@ export default function Home() {
               <div className="card-scrim" />
               <div className="card-content">
                 <h3 className="headline-md">Laser Engraved Gifts</h3>
-                <a href="/services/laser-engraved-gifts" className="label-sm card-link">
+                <div className="label-sm card-link">
                   <span className="card-link-text">View</span>
                   <span className="material-symbols-outlined">
                     chevron_right
                   </span>
-                </a>
+                </div>
               </div>
-            </div>
+            </a>
 
             {/* Card 6: Business Signage */}
-            <div className="showcase-card">
+            <a href="/services/business-signage" className="showcase-card">
               <Image
                 src="/images/business-signage.jpg"
                 alt="Minimalist mountain line-art logo laser-engraved on a rectangular maple wood block plaque"
@@ -190,14 +190,14 @@ export default function Home() {
               <div className="card-scrim" />
               <div className="card-content">
                 <h3 className="headline-md">Business Signage</h3>
-                <a href="/services/business-signage" className="label-sm card-link">
+                <div className="label-sm card-link">
                   <span className="card-link-text">View</span>
                   <span className="material-symbols-outlined">
                     chevron_right
                   </span>
-                </a>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
