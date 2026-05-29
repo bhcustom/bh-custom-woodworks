@@ -82,13 +82,12 @@ export default function Navbar() {
                 </span>
               </a>
               <div className="nav-dropdown-menu">
-                <a href="/services/custom-wood-signs">Custom Wood Signs</a>
-                <a href="/services/laser-engraved-gifts">Laser Engraved Gifts</a>
+                <a href="/services/memorial-pieces">Memorial Pieces</a>
+                <a href="/services/charcuterie-boards">Charcuterie Boards</a>
                 <a href="/services/cutting-boards">Cutting Boards</a>
                 <a href="/services/wedding-decor">Wedding Decor</a>
+                <a href="/services/laser-engraved-gifts">Laser Engraved Gifts</a>
                 <a href="/services/business-signage">Business Signage</a>
-                <a href="/services/memorial-pieces">Memorial Pieces</a>
-                <a href="/services/laser-engraving">Laser Engraving</a>
               </div>
             </div>
             <a href="/#process">Process</a>
@@ -126,13 +125,12 @@ export default function Navbar() {
           </a>
           
           <div className={`mobile-menu-sublinks ${collectionsExpanded ? 'expanded' : ''}`}>
-            <a href="/services/custom-wood-signs" className="mobile-menu-sublink" onClick={closeMenu}>Custom Wood Signs</a>
-            <a href="/services/laser-engraved-gifts" className="mobile-menu-sublink" onClick={closeMenu}>Laser Engraved Gifts</a>
+            <a href="/services/memorial-pieces" className="mobile-menu-sublink" onClick={closeMenu}>Memorial Pieces</a>
+            <a href="/services/charcuterie-boards" className="mobile-menu-sublink" onClick={closeMenu}>Charcuterie Boards</a>
             <a href="/services/cutting-boards" className="mobile-menu-sublink" onClick={closeMenu}>Cutting Boards</a>
             <a href="/services/wedding-decor" className="mobile-menu-sublink" onClick={closeMenu}>Wedding Decor</a>
+            <a href="/services/laser-engraved-gifts" className="mobile-menu-sublink" onClick={closeMenu}>Laser Engraved Gifts</a>
             <a href="/services/business-signage" className="mobile-menu-sublink" onClick={closeMenu}>Business Signage</a>
-            <a href="/services/memorial-pieces" className="mobile-menu-sublink" onClick={closeMenu}>Memorial Pieces</a>
-            <a href="/services/laser-engraving" className="mobile-menu-sublink" onClick={closeMenu}>Laser Engraving</a>
           </div>
 
           <a href="/#process" className="mobile-menu-link" onClick={closeMenu}>Process</a>

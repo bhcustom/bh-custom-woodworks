@@ -14,10 +14,10 @@ export const metadata = {
   keywords: [
     "custom woodwork",
     "laser engraving",
-    "personalized wood signs",
+    "charcuterie boards",
     "cutting boards",
     "wedding decor",
-    "artisan furniture",
+    "memorial pieces",
     "personalized gifts",
     "business signage",
   ],

@@ -6,69 +6,66 @@
  */
 
 export const services = {
-  "custom-wood-signs": {
-    title: "Custom Wood Signs",
+  "charcuterie-boards": {
+    title: "Custom Charcuterie Boards",
     metaDescription:
-      "Handcrafted custom wood signs built from premium hardwoods with precision laser engraving. Perfect for homes, farms, businesses, and gifts.",
-    heroImage: "/images/custom-signs.jpg",
-    heroAlt: "Custom wood sign with laser-engraved typography on walnut",
+      "Handcrafted custom charcuterie boards and serving platters built from solid walnut, maple, and cherry. Personalized laser engraving for housewarmings, weddings, and entertaining.",
+    heroImage: "/images/charcuterie-boards.jpg",
+    heroAlt: "Handcrafted premium walnut charcuterie board beautifully arranged with artisan cheeses, cured meats, and fresh fruits",
     intro: {
-      headline: "A Sign That Says Something",
+      headline: "Crafted for Gathering",
       description:
-        "Whether it's your family name above the front door, a verse in the living room, or a rustic welcome sign for the back porch: we build each one from solid hardwood and engrave it to last. No vinyl. No stickers. Just wood, a laser, and a design that's yours.",
+        "A great charcuterie board does more than hold food; it centers the table and gathers people together. We hand-select premium American hardwoods—prioritizing rich walnut, clean maple, and warm cherry—to craft serving platters that make every gathering feel special. Personalized with laser engraving, each board is a lasting centerpiece for your home.",
     },
     details: [
       {
         icon: "park",
         title: "Wood Options",
         items: [
-          "White Oak: Light, clean grain with a classic feel",
-          "Black Walnut: Rich, dark chocolate tones",
-          "Cherry: Warm amber that deepens over time",
-          "Maple: Bright, tight grain for crisp engraving detail",
+          "Black Walnut: Elegant and rich, the premium choice for food presentation",
+          "Hard Maple: Bright and clean, providing maximum contrast for detailed engravings",
+          "Cherry: Warm amber wood that ages and darkens beautifully over time",
+          "Multi-wood panels: Hand-joined stripes of walnut, maple, and cherry",
         ],
       },
       {
-        icon: "palette",
-        title: "Finish Options",
+        icon: "clean_hands",
+        title: "Care & Durability",
         items: [
-          "Natural clear coat: Lets the grain speak for itself",
-          "Semi-gloss lacquer: Durable, slight sheen",
-          "Matte polyurethane: Smooth, modern look",
-          "Raw / unfinished: For a rustic, weathered aesthetic",
+          "100% Food-Safe: Finished exclusively with USP-grade mineral oil and organic beeswax",
+          "Easy Maintenance: Hand-wash only, dry vertically, and re-oil monthly to maintain luster",
+          "Knife-Friendly: Hardwood construction is highly durable while protecting fine blades",
         ],
       },
       {
         icon: "straighten",
         title: "Sizes Available",
         items: [
-          "Small: Up to 12\" × 8\" (shelf or desk display)",
-          "Medium: Up to 24\" × 12\" (wall-mount)",
-          "Large: Up to 36\" × 18\" (statement piece)",
-          "Custom dimensions available on request",
+          "Small: 12\" × 8\" (intimate serving for two)",
+          "Medium: 18\" × 10\" (the everyday entertaining standard)",
+          "Large: 24\" × 12\" (grand feast statement board with live edge)",
         ],
       },
     ],
     popularUses: [
-      "Family name & established date signs",
-      "Address and house number plaques",
-      "Bible verses and inspirational quotes",
-      "Farm and ranch entrance signs",
-      "Man cave and she-shed signs",
-      "Pet memorial markers",
+      "Custom wedding gifts with couple's name and wedding date",
+      "Housewarming and realtor closing gifts",
+      "Premium anniversary markers (perfect for the 5th 'wood' anniversary)",
+      "Artisan serving platters for holiday hosting and wine tastings",
+      "Personalized gifts for home chefs and food lovers",
     ],
     faq: [
       {
-        q: "Can I use my own design or logo?",
-        a: "Absolutely. Send us an image and we'll convert it for laser engraving. Vector files (SVG, AI) give the sharpest results, but we can work with most image formats.",
+        q: "What finish do you use on your charcuterie boards?",
+        a: "We finish all of our serving boards exclusively with food-safe mineral oil and natural beeswax. We never use chemical lacquers, polyurethanes, or liquid varnishes. Everything that touches your food is 100% natural and food-safe.",
       },
       {
-        q: "How long does a custom sign take?",
-        a: "Most signs ship within 2-3 weeks. Rush orders may be available depending on our current workload: just ask.",
+        q: "Is it safe to cut directly on the board?",
+        a: "Yes. Hardwoods are naturally durable. However, to preserve the premium laser engraving, we recommend cutting on the plain back side of the board and using the beautifully engraved front side exclusively for serving and presentation.",
       },
       {
-        q: "Are these signs suitable for outdoor use?",
-        a: "With the right finish, yes. We recommend our semi-gloss lacquer for outdoor signs. We'll also advise on placement to maximize the life of the wood.",
+        q: "Can I have a custom logo or family recipe engraved?",
+        a: "Absolutely. We can engrave custom logos, monograms, family crests, or even high-resolution images of handwritten family recipes. Vector files (SVG/AI) give the sharpest detail, but we can work with most high-res image files.",
       },
     ],
   },

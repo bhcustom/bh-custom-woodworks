@@ -1,16 +1,16 @@
 import ServicePage from "../../components/ServicePage";
 import { services } from "../../data/services";
 
-const service = services["custom-wood-signs"];
+const service = services["charcuterie-boards"];
 
 export const metadata = {
   title: service.title,
   description: service.metaDescription,
   alternates: {
-    canonical: "/services/custom-wood-signs",
+    canonical: "/services/charcuterie-boards",
   },
 };
 
-export default function CustomWoodSignsPage() {
+export default function CharcuterieBoardsPage() {
   return <ServicePage service={service} />;
 }

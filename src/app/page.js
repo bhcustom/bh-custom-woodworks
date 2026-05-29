@@ -68,11 +68,11 @@ export default function Home() {
           </div>
 
           <div className="bento-grid">
-            {/* Card 1 — Signature (large) */}
+            {/* Card 1 — Signature (large): Memorial Pieces */}
             <div className="showcase-card signature">
               <Image
-                src="/images/custom-signs.jpg"
-                alt="Custom wood sign with laser-engraved typography on walnut"
+                src="/images/memorial-pieces.jpg"
+                alt="Handcrafted wooden memorial keepsake box with floral laser engraving"
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 66vw, 50vw"
                 style={{ objectFit: "cover" }}
@@ -80,12 +80,12 @@ export default function Home() {
               <div className="card-scrim" />
               <div className="card-content">
                 <span className="label-sm card-tag">Signature</span>
-                <h3 className="headline-md">Custom Wood Signs</h3>
+                <h3 className="headline-md">Memorial Pieces</h3>
                 <p className="body-md">
-                  Personalized statements for homes and businesses, deeply
-                  engraved in premium hardwoods.
+                  Handcrafted cremation urns, tribute boxes, and custom markers,
+                  built with care to honor your loved ones and preserve their stories.
                 </p>
-                <a href="/services/custom-wood-signs" className="label-sm card-link">
+                <a href="/services/memorial-pieces" className="label-sm card-link">
                   <span className="card-link-text">View</span>
                   <span className="material-symbols-outlined">
                     chevron_right
@@ -94,19 +94,19 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Card 2 */}
+            {/* Card 2: Charcuterie Boards */}
             <div className="showcase-card">
               <Image
-                src="/images/laser-gifts.jpg"
-                alt="Collection of laser-engraved wooden gifts including ornaments and coasters"
+                src="/images/charcuterie-boards.jpg"
+                alt="Handcrafted dark walnut charcuterie board styled with artisan cheeses and fruits"
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
                 style={{ objectFit: "cover" }}
               />
               <div className="card-scrim" />
               <div className="card-content">
-                <h3 className="headline-md">Laser Engraved Gifts</h3>
-                <a href="/services/laser-engraved-gifts" className="label-sm card-link">
+                <h3 className="headline-md">Charcuterie Boards</h3>
+                <a href="/services/charcuterie-boards" className="label-sm card-link">
                   <span className="card-link-text">View</span>
                   <span className="material-symbols-outlined">
                     chevron_right
@@ -115,7 +115,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Card 3 */}
+            {/* Card 3: Cutting Boards */}
             <div className="showcase-card">
               <Image
                 src="/images/cutting-boards.jpg"
@@ -136,7 +136,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Card 4 */}
+            {/* Card 4: Wedding Decor */}
             <div className="showcase-card">
               <Image
                 src="/images/wedding-decor.jpg"
@@ -157,7 +157,28 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Card 5 */}
+            {/* Card 5: Laser Engraved Gifts */}
+            <div className="showcase-card">
+              <Image
+                src="/images/laser-gifts.jpg"
+                alt="Collection of laser-engraved wooden gifts including ornaments and coasters"
+                fill
+                sizes="(max-width: 768px) 50vw, 33vw"
+                style={{ objectFit: "cover" }}
+              />
+              <div className="card-scrim" />
+              <div className="card-content">
+                <h3 className="headline-md">Laser Engraved Gifts</h3>
+                <a href="/services/laser-engraved-gifts" className="label-sm card-link">
+                  <span className="card-link-text">View</span>
+                  <span className="material-symbols-outlined">
+                    chevron_right
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            {/* Card 6: Business Signage */}
             <div className="showcase-card">
               <Image
                 src="/images/business-signage.jpg"
@@ -170,27 +191,6 @@ export default function Home() {
               <div className="card-content">
                 <h3 className="headline-md">Business Signage</h3>
                 <a href="/services/business-signage" className="label-sm card-link">
-                  <span className="card-link-text">View</span>
-                  <span className="material-symbols-outlined">
-                    chevron_right
-                  </span>
-                </a>
-              </div>
-            </div>
-
-            {/* Card 6 */}
-            <div className="showcase-card">
-              <Image
-                src="/images/memorial-pieces.jpg"
-                alt="Handcrafted wooden memorial keepsake box with floral laser engraving"
-                fill
-                sizes="(max-width: 768px) 50vw, 33vw"
-                style={{ objectFit: "cover" }}
-              />
-              <div className="card-scrim" />
-              <div className="card-content">
-                <h3 className="headline-md">Memorial Pieces</h3>
-                <a href="/services/memorial-pieces" className="label-sm card-link">
                   <span className="card-link-text">View</span>
                   <span className="material-symbols-outlined">
                     chevron_right
