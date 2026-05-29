@@ -81,11 +81,9 @@ function ProductCard({ product }) {
               </span>
             </a>
           )}
-          {(product.cta === "etsy+custom" || product.cta === "custom") && (
+          {product.cta === "custom" && (
             <a href="/quote" className="btn btn-outline">
-              {product.cta === "custom"
-                ? "Request a Custom Quote"
-                : "Need a custom version?"}
+              Request a Custom Quote
             </a>
           )}
         </div>
