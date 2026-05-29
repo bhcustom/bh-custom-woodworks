@@ -2072,12 +2072,13 @@ header.navbar.scrolled .navbar-logo-icon {
   overflow: hidden;
   max-height: 0;
   flex-shrink: 0;
+  margin-top: -1.15rem; /* Neutralize flex gap when collapsed to keep spacing identical */
   transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), margin 0.3s ease;
 }
 
 .mobile-menu-sublinks.expanded {
   max-height: 400px;
-  margin-top: 0.75rem;
+  margin-top: 0.25rem; /* Elegant spacing when expanded */
 }
 
 .mobile-menu-sublink {
