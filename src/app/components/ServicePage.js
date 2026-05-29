@@ -26,7 +26,7 @@ export default function ServicePage({ service }) {
               <>
                 <a
                   href={service.etsyUrl}
-                  className="btn btn-primary"
+                  className="btn btn-inverse"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -44,7 +44,7 @@ export default function ServicePage({ service }) {
                 </a>
               </>
             ) : (
-              <a href="/quote" className="btn btn-primary">
+              <a href="/quote" className="btn btn-inverse">
                 Request a Custom Quote
               </a>
             )}
