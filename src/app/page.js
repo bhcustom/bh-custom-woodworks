@@ -27,8 +27,8 @@ export default function Home() {
 
         <div className="hero-content">
           <Image
-            src="/logo_icon.svg"
-            alt="BH Custom Woodworks Logo"
+            src="/bh-custom-woodworks-logo.svg"
+            alt="Official BH Custom Woodworks circular saw blade logo, featuring a friendly illustration of a smiling artisan with white hair and glasses representing founder Bob"
             width={160}
             height={160}
             className="hero-logo-img"

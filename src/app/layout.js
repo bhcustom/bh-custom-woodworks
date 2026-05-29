@@ -44,7 +44,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'BH Custom Woodworks',
-  logo: 'https://bhcustomwoodworks.com/logo_icon.svg',
+  logo: 'https://bhcustomwoodworks.com/bh-custom-woodworks-logo.svg',
   url: 'https://bhcustomwoodworks.com',
   description: 'Artisan woodworking and precision laser engraving, specializing in heirloom-quality custom signs, memorial urns, and personalized gifts.',
   address: {
@@ -96,8 +96,8 @@ export default function RootLayout({ children }) {
           <div className="footer-brand">
             <a href="/" className="navbar-logo">
               <Image
-                src="/logo_icon.svg"
-                alt="BH Custom Woodworks Logo"
+                src="/bh-custom-woodworks-logo.svg"
+                alt=""
                 width={40}
                 height={40}
                 className="navbar-logo-icon"

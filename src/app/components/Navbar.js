@@ -63,8 +63,8 @@ export default function Navbar() {
         <div className="navbar-inner">
           <a href="/" className="navbar-logo" onClick={closeMenu}>
             <Image
-              src="/logo_icon.svg"
-              alt="BH Custom Woodworks Logo"
+              src="/bh-custom-woodworks-logo.svg"
+              alt=""
               width={70}
               height={70}
               className="navbar-logo-icon"
