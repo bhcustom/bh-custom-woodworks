@@ -579,6 +579,7 @@ header.navbar.scrolled .navbar-logo-icon {
   position: relative;
   z-index: 10;
   max-width: 44rem;
+  width: 100%; /* Force full width bounds on mobile */
   margin: 0 auto;
   text-align: center;
   display: flex;
@@ -620,6 +621,10 @@ header.navbar.scrolled .navbar-logo-icon {
   width: 100%;
 }
 
+.hero-cta .btn {
+  width: 100%; /* Stretch buttons to full container width on mobile */
+}
+
 @media (min-width: 640px) {
   .hero-cta {
     flex-direction: row;
@@ -627,6 +632,7 @@ header.navbar.scrolled .navbar-logo-icon {
   }
   .hero-cta .btn {
     padding: 0.85rem 2.5rem;
+    width: auto; /* Reset to natural auto sizing on desktop */
   }
 }
 
