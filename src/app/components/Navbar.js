@@ -96,7 +96,7 @@ export default function Navbar() {
           </nav>
 
           <div className="navbar-actions">
-            <a href="/shop" className="btn btn-primary">Shop Now</a>
+            <a href="/shop" className="btn btn-primary">Shop Our Etsy Store</a>
             <button 
               className="navbar-menu-btn" 
               aria-label={isOpen ? "Close Menu" : "Open Menu"}
@@ -138,7 +138,7 @@ export default function Navbar() {
           <a href="/our-story" className="mobile-menu-link" onClick={closeMenu}>Our Story</a>
           
           <div className="mobile-menu-cta">
-            <a href="/shop" className="btn btn-primary" onClick={closeMenu}>Shop Now</a>
+            <a href="/shop" className="btn btn-primary" onClick={closeMenu}>Shop Our Etsy Store</a>
           </div>
         </div>
       </div>
