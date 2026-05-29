@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const PROJECT_TYPES = [
@@ -44,6 +44,11 @@ export default function QuoteForm() {
     details: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Automatically scroll to the top of the page when changing steps in the form
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [step]);
 
   const handleSelect = (field, value) => {
     setFormData(prev => ({ ...prev, [field]: value }));
