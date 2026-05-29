@@ -279,7 +279,7 @@ export const services = {
     metaDescription:
       "Professional custom business signs and logo displays in solid hardwood. Laser-engraved office signs, lobby displays, and retail signage.",
     heroImage: "/images/business-signage.jpg",
-    heroAlt: "Minimalist mountain line-art logo laser-engraved on a rectangular maple wood block plaque",
+    heroAlt: "Intricately carved premium walnut wood office lobby sign for Lexington & Associates Counsellors at Law, featuring the scales of justice emblem and mounted on a stone wall",
     intro: {
       headline: "Your Brand, Built in Wood",
       description:

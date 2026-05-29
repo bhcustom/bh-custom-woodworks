@@ -182,7 +182,7 @@ export default function Home() {
             <a href="/services/business-signage" className="showcase-card">
               <Image
                 src="/images/business-signage.jpg"
-                alt="Minimalist mountain line-art logo laser-engraved on a rectangular maple wood block plaque"
+                alt="Intricately carved solid dark walnut office sign for Lexington & Associates Counsellors at Law, featuring a legal scales and tree emblem, mounted on a stone wall"
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
                 style={{ objectFit: "cover" }}
