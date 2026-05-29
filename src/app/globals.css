@@ -240,8 +240,9 @@ ul {
 }
 
 .btn-outline:hover {
+  background: var(--primary);
+  color: var(--on-primary);
   border-color: var(--primary);
-  background: var(--surface-container-low);
 }
 
 .btn-outline-inverse {
