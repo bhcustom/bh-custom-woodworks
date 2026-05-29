@@ -75,6 +75,7 @@ export const services = {
     metaDescription:
       "Personalized laser-engraved gifts crafted from solid wood. Custom cutting boards, ornaments, keepsake boxes, and more for every occasion.",
     heroImage: "/images/laser-gifts.jpg",
+    etsyUrl: "https://www.etsy.com/shop/BHCWoodworking",
     heroAlt: "Collection of laser-engraved wooden gifts including ornaments and coasters",
     intro: {
       headline: "Gifts People Actually Keep",
@@ -348,6 +349,7 @@ export const services = {
     metaDescription:
       "Handcrafted wooden memorial pieces including urns, keepsake boxes, photo plaques, and tribute signs. Built with care from solid American hardwoods.",
     heroImage: "/images/memorial-pieces.jpg",
+    etsyUrl: "https://www.etsy.com/shop/BHCWoodworking",
     heroAlt: "Handcrafted wooden memorial keepsake box with floral laser engraving",
     intro: {
       headline: "Something Worthy of Who They Were",

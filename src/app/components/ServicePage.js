@@ -21,9 +21,34 @@ export default function ServicePage({ service }) {
         <div className="container service-hero-content">
           <h1 className="display-lg">{service.intro.headline}</h1>
           <p className="body-lg">{service.intro.description}</p>
-          <a href="/quote" className="btn btn-primary">
-            Request a Custom Quote
-          </a>
+          <div style={{ display: "flex", gap: "var(--stack-sm)", flexWrap: "wrap", width: "100%" }}>
+            {service.etsyUrl ? (
+              <>
+                <a
+                  href={service.etsyUrl}
+                  className="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Shop on Etsy
+                  <span className="material-symbols-outlined" style={{ fontSize: "18px", marginLeft: "0.5rem" }}>
+                    open_in_new
+                  </span>
+                </a>
+                <a
+                  href="/quote"
+                  className="btn btn-outline"
+                  style={{ borderColor: "var(--surface-container-lowest)", color: "var(--surface-container-lowest)" }}
+                >
+                  Request a Custom Quote
+                </a>
+              </>
+            ) : (
+              <a href="/quote" className="btn btn-primary">
+                Request a Custom Quote
+              </a>
+            )}
+          </div>
         </div>
       </section>
 
@@ -118,12 +143,30 @@ export default function ServicePage({ service }) {
             options, pricing, and a timeline.
           </p>
           <div style={{ display: "flex", gap: "var(--stack-sm)", flexWrap: "wrap", justifyContent: "center" }}>
-            <a href="/quote" className="btn btn-inverse">
-              Request a Custom Quote
-            </a>
-            {service.shopLink && (
-              <a href={service.shopLink} className="btn btn-outline" style={{ borderColor: "var(--primary-fixed-dim)", color: "var(--primary-fixed-dim)" }}>
-                {service.shopLinkText}
+            {service.etsyUrl ? (
+              <>
+                <a
+                  href={service.etsyUrl}
+                  className="btn btn-inverse"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Shop on Etsy
+                  <span className="material-symbols-outlined" style={{ fontSize: "18px", marginLeft: "0.5rem" }}>
+                    open_in_new
+                  </span>
+                </a>
+                <a
+                  href="/quote"
+                  className="btn btn-outline"
+                  style={{ borderColor: "var(--primary-fixed-dim)", color: "var(--primary-fixed-dim)" }}
+                >
+                  Request a Custom Quote
+                </a>
+              </>
+            ) : (
+              <a href="/quote" className="btn btn-inverse">
+                Request a Custom Quote
               </a>
             )}
           </div>
