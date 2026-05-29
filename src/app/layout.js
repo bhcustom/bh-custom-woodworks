@@ -54,7 +54,7 @@ const jsonLd = {
     'addressCountry': 'US'
   },
   sameAs: [
-    'https://www.etsy.com/shop/BHCWoodworking'
+    'https://www.etsy.com/shop/BHWoodworx'
   ]
 };
 
