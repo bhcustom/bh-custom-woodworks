@@ -601,7 +601,7 @@ header.navbar.scrolled .navbar-logo-icon {
 }
 
 .hero-content .hero-desc {
-  color: var(--on-surface-variant);
+  color: #ffffff;
   max-width: 40rem;
   margin: 0 auto var(--stack-lg);
 }
@@ -1495,7 +1495,7 @@ header.navbar.scrolled .navbar-logo-icon {
 }
 
 .service-hero-content p {
-  color: var(--primary-fixed-dim);
+  color: #ffffff;
   margin-bottom: var(--stack-md);
   line-height: 1.7;
 }
