@@ -287,10 +287,10 @@ ul {
   border: 2px solid var(--on-primary);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .btn {
-    font-size: 0.78rem;
-    padding: 0.75rem 1.15rem;
+    font-size: 0.8rem;
+    padding: 0.75rem 1.5rem;
     letter-spacing: 0.08em;
     white-space: nowrap;
   }
@@ -618,7 +618,8 @@ header.navbar.scrolled .navbar-logo-icon {
   display: flex;
   flex-direction: column;
   gap: var(--stack-sm);
-  width: 100%;
+  width: 90%;
+  max-width: 320px; /* Happy middle ground: wide enough for single-line text, narrow enough to not look wide */
 }
 
 .hero-cta .btn {
