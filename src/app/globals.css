@@ -83,6 +83,13 @@
   --shadow-editorial: 0 20px 60px rgb(77 59 44 / 0.1);
 }
 
+@media (max-width: 640px) {
+  :root {
+    --gutter: 1.15rem;         /* 18px side margin for wider, balanced button layouts on mobile */
+    --section-padding: 3.5rem; /* 56px vertical padding to prevent overly tall sections on mobile */
+  }
+}
+
 /* ===================================================================
    RESET & BASE
    =================================================================== */
