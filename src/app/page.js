@@ -36,7 +36,7 @@ export default function Home() {
           />
           <span className="label-sm">BH Custom Woodworks</span>
           <h1 className="display-lg">
-            Heirloom Quality, Handcrafted for You
+            <span style={{ display: "inline-block", whiteSpace: "nowrap" }}>Heirloom Quality,</span> Handcrafted for&nbsp;You
           </h1>
           <p className="body-lg hero-desc">
             Custom woodwork and precision laser engraving designed to last
