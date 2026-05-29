@@ -244,6 +244,18 @@ ul {
   background: var(--surface-container-low);
 }
 
+.btn-outline-inverse {
+  background: transparent;
+  color: var(--surface-container-lowest);
+  border: 2px solid var(--surface-container-lowest);
+}
+
+.btn-outline-inverse:hover {
+  background: var(--surface-container-lowest);
+  color: var(--primary);
+  border-color: var(--surface-container-lowest);
+}
+
 .btn-inverse {
   background: var(--surface-container-lowest);
   color: var(--primary);

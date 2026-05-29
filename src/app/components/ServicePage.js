@@ -37,8 +37,7 @@ export default function ServicePage({ service }) {
                 </a>
                 <a
                   href="/quote"
-                  className="btn btn-outline"
-                  style={{ borderColor: "var(--surface-container-lowest)", color: "var(--surface-container-lowest)" }}
+                  className="btn btn-outline-inverse"
                 >
                   Request a Custom Quote
                 </a>
@@ -158,8 +157,7 @@ export default function ServicePage({ service }) {
                 </a>
                 <a
                   href="/quote"
-                  className="btn btn-outline"
-                  style={{ borderColor: "var(--primary-fixed-dim)", color: "var(--primary-fixed-dim)" }}
+                  className="btn btn-outline-inverse"
                 >
                   Request a Custom Quote
                 </a>
