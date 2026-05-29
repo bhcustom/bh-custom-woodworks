@@ -4,10 +4,12 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const PROJECT_TYPES = [
-  { id: 'signage', label: 'Custom Wood Sign', image: '/images/custom-signs.jpg' },
-  { id: 'cutting-board', label: 'Cutting Board', image: '/images/cutting-boards.jpg' },
-  { id: 'gift', label: 'Laser Engraved Gift', image: '/images/laser-gifts.jpg' },
   { id: 'memorial', label: 'Memorial Piece', image: '/images/memorial-pieces.jpg' },
+  { id: 'charcuterie', label: 'Charcuterie Board', image: '/images/charcuterie-boards.jpg' },
+  { id: 'cutting-board', label: 'Cutting Board', image: '/images/cutting-boards.jpg' },
+  { id: 'wedding', label: 'Wedding Decor', image: '/images/wedding-decor.jpg' },
+  { id: 'gift', label: 'Laser Engraved Gift', image: '/images/laser-gifts.jpg' },
+  { id: 'signage', label: 'Business Signage', image: '/images/business-signage.jpg' },
   { id: 'custom', label: 'Completely Custom Idea', image: '/images/process.jpg' }
 ];
 

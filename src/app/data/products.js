@@ -62,7 +62,7 @@ export const products = [
     category: "memorial-urns",
     name: "Aromatic Cedar Memorial Urn",
     image: "/images/shop/urn-cedar.jpg",
-    alt: "Handcrafted white oak cremation urn with custom laser engravings of a golfer, a fisherman, mountains, and trees for a sports tribute",
+    alt: "Handcrafted aromatic cedar cremation urn with custom laser engravings of a golfer, a fisherman, mountains, and trees for a sports tribute",
     startingPrice: 90,
     wood: "Aromatic Cedar",
     woodNote: "Warm reddish tones with a natural, comforting fragrance.",

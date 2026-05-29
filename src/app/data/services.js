@@ -43,7 +43,7 @@ export const services = {
         items: [
           "Small: 12\" × 8\" (intimate serving for two)",
           "Medium: 18\" × 10\" (the everyday entertaining standard)",
-          "Large: 24\" × 12\" (grand feast statement board with live edge)",
+          "Large: 24\" × 12\" (grand feast statement board with premium straight edges)",
         ],
       },
     ],

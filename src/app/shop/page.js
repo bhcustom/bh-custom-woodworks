@@ -199,7 +199,7 @@ export default function ShopPage() {
             Don&rsquo;t see exactly what you&rsquo;re looking for?
           </h2>
           <p className="body-lg">
-            We build custom signs, cutting boards, wedding decor, and business
+            We build custom charcuterie boards, cutting boards, wedding decor, and business
             signage from scratch. Tell us what you have in mind.
           </p>
           <a href="/quote" className="btn btn-inverse">

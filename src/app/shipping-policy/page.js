@@ -25,7 +25,7 @@ export default function ShippingPolicy() {
           </p>
           <ul className="body-md" style={{ paddingLeft: '1.5rem', marginBottom: '1rem' }}>
             <li style={{ marginBottom: '0.5rem' }}><strong>Standard Orders (In-stock/Etsy):</strong> Typically ship within 3–5 business days.</li>
-            <li style={{ marginBottom: '0.5rem' }}><strong>Custom Engravings & Signs:</strong> Typically require 1–2 weeks for design approval and production.</li>
+            <li style={{ marginBottom: '0.5rem' }}><strong>Custom Engravings & Signage:</strong> Typically require 1–2 weeks for design approval and production.</li>
             <li style={{ marginBottom: '0.5rem' }}><strong>Large Custom Builds:</strong> Timelines will be discussed and agreed upon during the quoting process.</li>
           </ul>
           <p className="body-md">

@@ -3,7 +3,7 @@ import Image from "next/image";
 export const metadata = {
   title: "BH Custom Woodworks | Custom Woodwork & Laser Engraving",
   description:
-    "Custom woodwork and precision laser engraving designed to last generations. From personalized signs to handcrafted cutting boards, we blend heritage craft with modern technology.",
+    "Custom woodwork and precision laser engraving designed to last generations. From handcrafted charcuterie boards to premium cutting boards, we blend heritage craft with modern technology.",
   alternates: {
     canonical: "/",
   },

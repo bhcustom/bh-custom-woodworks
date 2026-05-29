@@ -10,7 +10,7 @@ export const metadata = {
     template: "%s | BH Custom Woodworks"
   },
   description:
-    "Custom woodwork and precision laser engraving designed to last generations. From personalized signs to handcrafted cutting boards, we blend heritage craft with modern technology.",
+    "Custom woodwork and precision laser engraving designed to last generations. From handcrafted charcuterie boards to premium cutting boards, we blend heritage craft with modern technology.",
   keywords: [
     "custom woodwork",
     "laser engraving",
@@ -46,7 +46,7 @@ const jsonLd = {
   name: 'BH Custom Woodworks',
   logo: 'https://bhcustomwoodworks.com/bh-custom-woodworks-logo.svg',
   url: 'https://bhcustomwoodworks.com',
-  description: 'Artisan woodworking and precision laser engraving, specializing in heirloom-quality custom signs, memorial urns, and personalized gifts.',
+  description: 'Artisan woodworking and precision laser engraving, specializing in heirloom-quality memorial pieces, premium charcuterie boards, and custom cutting boards.',
   address: {
     '@type': 'PostalAddress',
     'addressLocality': 'West Jordan',
