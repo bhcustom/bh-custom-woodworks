@@ -72,7 +72,7 @@ export default function ContactForm() {
                   fontWeight: '600' 
                 }}
               >
-                Start a custom quote &rarr;
+                Start a custom quote
               </a>
             </p>
           </div>
