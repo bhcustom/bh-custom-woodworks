@@ -117,7 +117,7 @@ export default function ContactPage() {
             <span className="material-symbols-outlined" style={{ fontSize: '4rem', color: 'var(--primary)', marginBottom: 'var(--stack-md)' }}>check_circle</span>
             <h1 className="display-md mb-sm" style={{ color: 'var(--primary)' }}>Message Sent!</h1>
             <p className="body-lg" style={{ maxWidth: '500px', margin: '0 auto', marginBottom: 'var(--stack-xl)' }}>
-              Thank you, {formData.name}! Your message was sent successfully. We will review it and get back to you at {formData.email} within 24 hours.
+              Thank you, {formData.name}! Your message was sent successfully. We will review it and get back to you at {formData.email} as soon as possible.
             </p>
             <a href="/" className="btn btn-outline">Return to Homepage</a>
           </div>

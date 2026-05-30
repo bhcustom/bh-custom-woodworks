@@ -397,8 +397,8 @@ export default function QuoteForm() {
           </h1>
           <p className="body-lg" style={{ maxWidth: '600px', margin: '0 auto', marginBottom: 'var(--stack-xl)' }}>
             {isGeneralMessage 
-              ? `Thank you, ${formData.name || 'there'}! Your message has been sent successfully. We will review it and get back to you at ${formData.email} within 24 hours.`
-              : `Thank you, ${formData.name || 'there'}! We have received your custom order request and will be reviewing the details shortly. Keep an eye on your email (${formData.email}) for a response from us within 24-48 hours.`
+              ? `Thank you, ${formData.name || 'there'}! Your message has been sent successfully. We will review it and get back to you at ${formData.email} as soon as possible.`
+              : `Thank you, ${formData.name || 'there'}! We have received your custom order request and will be reviewing the details shortly. Keep an eye on your email (${formData.email}) for a response from us.`
             }
           </p>
           <a href="/" className="btn btn-outline">Return to Homepage</a>
