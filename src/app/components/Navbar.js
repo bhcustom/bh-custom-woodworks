@@ -2,12 +2,15 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const isHome = pathname === '/';
+
   const [isOpen, setIsOpen] = useState(false);
   const [collectionsExpanded, setCollectionsExpanded] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isHome, setIsHome] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(!isHome);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => {
@@ -34,9 +37,7 @@ export default function Navbar() {
 
   // Scroll detection logic
   useEffect(() => {
-    const isHomepage = window.location.pathname === '/';
-    setIsHome(isHomepage);
-    if (!isHomepage) {
+    if (!isHome) {
       setIsScrolled(true);
       return;
     }
@@ -56,7 +57,7 @@ export default function Navbar() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [isHome]);
 
   return (
     <>
