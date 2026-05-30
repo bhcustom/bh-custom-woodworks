@@ -784,22 +784,29 @@ header.navbar.scrolled .navbar-logo-icon {
 .card-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  letter-spacing: 0.15em;
-  transition: all 0.3s ease;
-}
-
-.card-link {
+  gap: 0.25rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   text-decoration: none;
+  color: var(--surface-container-lowest);
+  border: 1.5px solid var(--surface-container-lowest);
+  border-radius: var(--rounded-full);
+  padding: 0.35rem 0.8rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background: transparent;
+  margin-top: 0.5rem;
 }
 
-.card-link:hover .card-link-text {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+.showcase-card:hover .card-link {
+  background: var(--surface-container-lowest);
+  color: var(--primary);
+  border-color: var(--surface-container-lowest);
 }
 
 .card-link .material-symbols-outlined {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 /* ===================================================================
