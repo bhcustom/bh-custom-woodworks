@@ -403,6 +403,14 @@ header.navbar.scrolled .navbar-logo-icon {
   color: var(--primary);
 }
 
+.navbar-links .btn-primary {
+  color: var(--on-primary);
+}
+
+.navbar-links .btn-primary:hover {
+  color: var(--primary);
+}
+
 
 
 /* --- Nav Dropdown --- */
