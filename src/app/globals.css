@@ -609,7 +609,7 @@ header.navbar.scrolled .navbar-logo-icon {
 }
 
 .hero-content .hero-desc {
-  color: #ffffff;
+  color: var(--primary);
   max-width: 40rem;
   margin: 0 auto var(--stack-lg);
 }
