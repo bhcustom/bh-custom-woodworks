@@ -74,7 +74,7 @@ export default function Navbar() {
           </a>
 
           <nav className="navbar-links" style={{ alignItems: 'center' }}>
-            <a href="/shop" className="btn btn-primary" style={{ padding: '0.6rem 1.25rem', fontSize: '0.85rem' }}>Shop Our Etsy Store</a>
+            <a href="/shop" className="btn btn-primary" style={{ padding: '0.6rem 1.25rem', fontSize: '0.85rem', color: 'var(--on-primary)' }}>Shop Our Etsy Store</a>
             <div className="nav-dropdown">
               <a href="/#collections" className="nav-dropdown-trigger active">
                 Collections
