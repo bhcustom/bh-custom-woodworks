@@ -45,7 +45,7 @@ export default function Home() {
           </p>
           <div className="hero-cta">
             <a href="/shop" className="btn btn-primary" id="hero-cta-shop">
-              Shop Our Etsy Store
+              Shop Our Etsy Products
             </a>
             <a href="/quote" className="btn btn-outline" id="hero-cta-quote">
               Request a Custom Quote
