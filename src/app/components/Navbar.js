@@ -73,7 +73,8 @@ export default function Navbar() {
             <span className="navbar-logo-text">BH Custom <br /> Woodworks</span>
           </a>
 
-          <nav className="navbar-links">
+          <nav className="navbar-links" style={{ alignItems: 'center' }}>
+            <a href="/shop" className="btn btn-primary" style={{ padding: '0.6rem 1.25rem', fontSize: '0.85rem' }}>Shop Our Etsy Store</a>
             <div className="nav-dropdown">
               <a href="/#collections" className="nav-dropdown-trigger active">
                 Collections
@@ -97,7 +98,6 @@ export default function Navbar() {
           </nav>
 
           <div className="navbar-actions">
-            <a href="/shop" className="btn btn-primary">Shop Our Etsy Store</a>
             <button 
               className="navbar-menu-btn" 
               aria-label={isOpen ? "Close Menu" : "Open Menu"}
@@ -114,6 +114,10 @@ export default function Navbar() {
       {/* ====== MOBILE MENU OVERLAY ====== */}
       <div className={`mobile-menu ${isOpen ? 'active' : ''}`}>
         <div className="mobile-menu-links">
+          <div className="mobile-menu-cta" style={{ marginTop: '0', marginBottom: '1.25rem' }}>
+            <a href="/shop" className="btn btn-primary" onClick={closeMenu}>Shop Our Etsy Store</a>
+          </div>
+
           <a 
             href="#" 
             className={`mobile-menu-link ${collectionsExpanded ? 'expanded' : ''}`}
@@ -138,10 +142,6 @@ export default function Navbar() {
           <a href="/quote" className="mobile-menu-link" onClick={closeMenu}>Custom Quote</a>
           <a href="/our-story" className="mobile-menu-link" onClick={closeMenu}>Our Story</a>
           <a href="/contact" className="mobile-menu-link" onClick={closeMenu}>Contact</a>
-          
-          <div className="mobile-menu-cta">
-            <a href="/shop" className="btn btn-primary" onClick={closeMenu}>Shop Our Etsy Store</a>
-          </div>
         </div>
       </div>
     </>
