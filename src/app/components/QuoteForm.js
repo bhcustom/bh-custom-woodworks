@@ -209,7 +209,7 @@ export default function QuoteForm() {
                 </div>
                 <div className="quote-card-label">
                   <span className="headline-sm">{type.label}</span>
-                  <span className="material-symbols-outlined icon">arrow_forward</span>
+                  <span className="material-symbols-outlined icon">chevron_right</span>
                 </div>
               </div>
             ))}
