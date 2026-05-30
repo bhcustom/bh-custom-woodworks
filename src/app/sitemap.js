@@ -9,6 +9,7 @@ export default async function sitemap() {
     { url: '/our-story' },
     { url: '/shop' },
     { url: '/quote' },
+    { url: '/contact' },
     { url: '/shipping-policy' },
     { url: '/privacy-policy' },
     { url: '/terms-of-service' },
