@@ -61,7 +61,9 @@ export default function ContactForm() {
               Have a general question, or just want to chat about a future project? Drop us a note below and we'll get back to you shortly.
             </p>
             <p className="body-md" style={{ color: 'var(--on-surface-variant)', marginTop: '0.5rem' }}>
-              Looking to request a custom design quote?{' '}
+              Looking to request a custom design quote?
+            </p>
+            <p className="body-md" style={{ marginTop: '0.25rem' }}>
               <a 
                 href="/quote" 
                 style={{ 
@@ -70,7 +72,7 @@ export default function ContactForm() {
                   fontWeight: '600' 
                 }}
               >
-                Start a custom quote
+                Start a custom quote &rarr;
               </a>
             </p>
           </div>
@@ -114,7 +116,7 @@ export default function ContactForm() {
               />
             </div>
 
-            <div className="quote-actions mt-xl" style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
+            <div className="quote-actions mt-xl" style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
               <button type="submit" className="btn btn-primary" disabled={isSubmitting}>
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
