@@ -2107,10 +2107,11 @@ header.navbar.scrolled .navbar-logo-icon {
 
 .mobile-menu-cta {
   margin-top: 1.5rem;
-  width: 90%;
-  max-width: 300px; /* Widened slightly to give buttons ample room to stay on one row */
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .mobile-menu-cta .btn {
-  width: 100%;
+  width: auto; /* Matches the natural, compact mobile button size */
 }
