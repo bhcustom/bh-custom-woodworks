@@ -784,15 +784,15 @@ header.navbar.scrolled .navbar-logo-icon {
 .card-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.3rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--surface-container-lowest);
   border: 1.5px solid var(--surface-container-lowest);
   border-radius: var(--rounded-full);
-  padding: 0.35rem 0.8rem;
-  font-size: 0.72rem;
+  padding: 0.4rem 0.92rem;
+  font-size: 0.83rem;
   font-weight: 600;
   transition: all 0.3s ease;
   background: transparent;
@@ -806,7 +806,7 @@ header.navbar.scrolled .navbar-logo-icon {
 }
 
 .card-link .material-symbols-outlined {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* ===================================================================
