@@ -171,7 +171,12 @@ export default function QuoteForm() {
             <span className="label-sm" style={{ color: 'var(--outline)' }}>Step 1 of 4</span>
             <h1 className="headline-lg">What are we building for you?</h1>
             <p className="body-md">
-              Select a category below to get started. Just have a general question?{' '}
+              Select a category below to get started.
+            </p>
+            <p className="body-md" style={{ marginTop: '0.5rem' }}>
+              Just have a general question?
+            </p>
+            <p className="body-md" style={{ marginTop: '0.25rem' }}>
               <button 
                 type="button" 
                 onClick={() => setIsGeneralMessage(true)} 
