@@ -360,6 +360,9 @@ header.navbar .navbar-logo {
   line-height: 1.1;
   color: var(--primary);
   letter-spacing: -0.01em;
+}
+
+header.navbar.is-home .navbar-logo {
   transition: gap 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -373,6 +376,9 @@ header.navbar .navbar-logo-icon {
   opacity: 0;
   overflow: hidden;
   flex-shrink: 0;
+}
+
+header.navbar.is-home .navbar-logo-icon {
   transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease 0.2s;
 }
 
@@ -513,6 +519,8 @@ header.navbar.scrolled .navbar-logo-icon {
   header.navbar .navbar-logo {
     font-size: 2rem;
     gap: 0;
+  }
+  header.navbar.is-home .navbar-logo {
     transition: gap 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   }
   header.navbar.scrolled .navbar-logo {
@@ -522,6 +530,8 @@ header.navbar.scrolled .navbar-logo-icon {
     width: 0;
     height: 4.4rem;
     opacity: 0;
+  }
+  header.navbar.is-home .navbar-logo-icon {
     transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease 0.2s;
   }
   header.navbar.scrolled .navbar-logo-icon {

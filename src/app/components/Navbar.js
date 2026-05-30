@@ -7,6 +7,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [collectionsExpanded, setCollectionsExpanded] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isHome, setIsHome] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => {
@@ -33,8 +34,9 @@ export default function Navbar() {
 
   // Scroll detection logic
   useEffect(() => {
-    const isHome = window.location.pathname === '/';
-    if (!isHome) {
+    const isHomepage = window.location.pathname === '/';
+    setIsHome(isHomepage);
+    if (!isHomepage) {
       setIsScrolled(true);
       return;
     }
@@ -59,7 +61,7 @@ export default function Navbar() {
   return (
     <>
       {/* ====== NAVBAR ====== */}
-      <header className={`navbar ${isScrolled ? 'scrolled' : ''} ${isOpen ? 'menu-open' : ''}`}>
+      <header className={`navbar ${isScrolled ? 'scrolled' : ''} ${isOpen ? 'menu-open' : ''} ${isHome ? 'is-home' : ''}`}>
         <div className="navbar-inner">
           <a href="/" className="navbar-logo" onClick={closeMenu}>
             <Image
