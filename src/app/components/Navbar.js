@@ -93,6 +93,7 @@ export default function Navbar() {
             <a href="/#process">Process</a>
             <a href="/quote">Custom Quote</a>
             <a href="/our-story">Our Story</a>
+            <a href="/contact">Contact</a>
           </nav>
 
           <div className="navbar-actions">
@@ -136,6 +137,7 @@ export default function Navbar() {
           <a href="/#process" className="mobile-menu-link" onClick={closeMenu}>Process</a>
           <a href="/quote" className="mobile-menu-link" onClick={closeMenu}>Custom Quote</a>
           <a href="/our-story" className="mobile-menu-link" onClick={closeMenu}>Our Story</a>
+          <a href="/contact" className="mobile-menu-link" onClick={closeMenu}>Contact</a>
           
           <div className="mobile-menu-cta">
             <a href="/shop" className="btn btn-primary" onClick={closeMenu}>Shop Our Etsy Store</a>

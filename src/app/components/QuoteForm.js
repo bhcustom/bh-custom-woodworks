@@ -30,6 +30,7 @@ const FONTS = [
 
 export default function QuoteForm() {
   const [step, setStep] = useState(1);
+  const [isGeneralMessage, setIsGeneralMessage] = useState(false);
   const [formData, setFormData] = useState({
     projectType: '',
     woodType: '',
@@ -86,7 +87,9 @@ export default function QuoteForm() {
         },
         body: JSON.stringify({
           access_key: "42bbdef5-eeb1-4a7a-9021-22c4611b0aba",
-          subject: `New Custom Quote Request from ${formData.name}`,
+          subject: isGeneralMessage 
+            ? `General Inquiry from ${formData.name}`
+            : `New Custom Quote Request from ${formData.name}`,
           from_name: "BH Custom Woodworks Website",
           ...formData
         })
@@ -118,19 +121,75 @@ export default function QuoteForm() {
     <div className="quote-container">
       
       {/* Progress Bar */}
-      {step < 5 && (
+      {step < 5 && !isGeneralMessage && (
         <div className="quote-progress">
           <div className="quote-progress-bar" style={{ width: `${calculateProgress()}%` }}></div>
         </div>
       )}
 
+      {/* General Message Form */}
+      {isGeneralMessage && step < 5 && (
+        <div className="quote-step fade-in">
+          <div className="quote-header">
+            <h1 className="headline-lg">Send us a message</h1>
+            <p className="body-md">Have a quick question or a general inquiry? Drop us a note below.</p>
+          </div>
+
+          <form onSubmit={submitForm}>
+            <div className="quote-form-grid">
+              <div className="quote-form-group">
+                <label className="label-sm mb-xs">Full Name</label>
+                <input type="text" name="name" required className="quote-input" value={formData.name} onChange={handleInputChange} />
+              </div>
+              <div className="quote-form-group">
+                <label className="label-sm mb-xs">Email Address</label>
+                <input type="email" name="email" required className="quote-input" value={formData.email} onChange={handleInputChange} />
+              </div>
+            </div>
+
+            <div className="quote-form-group mt-lg">
+              <label className="label-sm mb-xs">Your Message</label>
+              <textarea name="details" required className="quote-textarea" placeholder="How can we help you?" value={formData.details} onChange={handleInputChange}></textarea>
+            </div>
+
+            <div className="quote-actions mt-xl">
+              <button type="button" className="btn btn-outline" onClick={() => setIsGeneralMessage(false)}>
+                Configure Custom Order
+              </button>
+              <button type="submit" className="btn btn-primary" disabled={isSubmitting}>
+                {isSubmitting ? 'Sending...' : 'Send Message'}
+              </button>
+            </div>
+          </form>
+        </div>
+      )}
+
       {/* Step 1: Project Type */}
-      {step === 1 && (
+      {step === 1 && !isGeneralMessage && (
         <div className="quote-step fade-in">
           <div className="quote-header">
             <span className="label-sm" style={{ color: 'var(--outline)' }}>Step 1 of 4</span>
             <h1 className="headline-lg">What are we building for you?</h1>
-            <p className="body-md">Select a category below to get started.</p>
+            <p className="body-md">
+              Select a category below to get started. Just have a general question?{' '}
+              <button 
+                type="button" 
+                onClick={() => setIsGeneralMessage(true)} 
+                style={{ 
+                  background: 'none', 
+                  border: 'none', 
+                  color: 'var(--primary)', 
+                  textDecoration: 'underline', 
+                  fontWeight: '600', 
+                  cursor: 'pointer', 
+                  padding: 0,
+                  fontFamily: 'inherit',
+                  fontSize: 'inherit'
+                }}
+              >
+                Send a quick message
+              </button>
+            </p>
           </div>
           
           <div className="quote-grid-cards">
@@ -333,9 +392,14 @@ export default function QuoteForm() {
       {step === 5 && (
         <div className="quote-step fade-in" style={{ textAlign: 'center', padding: 'var(--stack-xl) 0' }}>
           <span className="material-symbols-outlined" style={{ fontSize: '4rem', color: 'var(--primary)', marginBottom: 'var(--stack-md)' }}>check_circle</span>
-          <h1 className="display-md mb-sm" style={{ color: 'var(--primary)' }}>Request Received!</h1>
+          <h1 className="display-md mb-sm" style={{ color: 'var(--primary)' }}>
+            {isGeneralMessage ? 'Message Sent!' : 'Request Received!'}
+          </h1>
           <p className="body-lg" style={{ maxWidth: '600px', margin: '0 auto', marginBottom: 'var(--stack-xl)' }}>
-            Thank you, {formData.name || 'there'}! We have received your custom order request and will be reviewing the details shortly. Keep an eye on your email ({formData.email}) for a response from us within 24-48 hours.
+            {isGeneralMessage 
+              ? `Thank you, ${formData.name || 'there'}! Your message has been sent successfully. We will review it and get back to you at ${formData.email} within 24 hours.`
+              : `Thank you, ${formData.name || 'there'}! We have received your custom order request and will be reviewing the details shortly. Keep an eye on your email (${formData.email}) for a response from us within 24-48 hours.`
+            }
           </p>
           <a href="/" className="btn btn-outline">Return to Homepage</a>
         </div>

@@ -117,6 +117,7 @@ export default function RootLayout({ children }) {
               <li><a href="/#process" className="body-md">Process</a></li>
               <li><a href="/quote" className="body-md">Custom Quote</a></li>
               <li><a href="/our-story" className="body-md">Our Story</a></li>
+              <li><a href="/contact" className="body-md">Contact</a></li>
               <li><a href="/shop" className="body-md">Shop</a></li>
             </ul>
           </div>
