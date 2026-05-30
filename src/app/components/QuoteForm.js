@@ -149,7 +149,7 @@ export default function QuoteForm() {
 
             <div className="quote-form-group mt-lg">
               <label className="label-sm mb-xs">Your Message</label>
-              <textarea name="details" required className="quote-textarea" placeholder="How can we help you?" value={formData.details} onChange={handleInputChange}></textarea>
+              <textarea name="details" required className="quote-textarea" placeholder="How can we help you today?" value={formData.details} onChange={handleInputChange}></textarea>
             </div>
 
             <div className="quote-actions mt-xl">
