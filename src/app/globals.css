@@ -393,21 +393,13 @@ header.navbar.scrolled .navbar-logo-icon {
   align-items: center;
 }
 
-.navbar-links a {
+.navbar-links a:not(.btn) {
   color: var(--on-surface-variant);
   transition: color 0.3s ease;
 }
 
-.navbar-links a:hover,
-.navbar-links a.active {
-  color: var(--primary);
-}
-
-.navbar-links .btn-primary {
-  color: var(--on-primary);
-}
-
-.navbar-links .btn-primary:hover {
+.navbar-links a:not(.btn):hover,
+.navbar-links a:not(.btn).active {
   color: var(--primary);
 }
 
