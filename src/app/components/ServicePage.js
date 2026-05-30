@@ -5,8 +5,27 @@ import Image from "next/image";
  * Each /services/[slug]/page.js passes its data into this component.
  */
 export default function ServicePage({ service }) {
+  const faqJsonLd = service.faq ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: service.faq.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.a,
+      },
+    })),
+  } : null;
+
   return (
     <main>
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       {/* ====== HERO ====== */}
       <section className="service-hero">
         <div className="service-hero-bg">

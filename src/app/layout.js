@@ -28,11 +28,20 @@ export const metadata = {
     siteName: 'BH Custom Woodworks',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: 'https://bhcustomwoodworks.com/images/charcuterie-boards.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Handcrafted premium walnut charcuterie board',
+      }
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: "BH Custom Woodworks | Custom Woodwork & Laser Engraving",
     description: "Heirloom quality handcrafted woodwork and precision laser engraving.",
+    images: ['https://bhcustomwoodworks.com/images/charcuterie-boards.jpg'],
   },
   robots: {
     index: true,
@@ -52,6 +61,11 @@ const jsonLd = {
     'addressLocality': 'West Jordan',
     'addressRegion': 'UT',
     'addressCountry': 'US'
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    'email': 'BHWoodworx@gmail.com',
+    'contactType': 'customer support'
   },
   sameAs: [
     'https://www.etsy.com/shop/BHWoodworx'
