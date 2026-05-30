@@ -73,14 +73,37 @@ export default function QuoteForm() {
     else setStep(prev => prev - 1);
   };
 
-  const submitForm = (e) => {
+  const submitForm = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify({
+          access_key: "42bbdef5-eeb1-4a7a-9021-22c4611b0aba",
+          subject: `New Custom Quote Request from ${formData.name}`,
+          from_name: "BH Custom Woodworks Website",
+          ...formData
+        })
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setStep(5); // Success step
+      } else {
+        alert("Something went wrong. Please try again or email us directly at BHWoodworx@gmail.com");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("Unable to connect. Please check your internet connection and try again.");
+    } finally {
       setIsSubmitting(false);
-      setStep(5); // Success step
-    }, 1500);
+    }
   };
 
   const calculateProgress = () => {
