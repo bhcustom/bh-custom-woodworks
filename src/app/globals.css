@@ -504,7 +504,7 @@ header.navbar.scrolled .navbar-logo-icon {
   font-size: 36px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .navbar-inner {
     padding: var(--stack-sm) var(--gutter);
   }
