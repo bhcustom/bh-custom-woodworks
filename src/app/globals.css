@@ -693,9 +693,9 @@ header.navbar.scrolled .navbar-logo-icon {
   border-radius: var(--rounded-lg);
 }
 
-/* Ensure text fits on small 2-column mobile cards */
+/* Ensure text fits on small 2-column mobile cards by scaling down by 15% (from 1.75rem to 1.4875rem) */
 .showcase-card h3 {
-  font-size: 1.75rem; /* Unified to match the elegant memorial pieces title size */
+  font-size: 1.4875rem;
 }
 
 .showcase-card p {
@@ -729,6 +729,10 @@ header.navbar.scrolled .navbar-logo-icon {
   .showcase-card {
     border-radius: var(--rounded-xl);
     padding: var(--stack-md);
+  }
+
+  .showcase-card h3 {
+    font-size: 1.75rem;
   }
 
   /* Reset mobile spans and apply desktop bento spans */
