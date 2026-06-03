@@ -89,7 +89,7 @@ export default function QuoteForm() {
           access_key: "42bbdef5-eeb1-4a7a-9021-22c4611b0aba",
           subject: isGeneralMessage 
             ? `General Inquiry from ${formData.name}`
-            : `New Custom Quote Request from ${formData.name}`,
+            : `Custom Quote Request from ${formData.name}`,
           from_name: "BH Custom Woodworks Website",
           ...formData
         })
