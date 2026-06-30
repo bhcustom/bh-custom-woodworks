@@ -30,7 +30,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://bhcustomwoodworks.com/images/charcuterie-boards.jpg',
+        url: 'https://bhcustomwoodworks.com/images/charcuterie-boards-final.webp',
         width: 1200,
         height: 630,
         alt: 'Handcrafted premium walnut charcuterie board',
@@ -41,7 +41,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: "BH Custom Woodworks | Custom Woodwork & Laser Engraving",
     description: "Heirloom quality handcrafted woodwork and precision laser engraving.",
-    images: ['https://bhcustomwoodworks.com/images/charcuterie-boards.jpg'],
+    images: ['https://bhcustomwoodworks.com/images/charcuterie-boards-final.webp'],
   },
   robots: {
     index: true,

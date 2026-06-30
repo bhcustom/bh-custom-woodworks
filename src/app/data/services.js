@@ -10,7 +10,7 @@ export const services = {
     title: "Custom Charcuterie Boards",
     metaDescription:
       "Handcrafted custom charcuterie boards and serving platters built from solid walnut, maple, and cherry. Personalized laser engraving for housewarmings, weddings, and entertaining.",
-    heroImage: "/images/charcuterie-boards.jpg",
+    heroImage: "/images/charcuterie-boards-v2.png",
     heroAlt: "Handcrafted premium walnut charcuterie board beautifully arranged with artisan cheeses, cured meats, and fresh fruits",
     intro: {
       headline: "Crafted for Gathering",
@@ -42,7 +42,7 @@ export const services = {
         title: "Sizes Available",
         items: [
           "Small: 12\" × 8\" (intimate serving for two)",
-          "Medium: 18\" × 10\" (the everyday entertaining standard)",
+          "Medium: 16\" × 11\" (the everyday entertaining standard)",
           "Large: 24\" × 12\" (grand feast statement board with premium straight edges)",
         ],
       },
@@ -141,7 +141,7 @@ export const services = {
   "cutting-boards": {
     title: "Custom Cutting Boards",
     metaDescription:
-      "Handcrafted custom cutting boards in end-grain and edge-grain styles. Personalized laser engraving on walnut, maple, cherry, and oak.",
+      "Handcrafted custom cutting boards in end-grain and edge-grain styles. Personalized laser engraving on walnut, maple, and cherry.",
     heroImage: "/images/cutting-boards.jpg",
     heroAlt: "Handcrafted walnut edge-grain cutting board with juice groove on a marble surface",
     intro: {
@@ -157,7 +157,6 @@ export const services = {
           "Black Walnut: The classic. Rich color, naturally antimicrobial",
           "Hard Maple: Dense, light-colored, and knife-friendly",
           "Cherry: Warm tones that deepen with use and age",
-          "White Oak: Strong, water-resistant, with visible grain character",
           "Multi-wood striped: Walnut + Maple + Cherry combinations",
         ],
       },
@@ -168,6 +167,7 @@ export const services = {
           "End-grain: Self-healing surface, best for heavy use",
           "Edge-grain: Beautiful long grain lines, great for display",
           "Face-grain: Widest canvas for detailed engraving work",
+          "Available with or without a juice groove",
         ],
       },
       {
@@ -376,7 +376,6 @@ export const services = {
           "Photo plaques: Portrait engraved into solid wood",
           "Memorial signs: Name, dates, and verse or quote",
           "Pet memorials: Urns and portrait plaques for companions",
-          "Garden markers: Weather-sealed name and date stakes",
         ],
       },
       {
@@ -395,9 +394,7 @@ export const services = {
     popularUses: [
       "Cremation urns for humans and pets",
       "Celebration of life ceremony displays",
-      "Memorial garden markers and stakes",
       "Bereavement gifts for grieving families",
-      "Tribute shadow boxes with engraved plates",
       "Military and first responder memorial plaques",
     ],
     faq: [

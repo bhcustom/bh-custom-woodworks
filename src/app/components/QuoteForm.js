@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const PROJECT_TYPES = [
   { id: 'memorial', label: 'Memorial Piece', image: '/images/memorial-pieces.jpg' },
-  { id: 'charcuterie', label: 'Charcuterie Board', image: '/images/charcuterie-boards.jpg' },
+  { id: 'charcuterie', label: 'Charcuterie Board', image: '/images/charcuterie-boards-final.webp' },
   { id: 'cutting-board', label: 'Cutting Board', image: '/images/cutting-boards.jpg' },
   { id: 'wedding', label: 'Wedding Decor', image: '/images/wedding-decor.jpg' },
   { id: 'gift', label: 'Laser Engraved Gift', image: '/images/laser-gifts.jpg' },

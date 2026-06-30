@@ -258,8 +258,8 @@ ul {
 }
 
 .btn-outline:hover {
-  background: var(--primary);
-  color: var(--on-primary);
+  background: var(--surface-container-lowest);
+  color: var(--primary);
   border-color: var(--primary);
 }
 
@@ -556,12 +556,15 @@ header.navbar.scrolled .navbar-logo-icon {
 .hero {
   position: relative;
   width: 100%;
+  max-width: 2560px;
+  margin: 0 auto;
   min-height: 653px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: var(--section-padding) var(--gutter);
 }
+
 
 .hero-bg {
   position: absolute;
@@ -679,7 +682,6 @@ header.navbar.scrolled .navbar-logo-icon {
 }
 
 /* --- Showcase Card --- */
-
 .showcase-card {
   position: relative;
   overflow: hidden;
@@ -757,6 +759,7 @@ header.navbar.scrolled .navbar-logo-icon {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   transition: transform 0.7s ease;
 }
 
@@ -764,27 +767,23 @@ header.navbar.scrolled .navbar-logo-icon {
   transform: scale(1.05);
 }
 
-.showcase-card .card-scrim {
+.card-scrim {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    to top, 
-    rgba(30, 17, 6, 0.95) 0%, 
-    rgba(30, 17, 6, 0.6) 40%, 
-    rgba(30, 17, 6, 0.2) 70%,
-    transparent 100%
+    to bottom,
+    rgba(55, 30, 15, 0) 40%,
+    rgba(55, 30, 15, 0.49) 75%,
+    rgba(55, 30, 15, 0.75) 100%
   );
+  z-index: 1;
 }
 
-.showcase-card .card-content {
+.card-content {
   position: relative;
   z-index: 10;
   color: var(--on-primary);
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.showcase-card .card-content h3 {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0;
 }
 
 .showcase-card .card-content p {
@@ -803,6 +802,9 @@ header.navbar.scrolled .navbar-logo-icon {
 }
 
 .card-link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
@@ -810,20 +812,39 @@ header.navbar.scrolled .navbar-logo-icon {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--surface-container-lowest);
-  border: 1.5px solid var(--surface-container-lowest);
-  border-radius: var(--rounded-full);
-  padding: 0.4rem 0.92rem;
+  border-top: 1.5px solid var(--surface-container-lowest);
+  border-left: 1.5px solid var(--surface-container-lowest);
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 0;
+  padding: 0.75rem 0.9rem 0.5rem 1.25rem;
   font-size: 0.83rem;
   font-weight: 600;
   transition: all 0.3s ease;
   background: transparent;
-  margin-top: 0.5rem;
+  z-index: 20;
+}
+
+.card-link::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background: inherit;
+  z-index: -1;
+  border-bottom-right-radius: 0;
+}
+
+@media (min-width: 768px) {
+  .card-link {
+    border-top-left-radius: 20px;
+  }
 }
 
 .showcase-card:hover .card-link {
   background: var(--surface-container-lowest);
   color: var(--primary);
-  border-color: var(--surface-container-lowest);
 }
 
 .card-link .material-symbols-outlined {
@@ -1483,6 +1504,8 @@ header.navbar.scrolled .navbar-logo-icon {
 
 .service-hero {
   position: relative;
+  max-width: 2560px;
+  margin: 0 auto;
   min-height: 50vh;
   display: flex;
   align-items: flex-end;
@@ -1497,6 +1520,7 @@ header.navbar.scrolled .navbar-logo-icon {
 }
 
 .service-hero-bg img {
+  object-position: center;
   transition: transform 12s ease;
 }
 
@@ -1509,9 +1533,9 @@ header.navbar.scrolled .navbar-logo-icon {
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(30, 20, 12, 0.92) 0%,
-    rgba(30, 20, 12, 0.6) 50%,
-    rgba(30, 20, 12, 0.2) 100%
+    rgba(30, 20, 12, 0.8) 0%,
+    rgba(30, 20, 12, 0.3) 25%,
+    transparent 50%
   );
 }
 
@@ -1619,6 +1643,13 @@ header.navbar.scrolled .navbar-logo-icon {
 
 .service-detail-card li strong {
   color: var(--on-surface);
+}
+
+.service-detail-card .item-note {
+  display: block;
+  font-size: 0.9375rem;
+  color: var(--on-surface-variant);
+  margin-top: 0.125rem;
 }
 
 /* --- Popular Uses --- */

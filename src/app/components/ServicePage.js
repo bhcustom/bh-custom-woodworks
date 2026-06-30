@@ -85,15 +85,34 @@ export default function ServicePage({ service }) {
                 <ul>
                   {block.items.map((item) => {
                     const parts = item.split(": ");
+                    if (parts.length > 1) {
+                      const value = parts[1];
+                      const parenIndex = value.indexOf(" (");
+                      if (parenIndex !== -1) {
+                        const mainVal = value.substring(0, parenIndex);
+                        let noteVal = value.substring(parenIndex + 2);
+                        if (noteVal.endsWith(")")) {
+                          noteVal = noteVal.slice(0, -1);
+                        }
+                        if (noteVal) {
+                          noteVal = noteVal.charAt(0).toUpperCase() + noteVal.slice(1);
+                        }
+                        return (
+                          <li key={item} className="body-md">
+                            <strong>{parts[0]}</strong>: {mainVal}
+                            <span className="item-note">{noteVal}</span>
+                          </li>
+                        );
+                      }
+                      return (
+                        <li key={item} className="body-md">
+                          <strong>{parts[0]}</strong>: {value}
+                        </li>
+                      );
+                    }
                     return (
                       <li key={item} className="body-md">
-                        {parts.length > 1 ? (
-                          <>
-                            <strong>{parts[0]}</strong>: {parts[1]}
-                          </>
-                        ) : (
-                          item
-                        )}
+                        {item}
                       </li>
                     );
                   })}

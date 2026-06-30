@@ -85,19 +85,19 @@ export default function Home() {
                   Handcrafted cremation urns, tribute boxes, and pet urns,
                   built with care to honor your loved ones and preserve their stories.
                 </p>
-                <div className="label-sm card-link">
-                  <span className="card-link-text">View</span>
-                  <span className="material-symbols-outlined">
-                    chevron_right
-                  </span>
-                </div>
+              </div>
+              <div className="label-sm card-link">
+                <span className="card-link-text">VIEW</span>
+                <span className="material-symbols-outlined">
+                  chevron_right
+                </span>
               </div>
             </a>
 
             {/* Card 2: Charcuterie Boards */}
             <a href="/services/charcuterie-boards" className="showcase-card">
               <Image
-                src="/images/charcuterie-boards.jpg"
+                src="/images/charcuterie-boards-v2.png"
                 alt="Handcrafted dark walnut charcuterie board styled with artisan cheeses and fruits"
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
@@ -106,12 +106,12 @@ export default function Home() {
               <div className="card-scrim" />
               <div className="card-content">
                 <h3 className="headline-md">Charcuterie Boards</h3>
-                <div className="label-sm card-link">
-                  <span className="card-link-text">View</span>
-                  <span className="material-symbols-outlined">
-                    chevron_right
-                  </span>
-                </div>
+              </div>
+              <div className="label-sm card-link">
+                <span className="card-link-text">VIEW</span>
+                <span className="material-symbols-outlined">
+                  chevron_right
+                </span>
               </div>
             </a>
 
@@ -127,12 +127,12 @@ export default function Home() {
               <div className="card-scrim" />
               <div className="card-content">
                 <h3 className="headline-md">Cutting Boards</h3>
-                <div className="label-sm card-link">
-                  <span className="card-link-text">View</span>
-                  <span className="material-symbols-outlined">
-                    chevron_right
-                  </span>
-                </div>
+              </div>
+              <div className="label-sm card-link">
+                <span className="card-link-text">VIEW</span>
+                <span className="material-symbols-outlined">
+                  chevron_right
+                </span>
               </div>
             </a>
 
@@ -148,12 +148,12 @@ export default function Home() {
               <div className="card-scrim" />
               <div className="card-content">
                 <h3 className="headline-md">Wedding Decor</h3>
-                <div className="label-sm card-link">
-                  <span className="card-link-text">View</span>
-                  <span className="material-symbols-outlined">
-                    chevron_right
-                  </span>
-                </div>
+              </div>
+              <div className="label-sm card-link">
+                <span className="card-link-text">VIEW</span>
+                <span className="material-symbols-outlined">
+                  chevron_right
+                </span>
               </div>
             </a>
 
@@ -169,12 +169,12 @@ export default function Home() {
               <div className="card-scrim" />
               <div className="card-content">
                 <h3 className="headline-md">Laser Engraved Gifts</h3>
-                <div className="label-sm card-link">
-                  <span className="card-link-text">View</span>
-                  <span className="material-symbols-outlined">
-                    chevron_right
-                  </span>
-                </div>
+              </div>
+              <div className="label-sm card-link">
+                <span className="card-link-text">VIEW</span>
+                <span className="material-symbols-outlined">
+                  chevron_right
+                </span>
               </div>
             </a>
 
@@ -190,12 +190,12 @@ export default function Home() {
               <div className="card-scrim" />
               <div className="card-content">
                 <h3 className="headline-md">Business Signage</h3>
-                <div className="label-sm card-link">
-                  <span className="card-link-text">View</span>
-                  <span className="material-symbols-outlined">
-                    chevron_right
-                  </span>
-                </div>
+              </div>
+              <div className="label-sm card-link">
+                <span className="card-link-text">VIEW</span>
+                <span className="material-symbols-outlined">
+                  chevron_right
+                </span>
               </div>
             </a>
           </div>
@@ -234,7 +234,7 @@ export default function Home() {
                   <p className="body-md">
                     We hand-select every piece of lumber, prioritizing
                     sustainable domestic hardwoods like Black Walnut, Hard Maple,
-                    and Cherry. The natural grain dictates the final piece.
+                    Cherry, Aromatic Cedar, and Oak. The natural grain dictates the final piece.
                   </p>
                 </div>
               </div>
