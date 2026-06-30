@@ -805,7 +805,7 @@ header.navbar.scrolled .navbar-logo-icon {
   position: absolute;
   bottom: 0;
   right: 0;
-  display: inline-flex;
+  display: none;
   align-items: center;
   gap: 0.3rem;
   letter-spacing: 0.08em;
@@ -838,6 +838,7 @@ header.navbar.scrolled .navbar-logo-icon {
 
 @media (min-width: 768px) {
   .card-link {
+    display: inline-flex;
     border-top-left-radius: 20px;
   }
 }
