@@ -801,56 +801,6 @@ header.navbar.scrolled .navbar-logo-icon {
   margin-bottom: var(--stack-sm);
 }
 
-.card-link {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  display: none;
-  align-items: center;
-  gap: 0.3rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--surface-container-lowest);
-  border-top: 1.5px solid var(--surface-container-lowest);
-  border-left: 1.5px solid var(--surface-container-lowest);
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 0;
-  padding: 0.75rem 0.9rem 0.5rem 1.25rem;
-  font-size: 0.83rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  background: transparent;
-  z-index: 20;
-}
-
-.card-link::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  right: -10px;
-  width: 20px;
-  height: 20px;
-  background: inherit;
-  z-index: -1;
-  border-bottom-right-radius: 0;
-}
-
-@media (min-width: 768px) {
-  .card-link {
-    display: inline-flex;
-    border-top-left-radius: 20px;
-  }
-}
-
-.showcase-card:hover .card-link {
-  background: var(--surface-container-lowest);
-  color: var(--primary);
-}
-
-.card-link .material-symbols-outlined {
-  font-size: 16px;
-}
 
 /* ===================================================================
    OUR STORY PAGE

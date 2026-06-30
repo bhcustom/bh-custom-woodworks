@@ -71,7 +71,7 @@ export default function Home() {
             {/* Card 1 — Signature (large): Memorial Pieces */}
             <a href="/services/memorial-pieces" className="showcase-card signature">
               <Image
-                src="/images/memorial-pieces.jpg"
+                src="/images/memorial-pieces-v3.webp"
                 alt="Handcrafted wooden memorial keepsake box with floral laser engraving"
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 66vw, 50vw"
@@ -86,12 +86,7 @@ export default function Home() {
                   built with care to honor your loved ones and preserve their stories.
                 </p>
               </div>
-              <div className="label-sm card-link">
-                <span className="card-link-text">VIEW</span>
-                <span className="material-symbols-outlined">
-                  chevron_right
-                </span>
-              </div>
+
             </a>
 
             {/* Card 2: Charcuterie Boards */}
@@ -107,12 +102,7 @@ export default function Home() {
               <div className="card-content">
                 <h3 className="headline-md">Charcuterie Boards</h3>
               </div>
-              <div className="label-sm card-link">
-                <span className="card-link-text">VIEW</span>
-                <span className="material-symbols-outlined">
-                  chevron_right
-                </span>
-              </div>
+
             </a>
 
             {/* Card 3: Cutting Boards */}
@@ -128,12 +118,7 @@ export default function Home() {
               <div className="card-content">
                 <h3 className="headline-md">Cutting Boards</h3>
               </div>
-              <div className="label-sm card-link">
-                <span className="card-link-text">VIEW</span>
-                <span className="material-symbols-outlined">
-                  chevron_right
-                </span>
-              </div>
+
             </a>
 
             {/* Card 4: Wedding Decor */}
@@ -149,12 +134,7 @@ export default function Home() {
               <div className="card-content">
                 <h3 className="headline-md">Wedding Decor</h3>
               </div>
-              <div className="label-sm card-link">
-                <span className="card-link-text">VIEW</span>
-                <span className="material-symbols-outlined">
-                  chevron_right
-                </span>
-              </div>
+
             </a>
 
             {/* Card 5: Laser Engraved Gifts */}
@@ -170,12 +150,7 @@ export default function Home() {
               <div className="card-content">
                 <h3 className="headline-md">Laser Engraved Gifts</h3>
               </div>
-              <div className="label-sm card-link">
-                <span className="card-link-text">VIEW</span>
-                <span className="material-symbols-outlined">
-                  chevron_right
-                </span>
-              </div>
+
             </a>
 
             {/* Card 6: Business Signage */}
@@ -191,12 +166,7 @@ export default function Home() {
               <div className="card-content">
                 <h3 className="headline-md">Business Signage</h3>
               </div>
-              <div className="label-sm card-link">
-                <span className="card-link-text">VIEW</span>
-                <span className="material-symbols-outlined">
-                  chevron_right
-                </span>
-              </div>
+
             </a>
           </div>
         </div>

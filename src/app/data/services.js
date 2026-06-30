@@ -348,7 +348,7 @@ export const services = {
     title: "Memorial Pieces",
     metaDescription:
       "Handcrafted wooden memorial pieces including urns, keepsake boxes, photo plaques, and tribute signs. Built with care from solid American hardwoods.",
-    heroImage: "/images/memorial-pieces.jpg",
+    heroImage: "/images/memorial-pieces-v3.webp",
     etsyUrl: "https://www.etsy.com/shop/BHWoodworx",
     heroAlt: "Handcrafted wooden memorial keepsake box with floral laser engraving",
     intro: {

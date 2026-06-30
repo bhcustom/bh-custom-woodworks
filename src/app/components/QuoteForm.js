@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const PROJECT_TYPES = [
-  { id: 'memorial', label: 'Memorial Piece', image: '/images/memorial-pieces.jpg' },
+  { id: 'memorial', label: 'Memorial Piece', image: '/images/memorial-pieces-v3.webp' },
   { id: 'charcuterie', label: 'Charcuterie Board', image: '/images/charcuterie-boards-final.webp' },
   { id: 'cutting-board', label: 'Cutting Board', image: '/images/cutting-boards.jpg' },
   { id: 'wedding', label: 'Wedding Decor', image: '/images/wedding-decor.jpg' },
