@@ -46,6 +46,15 @@ export const services = {
           "Large: 24\" × 12\" (grand feast statement board with premium straight edges)",
         ],
       },
+      {
+        icon: "format_size",
+        title: "Popular Typography",
+        items: [
+          "Edwardian Script: Elegant, formal script—ideal for monograms, initials, and formal gifts",
+          "Lucida Calligraphy: Classic, legible cursive script—great for names and short quotes",
+          "Times New Roman: Traditional, clean serif font—perfect for a classic family name look",
+        ],
+      },
     ],
     popularUses: [
       "Custom wedding gifts with couple's name and wedding date",
@@ -167,7 +176,7 @@ export const services = {
           "End-grain: Self-healing surface, best for heavy use",
           "Edge-grain: Beautiful long grain lines, great for display",
           "Face-grain: Widest canvas for detailed engraving work",
-          "Available with or without a juice groove",
+          "Juice groove: Available with or without",
         ],
       },
       {
@@ -178,7 +187,7 @@ export const services = {
           "Medium: 14\" × 10\" (everyday prep board)",
           "Large: 18\" × 12\" (full kitchen workhorse)",
           "Butcher block: 20\" × 14\" × 2\" (statement piece)",
-          "Custom dimensions available",
+          "Custom: Custom dimensions available",
         ],
       },
     ],

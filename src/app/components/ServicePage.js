@@ -73,7 +73,7 @@ export default function ServicePage({ service }) {
       {/* ====== DETAILS GRID ====== */}
       <section className="service-details section">
         <div className="container">
-          <div className="service-details-grid">
+          <div className={`service-details-grid cols-${service.details.length}`}>
             {service.details.map((block) => (
               <div key={block.title} className="service-detail-card">
                 <div className="service-detail-icon">
