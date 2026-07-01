@@ -231,10 +231,9 @@ export const services = {
         icon: "park",
         title: "Wood Options",
         items: [
-          "White Oak: Clean and timeless, pairs with any palette",
+          "White Oak: Clean and timeless, best for sharp laser engraving",
+          "Cherry: Warm and romantic, engraves with beautiful dark contrast",
           "Walnut: Rich and dramatic for moody or rustic themes",
-          "Cherry: Warm and romantic with a natural glow",
-          "Birch plywood: Lightweight, ideal for hanging signs and toppers",
         ],
       },
       {
@@ -254,9 +253,7 @@ export const services = {
         title: "Finish & Style",
         items: [
           "Natural wood: Clean, organic, minimal",
-          "Whitewashed: Soft, beachy, bohemian",
           "Dark stained: Dramatic, formal, vineyard aesthetic",
-          "Painted lettering on raw wood: Contrast and readability",
         ],
       },
     ],
