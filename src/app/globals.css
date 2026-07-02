@@ -239,6 +239,12 @@ ul {
   transform: scale(0.95);
 }
 
+.btn .material-symbols-outlined {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
 .btn-primary {
   background: var(--primary);
   color: var(--on-primary);
@@ -1071,7 +1077,7 @@ header.navbar.scrolled .navbar-logo-icon {
   align-items: center;
 }
 
-.cta-inner .material-symbols-outlined {
+.cta-inner > .material-symbols-outlined {
   font-size: 2.5rem;
   margin-bottom: var(--stack-md);
   color: var(--primary-fixed-dim);
