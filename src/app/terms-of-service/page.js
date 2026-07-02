@@ -28,7 +28,7 @@ export default function TermsOfService() {
         <section style={{ marginBottom: 'var(--stack-lg)' }}>
           <h2 className="headline-md" style={{ marginBottom: 'var(--stack-sm)' }}>2. Custom Orders and Proofs</h2>
           <p className="body-md" style={{ marginBottom: '1rem' }}>
-            For customized items, we will often provide a digital proof for your approval before production begins. It is the buyer's responsibility to carefully review the proof for spelling, grammar, layout, and factual accuracy. 
+            For customized items, we will often provide a digital proof for your approval before production begins. It is the buyer&apos;s responsibility to carefully review the proof for spelling, grammar, layout, and factual accuracy. 
           </p>
           <p className="body-md">
             Once a proof is approved, BH Custom Woodworks is not responsible for any errors that were present in the approved proof. Remaking an item due to an error approved in a proof will incur additional costs.

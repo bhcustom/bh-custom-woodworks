@@ -2,15 +2,16 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const PROJECT_TYPES = [
-  { id: 'memorial', label: 'Memorial Piece', image: '/images/memorial-pieces-v3.webp' },
+  { id: 'memorial', label: 'Memorial Piece', image: '/images/memorial-pieces.webp' },
   { id: 'charcuterie', label: 'Charcuterie Board', image: '/images/charcuterie-boards-final.webp' },
-  { id: 'cutting-board', label: 'Cutting Board', image: '/images/cutting-boards.jpg' },
-  { id: 'wedding', label: 'Wedding Decor', image: '/images/wedding-decor.jpg' },
-  { id: 'gift', label: 'Laser Engraved Gift', image: '/images/laser-gifts.jpg' },
-  { id: 'signage', label: 'Business Signage', image: '/images/business-signage.jpg' },
-  { id: 'custom', label: 'Completely Custom Idea', image: '/images/process.jpg' }
+  { id: 'cutting-board', label: 'Cutting Board', image: '/images/cutting-boards.webp' },
+  { id: 'wedding', label: 'Wedding Decor', image: '/images/wedding-decor.webp' },
+  { id: 'gift', label: 'Laser Engraved Gift', image: '/images/laser-gifts.webp' },
+  { id: 'signage', label: 'Business Signage', image: '/images/business-signage.webp' },
+  { id: 'custom', label: 'Completely Custom Idea', image: '/images/process.webp' }
 ];
 
 const WOOD_TYPES = [
@@ -223,7 +224,7 @@ export default function QuoteForm() {
           <div className="quote-header">
             <span className="label-sm" style={{ color: 'var(--outline)' }}>Step 2 of 4</span>
             <h1 className="headline-lg">Customize your piece</h1>
-            <p className="body-md">Tell us a bit more about what you're looking for.</p>
+            <p className="body-md">Tell us a bit more about what you&apos;re looking for.</p>
           </div>
 
           <div className="quote-form-group">
@@ -377,7 +378,7 @@ export default function QuoteForm() {
               <label className="label-sm mb-sm">When do you need this by?</label>
               <select name="timeline" className="quote-select" required value={formData.timeline} onChange={handleInputChange}>
                 <option value="">Select a timeline...</option>
-                <option value="flexible">I'm flexible</option>
+                <option value="flexible">I&apos;m flexible</option>
                 <option value="standard">Standard (3-4 weeks)</option>
                 <option value="rush">Rush (Need it ASAP - may incur fee)</option>
               </select>
@@ -406,7 +407,7 @@ export default function QuoteForm() {
               : `Thank you, ${formData.name || 'there'}! We have received your custom order request and will be reviewing the details shortly. Keep an eye on your email (${formData.email}) for a response from us.`
             }
           </p>
-          <a href="/" className="btn btn-outline">Return to Homepage</a>
+          <Link href="/" className="btn btn-outline">Return to Homepage</Link>
         </div>
       )}
 

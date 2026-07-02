@@ -35,17 +35,32 @@ export default function ServicePage({ service }) {
             fill
             style={{ objectFit: "cover" }}
           />
-          <div className="service-hero-overlay" />
-        </div>
-        <div className="container service-hero-title">
-          <h1 className="display-lg">{service.title}</h1>
         </div>
       </section>
 
       {/* ====== SERVICE INTRO ====== */}
       <section className="service-intro section">
         <div className="container service-intro-content">
-          <h2 className="display-lg text-primary" style={{ marginBottom: "var(--stack-md)" }}>{service.intro.headline}</h2>
+          <span
+            className="label-sm"
+            style={{
+              color: "var(--primary)",
+              letterSpacing: "0.15em",
+              fontSize: "1.125rem",
+              marginBottom: "var(--stack-sm)",
+              display: "block"
+            }}
+          >
+            {service.title}
+          </span>
+          <h2 className="display-lg text-primary" style={{ marginBottom: "var(--stack-md)" }}>
+            {service.intro.headline.split('\n').map((line, i, arr) => (
+              <span key={i}>
+                {line}
+                {i < arr.length - 1 && <br className="desktop-break" />}
+              </span>
+            ))}
+          </h2>
           <p className="body-lg" style={{ color: "var(--on-surface-variant)", marginBottom: "var(--stack-md)" }}>{service.intro.description}</p>
           <div style={{ display: "flex", gap: "var(--stack-sm)", flexWrap: "wrap", justifyContent: "center", width: "100%" }}>
             {service.etsyUrl ? (

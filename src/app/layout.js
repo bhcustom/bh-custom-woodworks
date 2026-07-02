@@ -2,6 +2,7 @@ import "./globals.css";
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Script from "next/script";
+import Link from "next/link";
 
 export const metadata = {
   metadataBase: new URL('https://bhcustomwoodworks.com'),
@@ -108,7 +109,7 @@ export default function RootLayout({ children }) {
       <footer className="site-footer">
         <div className="footer-grid">
           <div className="footer-brand">
-            <a href="/" className="navbar-logo">
+            <Link href="/" className="navbar-logo">
               <Image
                 src="/bh-custom-woodworks-logo.svg"
                 alt=""
@@ -117,7 +118,7 @@ export default function RootLayout({ children }) {
                 className="navbar-logo-icon"
               />
               <span>BH Custom <br /> Woodworks</span>
-            </a>
+            </Link>
             <p className="body-md">
               Crafting legacy pieces through the union of traditional
               woodworking and modern precision.
@@ -127,21 +128,21 @@ export default function RootLayout({ children }) {
           <div className="footer-col">
             <h4 className="label-sm">Navigation</h4>
             <ul>
-              <li><a href="/#collections" className="body-md">Collections</a></li>
-              <li><a href="/#process" className="body-md">Process</a></li>
-              <li><a href="/quote" className="body-md">Custom Quote</a></li>
-              <li><a href="/our-story" className="body-md">Our Story</a></li>
-              <li><a href="/contact" className="body-md">Contact</a></li>
-              <li><a href="/shop" className="body-md">Shop</a></li>
+              <li><Link href="/#collections" className="body-md">Collections</Link></li>
+              <li><Link href="/#process" className="body-md">Process</Link></li>
+              <li><Link href="/quote" className="body-md">Custom Quote</Link></li>
+              <li><Link href="/our-story" className="body-md">Our Story</Link></li>
+              <li><Link href="/contact" className="body-md">Contact</Link></li>
+              <li><Link href="/shop" className="body-md">Shop</Link></li>
             </ul>
           </div>
 
           <div className="footer-col">
             <h4 className="label-sm">Legal</h4>
             <ul>
-              <li><a href="/shipping-policy" className="body-md">Shipping Policy</a></li>
-              <li><a href="/privacy-policy" className="body-md">Privacy Policy</a></li>
-              <li><a href="/terms-of-service" className="body-md">Terms of Service</a></li>
+              <li><Link href="/shipping-policy" className="body-md">Shipping Policy</Link></li>
+              <li><Link href="/privacy-policy" className="body-md">Privacy Policy</Link></li>
+              <li><Link href="/terms-of-service" className="body-md">Terms of Service</Link></li>
             </ul>
           </div>
         </div>

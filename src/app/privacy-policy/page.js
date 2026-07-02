@@ -1,4 +1,5 @@
 import { getLastUpdatedDate } from '../utils/dates';
+import Link from 'next/link';
 
 export const metadata = {
   title: "Privacy Policy",
@@ -21,7 +22,7 @@ export default function PrivacyPolicy() {
         <section style={{ marginBottom: 'var(--stack-lg)' }}>
           <h2 className="headline-md" style={{ marginBottom: 'var(--stack-sm)' }}>Who we are</h2>
           <p className="body-md">
-            BH Custom Woodworks (“we,” “us,” or “our”) is a custom woodworking and laser engraving business. This Privacy Policy explains how we collect, use, and protect information when you use our website.
+            BH Custom Woodworks (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) is a custom woodworking and laser engraving business. This Privacy Policy explains how we collect, use, and protect information when you use our website.
           </p>
         </section>
 
@@ -65,7 +66,7 @@ export default function PrivacyPolicy() {
             <strong>Analytics:</strong> We use Google Analytics to collect information about how visitors use our site, such as pages visited, time spent on pages, and general location based on IP address. We use this information in aggregate form to understand overall trends and improve our website. We do not attempt to use Google Analytics to identify individual visitors.
           </p>
           <p className="body-md" style={{ marginTop: 'var(--stack-sm)' }}>
-            You can control cookies through your browser settings. You can also use tools such as Google’s Analytics Opt‑out Browser Add‑on if you prefer not to be tracked by Google Analytics.
+            You can control cookies through your browser settings. You can also use tools such as Google&rsquo;s Analytics Opt‑out Browser Add‑on if you prefer not to be tracked by Google Analytics.
           </p>
         </section>
 
@@ -88,7 +89,7 @@ export default function PrivacyPolicy() {
           <h2 className="headline-md" style={{ marginBottom: 'var(--stack-sm)' }}>Data retention</h2>
           <p className="body-md">
             We keep personal information for as long as needed to respond to your request, work on your project, and for a reasonable period afterward for business and record‑keeping purposes. We may keep information longer if required by law or to protect our rights.
-            Google Analytics data is retained according to Google’s settings and policies, which you can review in Google’s own documentation.
+            Google Analytics data is retained according to Google&rsquo;s settings and policies, which you can review in Google&rsquo;s own documentation.
           </p>
         </section>
 
@@ -100,7 +101,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section style={{ marginBottom: 'var(--stack-lg)' }}>
-          <h2 className="headline-md" style={{ marginBottom: 'var(--stack-sm)' }}>Children’s privacy</h2>
+          <h2 className="headline-md" style={{ marginBottom: 'var(--stack-sm)' }}>Children&rsquo;s privacy</h2>
           <p className="body-md">
             Our website and services are not directed to children under the age of 13, and we do not knowingly collect personal information from children. If you believe a child under 13 has provided us with personal information, please contact us so we can delete it.
           </p>
@@ -135,7 +136,7 @@ export default function PrivacyPolicy() {
           </p>
           <div className="body-md" style={{ marginTop: 'var(--stack-sm)' }}>
             <p style={{ marginBottom: 'var(--stack-md)' }}><strong>BH Custom Woodworks</strong></p>
-            <a href="/quote" className="btn btn-primary">Contact Us</a>
+            <Link href="/quote" className="btn btn-primary">Contact Us</Link>
           </div>
         </section>
       </div>

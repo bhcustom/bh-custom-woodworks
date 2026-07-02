@@ -7,15 +7,15 @@
 
 export const services = {
   "charcuterie-boards": {
-    title: "Custom Charcuterie Boards",
+    title: "Charcuterie Boards",
     metaDescription:
       "Handcrafted custom charcuterie boards and serving platters built from solid walnut, maple, and cherry. Personalized laser engraving for housewarmings, weddings, and entertaining.",
-    heroImage: "/images/charcuterie-boards-v2.png",
+    heroImage: "/images/charcuterie-boards.webp",
     heroAlt: "Handcrafted premium walnut charcuterie board beautifully arranged with artisan cheeses, cured meats, and fresh fruits",
     intro: {
       headline: "Crafted for Gathering",
       description:
-        "A great charcuterie board does more than hold food; it centers the table and gathers people together. We hand-select premium American hardwoods—prioritizing rich walnut, clean maple, and warm cherry—to craft serving platters that make every gathering feel special. Personalized with laser engraving, each board is a lasting centerpiece for your home.",
+        "A great charcuterie board does more than hold food; it centers the table and gathers people together. We hand-select premium American hardwoods, prioritizing rich walnut, clean maple, and warm cherry, to craft serving platters that make every gathering feel special. Personalized with laser engraving, each board is a lasting centerpiece for your home.",
     },
     details: [
       {
@@ -41,18 +41,18 @@ export const services = {
         icon: "straighten",
         title: "Sizes Available",
         items: [
-          "Small: 12\" × 8\" (intimate serving for two)",
-          "Medium: 16\" × 11\" (the everyday entertaining standard)",
-          "Large: 24\" × 12\" (grand feast statement board with premium straight edges)",
+          "Small: 12\"×8\" (intimate serving for two)",
+          "Medium: 16\"×11\" (the everyday entertaining standard)",
+          "Large: 24\"×12\" (grand feast statement board with premium straight edges)",
         ],
       },
       {
         icon: "format_size",
         title: "Popular Typography",
         items: [
-          "Edwardian Script: Elegant, formal script—ideal for monograms, initials, and formal gifts",
-          "Lucida Calligraphy: Classic, legible cursive script—great for names and short quotes",
-          "Times New Roman: Traditional, clean serif font—perfect for a classic family name look",
+          "Edwardian Script: Elegant, formal script that is ideal for monograms, initials, and formal gifts",
+          "Lucida Calligraphy: Classic, legible cursive script that is great for names and short quotes",
+          "Times New Roman: Traditional, clean serif font that is perfect for a classic family name look",
         ],
       },
     ],
@@ -83,7 +83,7 @@ export const services = {
     title: "Laser Engraved Gifts",
     metaDescription:
       "Personalized laser-engraved gifts crafted from solid wood. Custom cutting boards, ornaments, keepsake boxes, and more for every occasion.",
-    heroImage: "/images/laser-gifts.jpg",
+    heroImage: "/images/laser-gifts.webp",
     etsyUrl: "https://www.etsy.com/shop/BHWoodworx",
     heroAlt: "Collection of laser-engraved wooden gifts including ornaments and coasters",
     intro: {
@@ -148,13 +148,13 @@ export const services = {
   },
 
   "cutting-boards": {
-    title: "Custom Cutting Boards",
+    title: "Cutting Boards",
     metaDescription:
       "Handcrafted custom cutting boards in end-grain and edge-grain styles. Personalized laser engraving on walnut, maple, and cherry.",
-    heroImage: "/images/cutting-boards.jpg",
+    heroImage: "/images/cutting-boards.webp",
     heroAlt: "Handcrafted walnut edge-grain cutting board with juice groove on a marble surface",
     intro: {
-      headline: "Built to Be Used, Not Just Displayed",
+      headline: "Built to Be Used, \nNot Just Displayed",
       description:
         "Our cutting boards are real kitchen tools: thick enough to handle daily use, beautiful enough to leave on the counter. Each one is glued, clamped, sanded, and finished by hand. Add a custom engraving and it becomes something worth passing down.",
     },
@@ -183,10 +183,10 @@ export const services = {
         icon: "straighten",
         title: "Standard Sizes",
         items: [
-          "Small: 10\" × 7\" (cheese and charcuterie)",
-          "Medium: 14\" × 10\" (everyday prep board)",
-          "Large: 18\" × 12\" (full kitchen workhorse)",
-          "Butcher block: 20\" × 14\" × 2\" (statement piece)",
+          "Small: 10\"×7\" (cheese and charcuterie)",
+          "Medium: 14\"×10\" (everyday prep board)",
+          "Large: 18\"×12\" (full kitchen workhorse)",
+          "Butcher block: 20\"×14\"×2\" (statement piece)",
           "Custom: Custom dimensions available",
         ],
       },
@@ -219,7 +219,7 @@ export const services = {
     title: "Wedding Decor",
     metaDescription:
       "Custom wooden wedding decor including guest books, table numbers, cake toppers, and ceremony signs. Handcrafted and laser engraved for your day.",
-    heroImage: "/images/wedding-decor.jpg",
+    heroImage: "/images/wedding-decor.webp",
     heroAlt: "Elegant laser-engraved wooden wedding sign with leafy borders and script text",
     intro: {
       headline: "Details That Make It Yours",
@@ -285,7 +285,7 @@ export const services = {
     title: "Business Signage",
     metaDescription:
       "Professional custom business signs and logo displays in solid hardwood. Laser-engraved office signs, lobby displays, and retail signage.",
-    heroImage: "/images/business-signage.jpg",
+    heroImage: "/images/business-signage.webp",
     heroAlt: "Intricately carved premium walnut wood office lobby sign for Lexington & Associates Counsellors at Law, featuring the scales of justice emblem and mounted on a stone wall",
     intro: {
       headline: "Your Brand, Built in Wood",
@@ -319,9 +319,9 @@ export const services = {
         icon: "straighten",
         title: "Size Options",
         items: [
-          "Desk plaques: 8\" × 2\" to 12\" × 4\"",
-          "Door signs: 10\" × 4\" to 14\" × 6\"",
-          "Wall signs: 18\" × 12\" to 48\" × 24\"",
+          "Desk plaques: 8\"×2\" to 12\"×4\"",
+          "Door signs: 10\"×4\" to 14\"×6\"",
+          "Wall signs: 18\"×12\" to 48\"×24\"",
           "Large-format and multi-panel displays available",
         ],
       },
@@ -341,7 +341,7 @@ export const services = {
       },
       {
         q: "Do you offer bulk pricing for multiple signs?",
-        a: "Absolutely. Multi-unit orders: like a set of office plaques or matching retail signs: get volume pricing. Request a quote with your quantities.",
+        a: "Absolutely. Multi-unit orders, like a set of office plaques or matching retail signs, get volume pricing. Request a quote with your quantities.",
       },
       {
         q: "Can these signs go outdoors?",
@@ -354,11 +354,11 @@ export const services = {
     title: "Memorial Pieces",
     metaDescription:
       "Handcrafted wooden memorial pieces including urns, keepsake boxes, photo plaques, and tribute signs. Built with care from solid American hardwoods.",
-    heroImage: "/images/memorial-pieces-v3.webp",
+    heroImage: "/images/memorial-pieces.webp",
     etsyUrl: "https://www.etsy.com/shop/BHWoodworx",
     heroAlt: "Handcrafted wooden memorial keepsake box with floral laser engraving",
     intro: {
-      headline: "Something Worthy of Who They Were",
+      headline: "Something Worthy of \nWho They Were",
       description:
         "When words aren't enough, something you can hold in your hands matters. We build memorial urns, keepsake boxes, photo plaques, and tribute signs from solid American hardwood: crafted with the kind of care that says this person mattered. Every piece includes custom laser engraving to tell their story.",
     },
@@ -419,74 +419,5 @@ export const services = {
     ],
     shopLink: "/shop#memorial-urns",
     shopLinkText: "View Memorial Urns in Shop",
-  },
-
-  "laser-engraving": {
-    title: "Custom Laser Engraving",
-    metaDescription:
-      "Professional laser engraving services on wood, leather, and more. Custom logos, text, photos, and artwork engraved with precision on any surface.",
-    heroImage: "/images/process.jpg",
-    heroAlt: "Laser engraving machine cutting a detailed design into solid wood",
-    intro: {
-      headline: "Precision You Can See and Feel",
-      description:
-        "Our laser doesn't just mark the surface: it cuts into the wood with pinpoint accuracy, creating depth and texture you can run your fingers over. Whether it's a single custom piece or a production run of 500, the result is the same: clean lines, consistent depth, and detail that holds up over time.",
-    },
-    details: [
-      {
-        icon: "settings_suggest",
-        title: "What We Engrave",
-        items: [
-          "Solid hardwoods: All species in our catalog",
-          "Plywood and MDF: For lightweight or painted projects",
-          "Leather: Wallets, journal covers, belts, holsters",
-          "Bamboo: Cutting boards, utensils, and drinkware",
-          "Bring your own item: We can engrave most flat surfaces",
-        ],
-      },
-      {
-        icon: "precision_manufacturing",
-        title: "Engraving Capabilities",
-        items: [
-          "Maximum bed size: 24\" × 18\"",
-          "Detail resolution down to 0.001\"",
-          "Variable depth control: Light etch to deep carve",
-          "Raster engraving for photos and shading",
-          "Vector cutting for shapes and silhouettes",
-        ],
-      },
-      {
-        icon: "inventory_2",
-        title: "Order Types",
-        items: [
-          "Single custom pieces: One-of-a-kind projects",
-          "Small batch (5-50): Wedding favors, team gifts, promos",
-          "Production runs (50-500+): Corporate branding, retail inventory",
-          "Bring-your-own-item: Engrave on something you already have",
-        ],
-      },
-    ],
-    popularUses: [
-      "Adding branding to products you manufacture",
-      "Personalizing gifts for any occasion",
-      "Creating detailed artwork on wood panels",
-      "Engraving awards, trophies, and recognition pieces",
-      "Prototyping designs before full production",
-      "Converting photos to permanent wood engravings",
-    ],
-    faq: [
-      {
-        q: "Can I bring in my own item to be engraved?",
-        a: "Yes: as long as it's flat (or close to flat) and fits on our 24\" × 18\" laser bed, we can likely engrave it. Bring it by or ship it to us with your design and we'll take care of the rest.",
-      },
-      {
-        q: "What file format should I send for my design?",
-        a: "SVG or AI vector files produce the best results. We can also work with high-resolution PNG or JPG files (300 DPI or higher). If you only have a rough sketch, we can help clean it up.",
-      },
-      {
-        q: "How does pricing work for laser engraving?",
-        a: "Pricing depends on material, size, and complexity of the design. Simple text on a small surface starts around $15. Detailed photo engravings on large panels are priced individually. Request a quote for exact pricing.",
-      },
-    ],
   },
 };

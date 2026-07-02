@@ -137,17 +137,16 @@ function SizeGuideTable() {
 }
 
 export default function ShopPage() {
-  let isFirstCategory = true;
+  const activeCategories = categories.filter((cat) =>
+    products.some((p) => p.category === cat.slug)
+  );
 
   return (
     <main>
       {/* ====== PRODUCT SECTIONS ====== */}
-      {categories.map((cat) => {
+      {activeCategories.map((cat, index) => {
         const catProducts = products.filter((p) => p.category === cat.slug);
-        if (catProducts.length === 0) return null;
-
-        const showTrust = isFirstCategory;
-        if (isFirstCategory) isFirstCategory = false;
+        const showTrust = index === 0;
 
         return (
           <section
@@ -179,7 +178,7 @@ export default function ShopPage() {
                 ))}
               </div>
 
-              {/* Size Guide — only for memorial urns */}
+              {/* Size Guide - only for memorial urns */}
               {cat.slug === "memorial-urns" && <SizeGuideTable />}
             </div>
           </section>

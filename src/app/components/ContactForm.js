@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -58,13 +59,13 @@ export default function ContactForm() {
           <div className="quote-header" style={{ marginBottom: 'var(--stack-lg)' }}>
             <h1 className="headline-xl" style={{ color: 'var(--primary)', marginBottom: 'var(--stack-xs)' }}>Contact Us</h1>
             <p className="body-md" style={{ color: 'var(--on-surface-variant)' }}>
-              Have a general question, or just want to chat about a future project? Drop us a note below and we'll get back to you shortly.
+              Have a general question, or just want to chat about a future project? Drop us a note below and we&apos;ll get back to you shortly.
             </p>
             <p className="body-md" style={{ color: 'var(--on-surface-variant)', marginTop: '0.5rem' }}>
               Looking to request a custom design quote instead?
             </p>
             <p className="body-md" style={{ marginTop: '0.25rem' }}>
-              <a 
+              <Link 
                 href="/quote" 
                 style={{ 
                   color: 'var(--primary)', 
@@ -73,7 +74,7 @@ export default function ContactForm() {
                 }}
               >
                 Start a custom quote
-              </a>
+              </Link>
             </p>
           </div>
 
@@ -130,7 +131,7 @@ export default function ContactForm() {
           <p className="body-lg" style={{ maxWidth: '500px', margin: '0 auto', marginBottom: 'var(--stack-xl)' }}>
             Thank you, {formData.name}! Your message was sent successfully. We will review it and get back to you at {formData.email} as soon as possible.
           </p>
-          <a href="/" className="btn btn-outline">Return to Homepage</a>
+          <Link href="/" className="btn btn-outline">Return to Homepage</Link>
         </div>
       )}
     </div>

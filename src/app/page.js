@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata = {
   title: "BH Custom Woodworks | Custom Woodwork & Laser Engraving",
@@ -16,7 +17,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-bg">
           <Image
-            src="/images/hero-bg-final.jpg"
+            src="/images/hero-bg-final.webp"
             alt="Close-up of a beautifully finished solid dark wood tabletop corner with soft sunlight highlights"
             fill
             style={{ objectFit: "cover", objectPosition: "center" }}
@@ -44,17 +45,17 @@ export default function Home() {
             and modern technology.
           </p>
           <div className="hero-cta">
-            <a href="/shop" className="btn btn-primary" id="hero-cta-shop">
+            <Link href="/shop" className="btn btn-primary" id="hero-cta-shop">
               Shop Our Etsy Products
-            </a>
-            <a href="/quote" className="btn btn-outline" id="hero-cta-quote">
+            </Link>
+            <Link href="/quote" className="btn btn-outline" id="hero-cta-quote">
               Request a Custom Quote
-            </a>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* ====== BENTO GRID — Product Categories ====== */}
+      {/* ====== BENTO GRID - Product Categories ====== */}
       <section
         id="collections"
         className="section"
@@ -68,10 +69,10 @@ export default function Home() {
           </div>
 
           <div className="bento-grid">
-            {/* Card 1 — Signature (large): Memorial Pieces */}
-            <a href="/services/memorial-pieces" className="showcase-card signature">
+            {/* Card 1 - Signature (large): Memorial Pieces */}
+            <Link href="/services/memorial-pieces" className="showcase-card signature">
               <Image
-                src="/images/memorial-pieces-v3.webp"
+                src="/images/memorial-pieces.webp"
                 alt="Handcrafted wooden memorial keepsake box with floral laser engraving"
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 66vw, 50vw"
@@ -87,12 +88,12 @@ export default function Home() {
                 </p>
               </div>
 
-            </a>
+            </Link>
 
             {/* Card 2: Charcuterie Boards */}
-            <a href="/services/charcuterie-boards" className="showcase-card">
+            <Link href="/services/charcuterie-boards" className="showcase-card">
               <Image
-                src="/images/charcuterie-boards-v2.png"
+                src="/images/charcuterie-boards.webp"
                 alt="Handcrafted dark walnut charcuterie board styled with artisan cheeses and fruits"
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
@@ -103,12 +104,12 @@ export default function Home() {
                 <h3 className="headline-md">Charcuterie Boards</h3>
               </div>
 
-            </a>
+            </Link>
 
             {/* Card 3: Cutting Boards */}
-            <a href="/services/cutting-boards" className="showcase-card">
+            <Link href="/services/cutting-boards" className="showcase-card">
               <Image
-                src="/images/cutting-boards.jpg"
+                src="/images/cutting-boards.webp"
                 alt="Handcrafted walnut edge-grain cutting board with juice groove on a marble surface"
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
@@ -119,12 +120,12 @@ export default function Home() {
                 <h3 className="headline-md">Cutting Boards</h3>
               </div>
 
-            </a>
+            </Link>
 
             {/* Card 4: Wedding Decor */}
-            <a href="/services/wedding-decor" className="showcase-card">
+            <Link href="/services/wedding-decor" className="showcase-card">
               <Image
-                src="/images/wedding-decor.jpg"
+                src="/images/wedding-decor.webp"
                 alt="Elegant laser-engraved wooden wedding sign with leafy borders and script text"
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
@@ -135,12 +136,12 @@ export default function Home() {
                 <h3 className="headline-md">Wedding Decor</h3>
               </div>
 
-            </a>
+            </Link>
 
             {/* Card 5: Laser Engraved Gifts */}
-            <a href="/services/laser-engraved-gifts" className="showcase-card">
+            <Link href="/services/laser-engraved-gifts" className="showcase-card">
               <Image
-                src="/images/laser-gifts.jpg"
+                src="/images/laser-gifts.webp"
                 alt="Collection of laser-engraved wooden gifts including ornaments and coasters"
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
@@ -151,12 +152,12 @@ export default function Home() {
                 <h3 className="headline-md">Laser Engraved Gifts</h3>
               </div>
 
-            </a>
+            </Link>
 
             {/* Card 6: Business Signage */}
-            <a href="/services/business-signage" className="showcase-card">
+            <Link href="/services/business-signage" className="showcase-card">
               <Image
-                src="/images/business-signage.jpg"
+                src="/images/business-signage.webp"
                 alt="Intricately carved solid dark walnut office sign for Lexington & Associates Counsellors at Law, featuring a legal scales and tree emblem, mounted on a stone wall"
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
@@ -167,7 +168,7 @@ export default function Home() {
                 <h3 className="headline-md">Business Signage</h3>
               </div>
 
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -178,7 +179,7 @@ export default function Home() {
           <div className="editorial-image">
             <div className="editorial-image-frame">
               <Image
-                src="/images/process.jpg"
+                src="/images/process.webp"
                 alt="Laser engraving machine cutting a detailed design into solid wood"
                 width={800}
                 height={1000}
@@ -227,10 +228,10 @@ export default function Home() {
             </div>
 
             <div className="editorial-divider">
-              <a href="/our-story" className="label-sm">
+              <Link href="/our-story" className="label-sm">
                 Read Our Story{" "}
                 <span className="material-symbols-outlined">east</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -252,9 +253,9 @@ export default function Home() {
             Whether it&rsquo;s a personalized gift or a large custom
             installation, we&rsquo;re ready to bring your vision to life.
           </p>
-          <a href="/quote" className="btn btn-inverse" id="cta-request-quote">
+          <Link href="/quote" className="btn btn-inverse" id="cta-request-quote">
             Request a Quote
-          </a>
+          </Link>
         </div>
       </section>
     </main>

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
@@ -11,6 +12,13 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [collectionsExpanded, setCollectionsExpanded] = useState(false);
   const [isScrolled, setIsScrolled] = useState(!isHome);
+
+  // Sync state with isHome prop during render to avoid useEffect set-state warning
+  const [prevIsHome, setPrevIsHome] = useState(isHome);
+  if (isHome !== prevIsHome) {
+    setPrevIsHome(isHome);
+    setIsScrolled(!isHome);
+  }
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => {
@@ -37,10 +45,7 @@ export default function Navbar() {
 
   // Scroll detection logic
   useEffect(() => {
-    if (!isHome) {
-      setIsScrolled(true);
-      return;
-    }
+    if (!isHome) return;
 
     const handleScroll = () => {
       // 150px is when the hero icon is fully moved under/past the main menu
@@ -64,7 +69,7 @@ export default function Navbar() {
       {/* ====== NAVBAR ====== */}
       <header className={`navbar ${isScrolled ? 'scrolled' : ''} ${isOpen ? 'menu-open' : ''} ${isHome ? 'is-home' : ''}`}>
         <div className="navbar-inner">
-          <a href="/" className="navbar-logo" onClick={closeMenu}>
+          <Link href="/" className="navbar-logo" onClick={closeMenu}>
             <Image
               src="/bh-custom-woodworks-logo.svg"
               alt=""
@@ -74,30 +79,30 @@ export default function Navbar() {
               priority
             />
             <span className="navbar-logo-text">BH Custom <br /> Woodworks</span>
-          </a>
+          </Link>
 
           <nav className="navbar-links" style={{ alignItems: 'center' }}>
-            <a href="/shop" className="btn btn-primary" style={{ padding: '0.6rem 1.25rem', fontSize: '0.85rem' }}>Shop Our Etsy Products</a>
+            <Link href="/shop" className="btn btn-primary" style={{ padding: '0.6rem 1.25rem', fontSize: '0.85rem' }}>Shop Our Etsy Products</Link>
             <div className="nav-dropdown">
-              <a href="/#collections" className="nav-dropdown-trigger active">
+              <Link href="/#collections" className="nav-dropdown-trigger active">
                 Collections
                 <span className="material-symbols-outlined nav-dropdown-icon">
                   expand_more
                 </span>
-              </a>
+              </Link>
               <div className="nav-dropdown-menu">
-                <a href="/services/memorial-pieces">Memorial Pieces</a>
-                <a href="/services/charcuterie-boards">Charcuterie Boards</a>
-                <a href="/services/cutting-boards">Cutting Boards</a>
-                <a href="/services/wedding-decor">Wedding Decor</a>
-                <a href="/services/laser-engraved-gifts">Laser Engraved Gifts</a>
-                <a href="/services/business-signage">Business Signage</a>
+                <Link href="/services/memorial-pieces">Memorial Pieces</Link>
+                <Link href="/services/charcuterie-boards">Charcuterie Boards</Link>
+                <Link href="/services/cutting-boards">Cutting Boards</Link>
+                <Link href="/services/wedding-decor">Wedding Decor</Link>
+                <Link href="/services/laser-engraved-gifts">Laser Engraved Gifts</Link>
+                <Link href="/services/business-signage">Business Signage</Link>
               </div>
             </div>
-            <a href="/#process">Process</a>
-            <a href="/quote">Custom Quote</a>
-            <a href="/our-story">Our Story</a>
-            <a href="/contact">Contact</a>
+            <Link href="/#process">Process</Link>
+            <Link href="/quote">Custom Quote</Link>
+            <Link href="/our-story">Our Story</Link>
+            <Link href="/contact">Contact</Link>
           </nav>
 
           <div className="navbar-actions">
@@ -118,7 +123,7 @@ export default function Navbar() {
       <div className={`mobile-menu ${isOpen ? 'active' : ''}`}>
         <div className="mobile-menu-links">
           <div className="mobile-menu-cta" style={{ marginTop: '0', marginBottom: '1.25rem' }}>
-            <a href="/shop" className="btn btn-primary" onClick={closeMenu}>Shop Our Etsy Products</a>
+            <Link href="/shop" className="btn btn-primary" onClick={closeMenu}>Shop Our Etsy Products</Link>
           </div>
 
           <a 
@@ -133,18 +138,18 @@ export default function Navbar() {
           </a>
           
           <div className={`mobile-menu-sublinks ${collectionsExpanded ? 'expanded' : ''}`}>
-            <a href="/services/memorial-pieces" className="mobile-menu-sublink" onClick={closeMenu}>Memorial Pieces</a>
-            <a href="/services/charcuterie-boards" className="mobile-menu-sublink" onClick={closeMenu}>Charcuterie Boards</a>
-            <a href="/services/cutting-boards" className="mobile-menu-sublink" onClick={closeMenu}>Cutting Boards</a>
-            <a href="/services/wedding-decor" className="mobile-menu-sublink" onClick={closeMenu}>Wedding Decor</a>
-            <a href="/services/laser-engraved-gifts" className="mobile-menu-sublink" onClick={closeMenu}>Laser Engraved Gifts</a>
-            <a href="/services/business-signage" className="mobile-menu-sublink" onClick={closeMenu}>Business Signage</a>
+            <Link href="/services/memorial-pieces" className="mobile-menu-sublink" onClick={closeMenu}>Memorial Pieces</Link>
+            <Link href="/services/charcuterie-boards" className="mobile-menu-sublink" onClick={closeMenu}>Charcuterie Boards</Link>
+            <Link href="/services/cutting-boards" className="mobile-menu-sublink" onClick={closeMenu}>Cutting Boards</Link>
+            <Link href="/services/wedding-decor" className="mobile-menu-sublink" onClick={closeMenu}>Wedding Decor</Link>
+            <Link href="/services/laser-engraved-gifts" className="mobile-menu-sublink" onClick={closeMenu}>Laser Engraved Gifts</Link>
+            <Link href="/services/business-signage" className="mobile-menu-sublink" onClick={closeMenu}>Business Signage</Link>
           </div>
 
-          <a href="/#process" className="mobile-menu-link" onClick={closeMenu}>Process</a>
-          <a href="/quote" className="mobile-menu-link" onClick={closeMenu}>Custom Quote</a>
-          <a href="/our-story" className="mobile-menu-link" onClick={closeMenu}>Our Story</a>
-          <a href="/contact" className="mobile-menu-link" onClick={closeMenu}>Contact</a>
+          <Link href="/#process" className="mobile-menu-link" onClick={closeMenu}>Process</Link>
+          <Link href="/quote" className="mobile-menu-link" onClick={closeMenu}>Custom Quote</Link>
+          <Link href="/our-story" className="mobile-menu-link" onClick={closeMenu}>Our Story</Link>
+          <Link href="/contact" className="mobile-menu-link" onClick={closeMenu}>Contact</Link>
         </div>
       </div>
     </>
