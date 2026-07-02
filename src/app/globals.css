@@ -1459,7 +1459,7 @@ header.navbar.scrolled .navbar-logo-icon {
   margin: 0 auto;
   min-height: 50vh;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   padding: var(--section-padding) var(--gutter);
   overflow: hidden;
 }
@@ -1483,7 +1483,7 @@ header.navbar.scrolled .navbar-logo-icon {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    to top,
+    to bottom,
     rgba(30, 20, 12, 0.92) 0%,
     rgba(30, 20, 12, 0.65) 35%,
     rgba(30, 20, 12, 0.3) 65%,
@@ -1491,26 +1491,27 @@ header.navbar.scrolled .navbar-logo-icon {
   );
 }
 
-.service-hero-content {
+.service-hero-title {
   position: relative;
   z-index: 1;
   max-width: 54rem;
 }
 
-.service-hero-content h1 {
+.service-hero-title h1 {
   color: var(--surface-container-lowest);
   margin-bottom: var(--stack-sm);
   font-size: 3rem;
 }
 
-.service-hero-content p {
-  color: #ffffff;
-  margin-bottom: var(--stack-md);
-  line-height: 1.7;
+.service-intro {
+  background: var(--surface);
+  text-align: center;
 }
 
-.service-hero-content .btn {
-  margin-top: var(--stack-sm);
+.service-intro-content {
+  max-width: 48rem;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* --- Details Grid --- */

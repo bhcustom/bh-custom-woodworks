@@ -37,15 +37,22 @@ export default function ServicePage({ service }) {
           />
           <div className="service-hero-overlay" />
         </div>
-        <div className="container service-hero-content">
-          <h1 className="display-lg">{service.intro.headline}</h1>
-          <p className="body-lg">{service.intro.description}</p>
-          <div style={{ display: "flex", gap: "var(--stack-sm)", flexWrap: "wrap", width: "100%" }}>
+        <div className="container service-hero-title">
+          <h1 className="display-lg">{service.title}</h1>
+        </div>
+      </section>
+
+      {/* ====== SERVICE INTRO ====== */}
+      <section className="service-intro section">
+        <div className="container service-intro-content">
+          <h2 className="display-lg text-primary" style={{ marginBottom: "var(--stack-md)" }}>{service.intro.headline}</h2>
+          <p className="body-lg" style={{ color: "var(--on-surface-variant)", marginBottom: "var(--stack-md)" }}>{service.intro.description}</p>
+          <div style={{ display: "flex", gap: "var(--stack-sm)", flexWrap: "wrap", justifyContent: "center", width: "100%" }}>
             {service.etsyUrl ? (
               <>
                 <a
                   href={service.etsyUrl}
-                  className="btn btn-inverse"
+                  className="btn btn-primary"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -56,13 +63,13 @@ export default function ServicePage({ service }) {
                 </a>
                 <a
                   href="/quote"
-                  className="btn btn-outline-inverse"
+                  className="btn btn-outline"
                 >
                   Request a Custom Quote
                 </a>
               </>
             ) : (
-              <a href="/quote" className="btn btn-inverse">
+              <a href="/quote" className="btn btn-primary">
                 Request a Custom Quote
               </a>
             )}
