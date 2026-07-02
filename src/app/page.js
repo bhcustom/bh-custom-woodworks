@@ -73,7 +73,7 @@ export default function Home() {
             <Link href="/services/memorial-pieces" className="showcase-card signature">
               <Image
                 src="/images/memorial-pieces.webp"
-                alt="Handcrafted wooden memorial keepsake box with floral laser engraving"
+                alt="Handcrafted aromatic cedar keepsake box with dovetail corners sitting on a fireplace mantel"
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 66vw, 50vw"
                 style={{ objectFit: "cover" }}
