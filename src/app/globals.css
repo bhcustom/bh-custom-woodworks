@@ -303,6 +303,7 @@ ul {
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 300;
   vertical-align: middle;
+  text-transform: none;
 }
 
 /* ===================================================================
