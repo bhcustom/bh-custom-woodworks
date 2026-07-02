@@ -129,7 +129,6 @@ export default function RootLayout({ children }) {
             <h4 className="label-sm">Navigation</h4>
             <ul>
               <li><Link href="/#collections" className="body-md">Collections</Link></li>
-              <li><Link href="/#process" className="body-md">Process</Link></li>
               <li><Link href="/quote" className="body-md">Custom Quote</Link></li>
               <li><Link href="/our-story" className="body-md">Our Story</Link></li>
               <li><Link href="/contact" className="body-md">Contact</Link></li>
