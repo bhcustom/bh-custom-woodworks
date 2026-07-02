@@ -131,13 +131,10 @@ export default function PrivacyPolicy() {
 
         <section style={{ marginBottom: 'var(--stack-lg)' }}>
           <h2 className="headline-md" style={{ marginBottom: 'var(--stack-sm)' }}>Contact us</h2>
-          <p className="body-md">
-            If you have any questions about this Privacy Policy or how we handle your information, please contact us:
+          <p className="body-md" style={{ marginBottom: 'var(--stack-md)' }}>
+            If you have any questions about this Privacy Policy or how we handle your information, please contact us.
           </p>
-          <div className="body-md" style={{ marginTop: 'var(--stack-sm)' }}>
-            <p style={{ marginBottom: 'var(--stack-md)' }}><strong>BH Custom Woodworks</strong></p>
-            <Link href="/quote" className="btn btn-primary">Contact Us</Link>
-          </div>
+          <Link href="/contact" className="btn btn-primary">Contact Us</Link>
         </section>
       </div>
     </main>

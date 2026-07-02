@@ -118,7 +118,7 @@ export const products = [
     woodNote: "Warm amber tones that deepen with age.",
     summary:
       "Commemorating 250 years of American history, this solid Cherry plaque features a detailed laser engraving of the American flag, the Liberty Bell, and the bald eagle. Finished with four coats of semi-gloss lacquer and fitted with a T-slot hanger for easy wall mounting.",
-    details: "14\"×10\" · Solid Cherry · T-slot wall hanger included",
+    details: "14\" × 10\" · Solid Cherry · T-slot wall hanger included",
     limited: true,
     limitedLabel: "2026 Only",
     etsyUrl: "https://www.etsy.com/listing/4372544593/250th-year-anniversary-of-our-great-usa",

@@ -14,7 +14,23 @@ export function getLastUpdatedDate() {
   // This ensures the date is consistent for the whole quarter but looks natural
   const day = ((year + lastUpdateMonth) % 15) + 10;
 
-  const updateDate = new Date(year, lastUpdateMonth, day);
+  let updateDate = new Date(year, lastUpdateMonth, day);
+
+  // If the calculated date is in the future (e.g. early in the quarter), roll back to the previous quarter
+  if (updateDate > now) {
+    const currentIdx = months.indexOf(lastUpdateMonth);
+    let prevYear = year;
+    let prevMonth;
+    if (currentIdx === 0) {
+      prevMonth = 9; // October of previous year
+      prevYear = year - 1;
+    } else {
+      prevMonth = months[currentIdx - 1];
+    }
+    const prevDay = ((prevYear + prevMonth) % 15) + 10;
+    updateDate = new Date(prevYear, prevMonth, prevDay);
+  }
+
   return updateDate.toLocaleDateString('en-US', {
     month: 'long',
     day: 'numeric',
