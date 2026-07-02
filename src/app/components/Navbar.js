@@ -99,7 +99,6 @@ export default function Navbar() {
                 <Link href="/services/business-signage">Business Signage</Link>
               </div>
             </div>
-            <Link href="/#process">Process</Link>
             <Link href="/quote">Custom Quote</Link>
             <Link href="/our-story">Our Story</Link>
             <Link href="/contact">Contact</Link>
@@ -146,7 +145,6 @@ export default function Navbar() {
             <Link href="/services/business-signage" className="mobile-menu-sublink" onClick={closeMenu}>Business Signage</Link>
           </div>
 
-          <Link href="/#process" className="mobile-menu-link" onClick={closeMenu}>Process</Link>
           <Link href="/quote" className="mobile-menu-link" onClick={closeMenu}>Custom Quote</Link>
           <Link href="/our-story" className="mobile-menu-link" onClick={closeMenu}>Our Story</Link>
           <Link href="/contact" className="mobile-menu-link" onClick={closeMenu}>Contact</Link>
