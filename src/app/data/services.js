@@ -11,6 +11,7 @@ export const services = {
     metaDescription:
       "Handcrafted custom charcuterie boards and serving platters built from solid walnut, maple, and cherry. Personalized laser engraving for housewarmings, weddings, and entertaining.",
     heroImage: "/images/charcuterie-boards.webp",
+    heroPosition: "center 55%",
     heroAlt: "Handcrafted premium walnut charcuterie board beautifully arranged with artisan cheeses, cured meats, and fresh fruits",
     intro: {
       headline: "Crafted for Gathering",
@@ -84,6 +85,7 @@ export const services = {
     metaDescription:
       "Personalized laser-engraved gifts crafted from solid wood. Custom cutting boards, ornaments, keepsake boxes, and more for every occasion.",
     heroImage: "/images/laser-gifts.webp",
+    heroPosition: "center 48%",
     etsyUrl: "https://www.etsy.com/shop/BHWoodworx",
     heroAlt: "Collection of laser-engraved wooden gifts including ornaments and coasters",
     intro: {
@@ -152,6 +154,7 @@ export const services = {
     metaDescription:
       "Handcrafted custom cutting boards in end-grain and edge-grain styles. Personalized laser engraving on walnut, maple, and cherry.",
     heroImage: "/images/cutting-boards.webp",
+    heroPosition: "center 55%",
     heroAlt: "Handcrafted walnut edge-grain cutting board with juice groove on a marble surface",
     intro: {
       headline: "Built to Be Used, \nNot Just Displayed",
@@ -220,6 +223,7 @@ export const services = {
     metaDescription:
       "Custom wooden wedding decor including guest books, table numbers, cake toppers, and ceremony signs. Handcrafted and laser engraved for your day.",
     heroImage: "/images/wedding-decor.webp",
+    heroPosition: "center 50%",
     heroAlt: "Elegant laser-engraved wooden wedding sign with leafy borders and script text",
     intro: {
       headline: "Details That Make It Yours",
@@ -286,6 +290,7 @@ export const services = {
     metaDescription:
       "Professional custom business signs and logo displays in solid hardwood. Laser-engraved office signs, lobby displays, and retail signage.",
     heroImage: "/images/business-signage.webp",
+    heroPosition: "center 45%",
     heroAlt: "Intricately carved premium walnut wood office lobby sign for Lexington & Associates Counsellors at Law, featuring the scales of justice emblem and mounted on a stone wall",
     intro: {
       headline: "Your Brand, Built in Wood",
