@@ -37,7 +37,7 @@ export default function ServicePage({ service }) {
                 fill
                 priority
                 sizes="(max-width: 1280px) 100vw, 1280px"
-                style={{ objectFit: "cover", objectPosition: "center" }}
+                style={{ objectFit: "cover", objectPosition: service.heroPosition || "center" }}
               />
             </div>
           </div>

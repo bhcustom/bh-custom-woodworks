@@ -355,6 +355,7 @@ export const services = {
     metaDescription:
       "Handcrafted wooden memorial pieces including urns, keepsake boxes, photo plaques, and tribute signs. Built with care from solid American hardwoods.",
     heroImage: "/images/memorial-pieces.webp",
+    heroPosition: "center 42%",
     etsyUrl: "https://www.etsy.com/shop/BHWoodworx",
     heroAlt: "Handcrafted aromatic cedar keepsake box with dovetail corners sitting on a fireplace mantel",
     intro: {
