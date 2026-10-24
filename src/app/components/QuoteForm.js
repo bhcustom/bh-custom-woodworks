@@ -47,6 +47,7 @@ export default function QuoteForm() {
     zip: '',
     details: ''
   });
+  const [submissionError, setSubmissionError] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Automatically scroll to the top of the page when changing steps in the form
@@ -69,17 +70,29 @@ export default function QuoteForm() {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const nextStep = () => setStep(prev => prev + 1);
+  const nextStep = () => {
+    setSubmissionError(null);
+    setStep(prev => prev + 1);
+  };
+
   const prevStep = () => {
+    setSubmissionError(null);
     if (step === 3 && formData.projectType === 'custom') setStep(1);
     else setStep(prev => prev - 1);
   };
 
   const submitForm = async (e) => {
     e.preventDefault();
+    if (isSubmitting) return;
     setIsSubmitting(true);
+    setSubmissionError(null);
 
     try {
+      const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "42bbdef5-eeb1-4a7a-9021-22c4611b0aba";
+      const subject = isGeneralMessage 
+        ? `General Inquiry from ${formData.name}`
+        : `Custom Quote Request from ${formData.name}`;
+
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
@@ -87,10 +100,8 @@ export default function QuoteForm() {
           Accept: "application/json"
         },
         body: JSON.stringify({
-          access_key: "42bbdef5-eeb1-4a7a-9021-22c4611b0aba",
-          subject: isGeneralMessage 
-            ? `General Inquiry from ${formData.name}`
-            : `Custom Quote Request from ${formData.name}`,
+          access_key: accessKey,
+          subject,
           from_name: "BH Custom Woodworks Website",
           ...formData
         })
@@ -98,13 +109,30 @@ export default function QuoteForm() {
 
       const result = await response.json();
       if (result.success) {
+        setFormData({
+          projectType: '',
+          woodType: '',
+          cuttingBoardStyle: '',
+          indoorOutdoor: '',
+          size: '',
+          engravingText: '',
+          fontStyle: '',
+          timeline: '',
+          name: '',
+          email: '',
+          phone: '',
+          zip: '',
+          details: ''
+        });
+        setSubmissionError(null);
         setStep(5); // Success step
       } else {
-        alert("Something went wrong. Please try again or email us directly at BHWoodworx@gmail.com");
+        const errorMsg = result.message || "Something went wrong. Please check your submission or try again.";
+        setSubmissionError(errorMsg);
       }
     } catch (error) {
-      console.error("Form submission error:", error);
-      alert("Unable to connect. Please check your internet connection and try again.");
+      console.error("Form submission error:", error?.message || "Connection failed");
+      setSubmissionError("Unable to connect. Please check your internet connection and try again.");
     } finally {
       setIsSubmitting(false);
     }
@@ -152,6 +180,15 @@ export default function QuoteForm() {
               <label className="label-sm mb-xs">Your Message</label>
               <textarea name="details" required className="quote-textarea" placeholder="How can we help you today?" value={formData.details} onChange={handleInputChange}></textarea>
             </div>
+
+            {submissionError && (
+              <div className="quote-alert-error mt-md" role="alert">
+                <span className="material-symbols-outlined">error</span>
+                <div>
+                  <strong>Submission issue:</strong> {submissionError}
+                </div>
+              </div>
+            )}
 
             <div className="quote-actions mt-xl">
               <button type="button" className="btn btn-outline" onClick={() => setIsGeneralMessage(false)}>
@@ -290,7 +327,7 @@ export default function QuoteForm() {
         </div>
       )}
 
-      {/* Step 3: Artwork & Uploads */}
+      {/* Step 3: Details & Artwork */}
       {step === 3 && (
         <div className="quote-step fade-in">
           <div className="quote-header">
@@ -329,13 +366,9 @@ export default function QuoteForm() {
           )}
 
           <div className="quote-form-group mt-lg">
-            <h3 className="headline-sm mb-sm">Upload Reference Images or Logos</h3>
-            <div className="quote-upload-zone">
-              <span className="material-symbols-outlined icon-lg mb-sm" style={{ color: 'var(--outline)' }}>cloud_upload</span>
-              <p className="body-md">Drag & drop files here, or click to browse</p>
-              <p className="label-sm" style={{ color: 'var(--outline)' }}>Supports .jpg, .png, .svg, .ai, .pdf (Max 10MB)</p>
-              <input type="file" multiple className="quote-file-input" />
-            </div>
+            <p className="body-md" style={{ color: 'var(--on-surface-variant)' }}>
+              Have reference photos? You can share them by email when we follow up about your project.
+            </p>
           </div>
 
           <div className="quote-actions">
@@ -383,6 +416,15 @@ export default function QuoteForm() {
                 <option value="rush">Rush (Need it ASAP - may incur fee)</option>
               </select>
             </div>
+
+            {submissionError && (
+              <div className="quote-alert-error mt-md" role="alert">
+                <span className="material-symbols-outlined">error</span>
+                <div>
+                  <strong>Submission issue:</strong> {submissionError}
+                </div>
+              </div>
+            )}
 
             <div className="quote-actions mt-xl">
               <button type="button" className="btn btn-outline" onClick={prevStep}>Back</button>
