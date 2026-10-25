@@ -54,6 +54,11 @@ export default function QuoteForm() {
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
+    // Prevent browser from restoring scroll position to bottom of page on back navigation
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+
     const currentState = window.history.state || {};
     if (currentState.quoteStep === undefined) {
       window.history.replaceState(
@@ -68,18 +73,34 @@ export default function QuoteForm() {
         setStep(state.quoteStep);
         setIsGeneralMessage(Boolean(state.isGeneralMessage));
         setSubmissionError(null);
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
       }
     };
 
     window.addEventListener('popstate', handlePopState);
     return () => {
       window.removeEventListener('popstate', handlePopState);
+      if ('scrollRestoration' in window.history) {
+        window.history.scrollRestoration = 'auto';
+      }
     };
   }, []);
 
   // Automatically scroll to the top of the page when changing steps in the form
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+
+    const rafId = requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    });
+
+    return () => cancelAnimationFrame(rafId);
   }, [step, isGeneralMessage]);
 
   const goToStep = (newStep, generalMsg = false) => {
@@ -119,6 +140,9 @@ export default function QuoteForm() {
 
   const prevStep = () => {
     setSubmissionError(null);
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
     if (typeof window !== 'undefined' && window.history.state?.quoteStep > 1) {
       window.history.back();
     } else {
@@ -129,6 +153,9 @@ export default function QuoteForm() {
 
   const exitGeneralMessage = () => {
     setSubmissionError(null);
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
     if (typeof window !== 'undefined' && window.history.state?.isGeneralMessage) {
       window.history.back();
     } else {
