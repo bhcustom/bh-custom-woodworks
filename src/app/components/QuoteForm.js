@@ -50,18 +50,61 @@ export default function QuoteForm() {
   const [submissionError, setSubmissionError] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  // Synchronize form steps with browser history
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const currentState = window.history.state || {};
+    if (currentState.quoteStep === undefined) {
+      window.history.replaceState(
+        { ...currentState, quoteStep: 1, isGeneralMessage: false },
+        ''
+      );
+    }
+
+    const handlePopState = (event) => {
+      const state = event.state;
+      if (state && typeof state.quoteStep === 'number') {
+        setStep(state.quoteStep);
+        setIsGeneralMessage(Boolean(state.isGeneralMessage));
+        setSubmissionError(null);
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, []);
+
   // Automatically scroll to the top of the page when changing steps in the form
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [step]);
+  }, [step, isGeneralMessage]);
+
+  const goToStep = (newStep, generalMsg = false) => {
+    if (typeof window !== 'undefined') {
+      const currentState = window.history.state || {};
+      window.history.pushState(
+        { ...currentState, quoteStep: newStep, isGeneralMessage: generalMsg },
+        ''
+      );
+    }
+    setStep(newStep);
+    setIsGeneralMessage(generalMsg);
+    setSubmissionError(null);
+  };
 
   const handleSelect = (field, value) => {
     setFormData(prev => ({ ...prev, [field]: value }));
     
     // Auto-advance logic for radio-like selections
     if (field === 'projectType') {
-      if (value === 'custom') setStep(3); // Skip straight to details for fully custom
-      else setStep(2);
+      if (value === 'custom') {
+        goToStep(3, false); // Skip straight to details for fully custom
+      } else {
+        goToStep(2, false);
+      }
     }
   };
 
@@ -71,14 +114,26 @@ export default function QuoteForm() {
   };
 
   const nextStep = () => {
-    setSubmissionError(null);
-    setStep(prev => prev + 1);
+    goToStep(step + 1, false);
   };
 
   const prevStep = () => {
     setSubmissionError(null);
-    if (step === 3 && formData.projectType === 'custom') setStep(1);
-    else setStep(prev => prev - 1);
+    if (typeof window !== 'undefined' && window.history.state?.quoteStep > 1) {
+      window.history.back();
+    } else {
+      if (step === 3 && formData.projectType === 'custom') setStep(1);
+      else setStep(prev => Math.max(1, prev - 1));
+    }
+  };
+
+  const exitGeneralMessage = () => {
+    setSubmissionError(null);
+    if (typeof window !== 'undefined' && window.history.state?.isGeneralMessage) {
+      window.history.back();
+    } else {
+      setIsGeneralMessage(false);
+    }
   };
 
   const submitForm = async (e) => {
@@ -125,6 +180,13 @@ export default function QuoteForm() {
           details: ''
         });
         setSubmissionError(null);
+        if (typeof window !== 'undefined') {
+          const currentState = window.history.state || {};
+          window.history.replaceState(
+            { ...currentState, quoteStep: 5, isGeneralMessage },
+            ''
+          );
+        }
         setStep(5); // Success step
       } else {
         const errorMsg = result.message || "Something went wrong. Please check your submission or try again.";
@@ -191,7 +253,7 @@ export default function QuoteForm() {
             )}
 
             <div className="quote-actions mt-xl">
-              <button type="button" className="btn btn-outline" onClick={() => setIsGeneralMessage(false)}>
+              <button type="button" className="btn btn-outline" onClick={exitGeneralMessage}>
                 Configure Custom Order
               </button>
               <button type="submit" className="btn btn-primary" disabled={isSubmitting}>
@@ -217,7 +279,7 @@ export default function QuoteForm() {
             <p className="body-md" style={{ marginTop: '0.25rem' }}>
               <button 
                 type="button" 
-                onClick={() => setIsGeneralMessage(true)} 
+                onClick={() => goToStep(1, true)} 
                 style={{ 
                   background: 'none', 
                   border: 'none', 
